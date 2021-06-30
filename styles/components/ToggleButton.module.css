@@ -1,0 +1,17 @@
+.button {
+  background: var(--unselected-item-bg);
+  color: var(--foreground);
+  fill: var(--foreground);
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover {
+  color: var(--rare-item-bg);
+  fill: var(--rare-item-bg);
+  cursor: pointer;
+}

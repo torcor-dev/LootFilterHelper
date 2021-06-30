@@ -1,4 +1,7 @@
-@import '../node_modules/modern-normalize/modern-normalize.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 :root {
     --background: #282A36;
@@ -12,6 +15,12 @@
     --purple: #BD93F9;
     --cyan: #8BE9FD;
     --pink: #FF79C6;
+
+    --unique-item-bg: rgb(175,96,37);
+    --rare-item-bg: rgb(255,255,119);
+    --magic-item-bg: rgb(136,136,255);
+    --normal-item-bg: rgb(200,200,200);
+    --unselected-item-bg: var(--selection);
 }
 
 body {
@@ -62,4 +71,9 @@ a:hover {
 
 .btn-outline, .btn-outline:hover {
     background-color: transparent;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
 }

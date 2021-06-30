@@ -1,0 +1,7035 @@
+{
+  "Shabby Jerkin": {
+    "domain": "item",
+    "drop_level": 2,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Shabby Jerkin",
+    "properties": {
+      "evasion": 29,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 14,
+      "intelligence": 0,
+      "level": 2,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDex1A.dds",
+      "id": "BodyDex1A"
+    }
+  },
+  "Glorious Leather": {
+    "domain": "item",
+    "drop_level": 45,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Glorious Leather",
+    "properties": {
+      "evasion": 451,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 124,
+      "intelligence": 0,
+      "level": 45,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDex1C.dds",
+      "id": "BodyDex1C"
+    }
+  },
+  "Coronal Leather": {
+    "domain": "item",
+    "drop_level": 49,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Coronal Leather",
+    "properties": {
+      "evasion": 491,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 134,
+      "intelligence": 0,
+      "level": 49,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDex3C.dds",
+      "id": "BodyDex3C"
+    }
+  },
+  "Cutthroat's Garb": {
+    "domain": "item",
+    "drop_level": 53,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Cutthroat's Garb",
+    "properties": {
+      "evasion": 530,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 144,
+      "intelligence": 0,
+      "level": 53,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDex2C.dds",
+      "id": "BodyDex2C"
+    }
+  },
+  "Sharkskin Tunic": {
+    "domain": "item",
+    "drop_level": 56,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Sharkskin Tunic",
+    "properties": {
+      "evasion": 559,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 152,
+      "intelligence": 0,
+      "level": 56,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDex1B.dds",
+      "id": "BodyDex1B"
+    }
+  },
+  "Destiny Leather": {
+    "domain": "item",
+    "drop_level": 59,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Destiny Leather",
+    "properties": {
+      "evasion": 601,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 160,
+      "intelligence": 0,
+      "level": 59,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDex3B.dds",
+      "id": "BodyDex3B"
+    }
+  },
+  "Exquisite Leather": {
+    "domain": "item",
+    "drop_level": 62,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Exquisite Leather",
+    "properties": {
+      "evasion": 704,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 170,
+      "intelligence": 0,
+      "level": 62,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDex1C.dds",
+      "id": "BodyDex1C"
+    }
+  },
+  "Zodiac Leather": {
+    "domain": "item",
+    "drop_level": 65,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Zodiac Leather",
+    "properties": {
+      "evasion": 854,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 197,
+      "intelligence": 0,
+      "level": 65,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDex3C.dds",
+      "id": "BodyDex3C"
+    }
+  },
+  "Assassin's Garb": {
+    "domain": "item",
+    "drop_level": 68,
+    "implicits": [
+      "MovementVelocityImplicitArmour1"
+    ],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Assassin's Garb",
+    "properties": {
+      "evasion": 737
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 183,
+      "intelligence": 0,
+      "level": 68,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDex2C.dds",
+      "id": "BodyDex2C"
+    }
+  },
+  "Strapped Leather": {
+    "domain": "item",
+    "drop_level": 9,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Strapped Leather",
+    "properties": {
+      "evasion": 98,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 32,
+      "intelligence": 0,
+      "level": 9,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDex3A.dds",
+      "id": "BodyDex3A"
+    }
+  },
+  "Buckskin Tunic": {
+    "domain": "item",
+    "drop_level": 17,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Buckskin Tunic",
+    "properties": {
+      "evasion": 176,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 53,
+      "intelligence": 0,
+      "level": 17,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDex1B.dds",
+      "id": "BodyDex1B"
+    }
+  },
+  "Wild Leather": {
+    "domain": "item",
+    "drop_level": 25,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Wild Leather",
+    "properties": {
+      "evasion": 255,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 73,
+      "intelligence": 0,
+      "level": 25,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDex3B.dds",
+      "id": "BodyDex3B"
+    }
+  },
+  "Full Leather": {
+    "domain": "item",
+    "drop_level": 28,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Full Leather",
+    "properties": {
+      "evasion": 284,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 81,
+      "intelligence": 0,
+      "level": 28,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDex1C.dds",
+      "id": "BodyDex1C"
+    }
+  },
+  "Sun Leather": {
+    "domain": "item",
+    "drop_level": 32,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Sun Leather",
+    "properties": {
+      "evasion": 324,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 91,
+      "intelligence": 0,
+      "level": 32,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDex3C.dds",
+      "id": "BodyDex3C"
+    }
+  },
+  "Thief's Garb": {
+    "domain": "item",
+    "drop_level": 35,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Thief's Garb",
+    "properties": {
+      "evasion": 353,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 99,
+      "intelligence": 0,
+      "level": 35,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDex2C.dds",
+      "id": "BodyDex2C"
+    }
+  },
+  "Eelskin Tunic": {
+    "domain": "item",
+    "drop_level": 37,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Eelskin Tunic",
+    "properties": {
+      "evasion": 373,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 104,
+      "intelligence": 0,
+      "level": 37,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDex1B.dds",
+      "id": "BodyDex1B"
+    }
+  },
+  "Frontier Leather": {
+    "domain": "item",
+    "drop_level": 41,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Frontier Leather",
+    "properties": {
+      "evasion": 412,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 114,
+      "intelligence": 0,
+      "level": 41,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDex3B.dds",
+      "id": "BodyDex3B"
+    }
+  },
+  "Padded Vest": {
+    "domain": "item",
+    "drop_level": 4,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Padded Vest",
+    "properties": {
+      "energy_shield": 8,
+      "evasion": 27,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 10,
+      "intelligence": 10,
+      "level": 4,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDexInt1A.dds",
+      "id": "BodyDexInt1A"
+    }
+  },
+  "Crimson Raiment": {
+    "domain": "item",
+    "drop_level": 48,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Crimson Raiment",
+    "properties": {
+      "energy_shield": 52,
+      "evasion": 264,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 71,
+      "intelligence": 71,
+      "level": 48,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDexInt1C.dds",
+      "id": "BodyDexInt1C"
+    }
+  },
+  "Lacquered Garb": {
+    "domain": "item",
+    "drop_level": 52,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Lacquered Garb",
+    "properties": {
+      "energy_shield": 56,
+      "evasion": 286,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 76,
+      "intelligence": 76,
+      "level": 52,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDexInt2C.dds",
+      "id": "BodyDexInt2C"
+    }
+  },
+  "Crypt Armour": {
+    "domain": "item",
+    "drop_level": 56,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Crypt Armour",
+    "properties": {
+      "energy_shield": 60,
+      "evasion": 308,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 82,
+      "intelligence": 82,
+      "level": 56,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDexInt4C.dds",
+      "id": "BodyDexInt4C"
+    }
+  },
+  "Sentinel Jacket": {
+    "domain": "item",
+    "drop_level": 59,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Sentinel Jacket",
+    "properties": {
+      "energy_shield": 64,
+      "evasion": 330,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 86,
+      "intelligence": 86,
+      "level": 59,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDexInt1B.dds",
+      "id": "BodyDexInt1B"
+    }
+  },
+  "Varnished Coat": {
+    "domain": "item",
+    "drop_level": 62,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Varnished Coat",
+    "properties": {
+      "energy_shield": 75,
+      "evasion": 387,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 96,
+      "intelligence": 96,
+      "level": 62,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDexInt2B.dds",
+      "id": "BodyDexInt2B"
+    }
+  },
+  "Blood Raiment": {
+    "domain": "item",
+    "drop_level": 65,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Blood Raiment",
+    "properties": {
+      "energy_shield": 70,
+      "evasion": 436,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 107,
+      "intelligence": 90,
+      "level": 65,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDexInt1C.dds",
+      "id": "BodyDexInt1C"
+    }
+  },
+  "Sadist Garb": {
+    "domain": "item",
+    "drop_level": 68,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Sadist Garb",
+    "properties": {
+      "energy_shield": 88,
+      "evasion": 427,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 103,
+      "intelligence": 109,
+      "level": 68,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDexInt2C.dds",
+      "id": "BodyDexInt2C"
+    }
+  },
+  "Carnal Armour": {
+    "domain": "item",
+    "drop_level": 71,
+    "implicits": [
+      "IncreasedManaImplicitArmour1"
+    ],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Carnal Armour",
+    "properties": {
+      "energy_shield": 98,
+      "evasion": 353,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 88,
+      "intelligence": 122,
+      "level": 71,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDexInt4C.dds",
+      "id": "BodyDexInt4C"
+    }
+  },
+  "Oiled Vest": {
+    "domain": "item",
+    "drop_level": 9,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Oiled Vest",
+    "properties": {
+      "energy_shield": 13,
+      "evasion": 54,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 17,
+      "intelligence": 17,
+      "level": 9,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDexInt2A.dds",
+      "id": "BodyDexInt2A"
+    }
+  },
+  "Padded Jacket": {
+    "domain": "item",
+    "drop_level": 18,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Padded Jacket",
+    "properties": {
+      "energy_shield": 22,
+      "evasion": 102,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 30,
+      "intelligence": 30,
+      "level": 18,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDexInt1B.dds",
+      "id": "BodyDexInt1B"
+    }
+  },
+  "Oiled Coat": {
+    "domain": "item",
+    "drop_level": 22,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Oiled Coat",
+    "properties": {
+      "energy_shield": 26,
+      "evasion": 124,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 35,
+      "intelligence": 35,
+      "level": 22,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDexInt2B.dds",
+      "id": "BodyDexInt2B"
+    }
+  },
+  "Scarlet Raiment": {
+    "domain": "item",
+    "drop_level": 28,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Scarlet Raiment",
+    "properties": {
+      "energy_shield": 32,
+      "evasion": 156,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 43,
+      "intelligence": 43,
+      "level": 28,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDexInt1C.dds",
+      "id": "BodyDexInt1C"
+    }
+  },
+  "Waxed Garb": {
+    "domain": "item",
+    "drop_level": 32,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Waxed Garb",
+    "properties": {
+      "energy_shield": 36,
+      "evasion": 178,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 48,
+      "intelligence": 48,
+      "level": 32,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDexInt2C.dds",
+      "id": "BodyDexInt2C"
+    }
+  },
+  "Bone Armour": {
+    "domain": "item",
+    "drop_level": 35,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Bone Armour",
+    "properties": {
+      "energy_shield": 39,
+      "evasion": 194,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 53,
+      "intelligence": 53,
+      "level": 35,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDexInt4C.dds",
+      "id": "BodyDexInt4C"
+    }
+  },
+  "Quilted Jacket": {
+    "domain": "item",
+    "drop_level": 40,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Quilted Jacket",
+    "properties": {
+      "energy_shield": 44,
+      "evasion": 221,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 60,
+      "intelligence": 60,
+      "level": 40,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDexInt1B.dds",
+      "id": "BodyDexInt1B"
+    }
+  },
+  "Sleek Coat": {
+    "domain": "item",
+    "drop_level": 44,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Sleek Coat",
+    "properties": {
+      "energy_shield": 48,
+      "evasion": 243,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 65,
+      "intelligence": 65,
+      "level": 44,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyDexInt2B.dds",
+      "id": "BodyDexInt2B"
+    }
+  },
+  "Simple Robe": {
+    "domain": "item",
+    "drop_level": 3,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Simple Robe",
+    "properties": {
+      "energy_shield": 12,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 17,
+      "level": 3,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyInt1A.dds",
+      "id": "BodyInt1A"
+    }
+  },
+  "Conjurer's Vestment": {
+    "domain": "item",
+    "drop_level": 45,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Conjurer's Vestment",
+    "properties": {
+      "energy_shield": 89,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 124,
+      "level": 45,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyInt1C.dds",
+      "id": "BodyInt1C"
+    }
+  },
+  "Spidersilk Robe": {
+    "domain": "item",
+    "drop_level": 49,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Spidersilk Robe",
+    "properties": {
+      "energy_shield": 96,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 134,
+      "level": 49,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyInt2C.dds",
+      "id": "BodyInt2C"
+    }
+  },
+  "Destroyer Regalia": {
+    "domain": "item",
+    "drop_level": 53,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Destroyer Regalia",
+    "properties": {
+      "energy_shield": 104,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 144,
+      "level": 53,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrDexInt1C.dds",
+      "id": "BodyStrDexInt1C"
+    }
+  },
+  "Savant's Robe": {
+    "domain": "item",
+    "drop_level": 56,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Savant's Robe",
+    "properties": {
+      "energy_shield": 109,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 152,
+      "level": 56,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyInt1B.dds",
+      "id": "BodyInt1B"
+    }
+  },
+  "Necromancer Silks": {
+    "domain": "item",
+    "drop_level": 59,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Necromancer Silks",
+    "properties": {
+      "energy_shield": 117,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 160,
+      "level": 59,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyInt2B.dds",
+      "id": "BodyInt2B"
+    }
+  },
+  "Occultist's Vestment": {
+    "domain": "item",
+    "drop_level": 62,
+    "implicits": [
+      "SpellDamageImplicitArmour1"
+    ],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Occultist's Vestment",
+    "properties": {
+      "energy_shield": 130,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 180,
+      "level": 62,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyInt1C.dds",
+      "id": "BodyInt1C"
+    }
+  },
+  "Widowsilk Robe": {
+    "domain": "item",
+    "drop_level": 65,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Widowsilk Robe",
+    "properties": {
+      "energy_shield": 150,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 187,
+      "level": 65,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyInt2C.dds",
+      "id": "BodyInt2C"
+    }
+  },
+  "Vaal Regalia": {
+    "domain": "item",
+    "drop_level": 68,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Vaal Regalia",
+    "properties": {
+      "energy_shield": 163,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 194,
+      "level": 68,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrDexInt1C.dds",
+      "id": "BodyStrDexInt1C"
+    }
+  },
+  "Silken Vest": {
+    "domain": "item",
+    "drop_level": 11,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Silken Vest",
+    "properties": {
+      "energy_shield": 27,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 37,
+      "level": 11,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyInt2A.dds",
+      "id": "BodyInt2A"
+    }
+  },
+  "Scholar's Robe": {
+    "domain": "item",
+    "drop_level": 18,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Scholar's Robe",
+    "properties": {
+      "energy_shield": 39,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 55,
+      "level": 18,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyInt1B.dds",
+      "id": "BodyInt1B"
+    }
+  },
+  "Silken Garb": {
+    "domain": "item",
+    "drop_level": 25,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Silken Garb",
+    "properties": {
+      "energy_shield": 52,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 73,
+      "level": 25,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyInt2B.dds",
+      "id": "BodyInt2B"
+    }
+  },
+  "Mage's Vestment": {
+    "domain": "item",
+    "drop_level": 28,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Mage's Vestment",
+    "properties": {
+      "energy_shield": 58,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 81,
+      "level": 28,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyInt1C.dds",
+      "id": "BodyInt1C"
+    }
+  },
+  "Silk Robe": {
+    "domain": "item",
+    "drop_level": 32,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Silk Robe",
+    "properties": {
+      "energy_shield": 65,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 91,
+      "level": 32,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyInt2C.dds",
+      "id": "BodyInt2C"
+    }
+  },
+  "Cabalist Regalia": {
+    "domain": "item",
+    "drop_level": 35,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Cabalist Regalia",
+    "properties": {
+      "energy_shield": 71,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 99,
+      "level": 35,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrDexInt1C.dds",
+      "id": "BodyStrDexInt1C"
+    }
+  },
+  "Sage's Robe": {
+    "domain": "item",
+    "drop_level": 37,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Sage's Robe",
+    "properties": {
+      "energy_shield": 74,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 104,
+      "level": 37,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyInt1B.dds",
+      "id": "BodyInt1B"
+    }
+  },
+  "Silken Wrap": {
+    "domain": "item",
+    "drop_level": 41,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Silken Wrap",
+    "properties": {
+      "energy_shield": 82,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 114,
+      "level": 41,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyInt2B.dds",
+      "id": "BodyInt2B"
+    }
+  },
+  "Plate Vest": {
+    "domain": "item",
+    "drop_level": 1,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Plate Vest",
+    "properties": {
+      "armour": 19,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 1,
+      "strength": 12
+    },
+    "tags": [
+      "str_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStr1A.dds",
+      "id": "BodyStr1A"
+    }
+  },
+  "Sun Plate": {
+    "domain": "item",
+    "drop_level": 45,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Sun Plate",
+    "properties": {
+      "armour": 451,
+      "movement_speed": -5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 45,
+      "strength": 124
+    },
+    "tags": [
+      "str_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStr1C.dds",
+      "id": "BodyStr1C"
+    }
+  },
+  "Colosseum Plate": {
+    "domain": "item",
+    "drop_level": 49,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Colosseum Plate",
+    "properties": {
+      "armour": 491,
+      "movement_speed": -5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 49,
+      "strength": 134
+    },
+    "tags": [
+      "str_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStr2C.dds",
+      "id": "BodyStr2C"
+    }
+  },
+  "Majestic Plate": {
+    "domain": "item",
+    "drop_level": 53,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Majestic Plate",
+    "properties": {
+      "armour": 530,
+      "movement_speed": -5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 53,
+      "strength": 144
+    },
+    "tags": [
+      "str_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStr3C.dds",
+      "id": "BodyStr3C"
+    }
+  },
+  "Golden Plate": {
+    "domain": "item",
+    "drop_level": 56,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Golden Plate",
+    "properties": {
+      "armour": 559,
+      "movement_speed": -5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 56,
+      "strength": 152
+    },
+    "tags": [
+      "str_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStr1B.dds",
+      "id": "BodyStr1B"
+    }
+  },
+  "Crusader Plate": {
+    "domain": "item",
+    "drop_level": 59,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Crusader Plate",
+    "properties": {
+      "armour": 601,
+      "movement_speed": -5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 59,
+      "strength": 160
+    },
+    "tags": [
+      "str_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStr2B.dds",
+      "id": "BodyStr2B"
+    }
+  },
+  "Astral Plate": {
+    "domain": "item",
+    "drop_level": 62,
+    "implicits": [
+      "AllResistancesImplicitArmour1"
+    ],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Astral Plate",
+    "properties": {
+      "armour": 711,
+      "movement_speed": -5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 62,
+      "strength": 180
+    },
+    "tags": [
+      "str_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStr1C.dds",
+      "id": "BodyStr1C"
+    }
+  },
+  "Gladiator Plate": {
+    "domain": "item",
+    "drop_level": 65,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Gladiator Plate",
+    "properties": {
+      "armour": 738,
+      "movement_speed": -5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 65,
+      "strength": 177
+    },
+    "tags": [
+      "str_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStr2C.dds",
+      "id": "BodyStr2C"
+    }
+  },
+  "Glorious Plate": {
+    "domain": "item",
+    "drop_level": 68,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Glorious Plate",
+    "properties": {
+      "armour": 776
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 68,
+      "strength": 191
+    },
+    "tags": [
+      "str_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStr3C.dds",
+      "id": "BodyStr3C"
+    }
+  },
+  "Chestplate": {
+    "domain": "item",
+    "drop_level": 6,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Chestplate",
+    "properties": {
+      "armour": 68,
+      "movement_speed": -5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 6,
+      "strength": 25
+    },
+    "tags": [
+      "str_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStr2A.dds",
+      "id": "BodyStr2A"
+    }
+  },
+  "Copper Plate": {
+    "domain": "item",
+    "drop_level": 17,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Copper Plate",
+    "properties": {
+      "armour": 176,
+      "movement_speed": -5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 17,
+      "strength": 53
+    },
+    "tags": [
+      "str_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStr1B.dds",
+      "id": "BodyStr1B"
+    }
+  },
+  "War Plate": {
+    "domain": "item",
+    "drop_level": 21,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "War Plate",
+    "properties": {
+      "armour": 216,
+      "movement_speed": -5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 21,
+      "strength": 63
+    },
+    "tags": [
+      "str_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStr2B.dds",
+      "id": "BodyStr2B"
+    }
+  },
+  "Full Plate": {
+    "domain": "item",
+    "drop_level": 28,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Full Plate",
+    "properties": {
+      "armour": 284,
+      "movement_speed": -5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 28,
+      "strength": 81
+    },
+    "tags": [
+      "str_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStr1C.dds",
+      "id": "BodyStr1C"
+    }
+  },
+  "Arena Plate": {
+    "domain": "item",
+    "drop_level": 32,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Arena Plate",
+    "properties": {
+      "armour": 324,
+      "movement_speed": -5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 32,
+      "strength": 91
+    },
+    "tags": [
+      "str_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStr2C.dds",
+      "id": "BodyStr2C"
+    }
+  },
+  "Lordly Plate": {
+    "domain": "item",
+    "drop_level": 35,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Lordly Plate",
+    "properties": {
+      "armour": 353,
+      "movement_speed": -5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 35,
+      "strength": 99
+    },
+    "tags": [
+      "str_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStr3C.dds",
+      "id": "BodyStr3C"
+    }
+  },
+  "Bronze Plate": {
+    "domain": "item",
+    "drop_level": 37,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Bronze Plate",
+    "properties": {
+      "armour": 373,
+      "movement_speed": -5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 37,
+      "strength": 104
+    },
+    "tags": [
+      "str_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStr1B.dds",
+      "id": "BodyStr1B"
+    }
+  },
+  "Battle Plate": {
+    "domain": "item",
+    "drop_level": 41,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Battle Plate",
+    "properties": {
+      "armour": 412,
+      "movement_speed": -5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 41,
+      "strength": 114
+    },
+    "tags": [
+      "str_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStr2B.dds",
+      "id": "BodyStr2B"
+    }
+  },
+  "Scale Vest": {
+    "domain": "item",
+    "drop_level": 4,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Scale Vest",
+    "properties": {
+      "armour": 27,
+      "evasion": 27,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 10,
+      "intelligence": 0,
+      "level": 4,
+      "strength": 10
+    },
+    "tags": [
+      "str_dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrDex1A.dds",
+      "id": "BodyStrDex1A"
+    }
+  },
+  "Full Wyrmscale": {
+    "domain": "item",
+    "drop_level": 46,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Full Wyrmscale",
+    "properties": {
+      "armour": 254,
+      "evasion": 254,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 68,
+      "intelligence": 0,
+      "level": 46,
+      "strength": 68
+    },
+    "tags": [
+      "str_dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrDex1C.dds",
+      "id": "BodyStrDex1C"
+    }
+  },
+  "Commander's Brigandine": {
+    "domain": "item",
+    "drop_level": 50,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Commander's Brigandine",
+    "properties": {
+      "armour": 275,
+      "evasion": 275,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 73,
+      "intelligence": 0,
+      "level": 50,
+      "strength": 73
+    },
+    "tags": [
+      "str_dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrDex2C.dds",
+      "id": "BodyStrDex2C"
+    }
+  },
+  "Battle Lamellar": {
+    "domain": "item",
+    "drop_level": 54,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Battle Lamellar",
+    "properties": {
+      "armour": 297,
+      "evasion": 297,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 79,
+      "intelligence": 0,
+      "level": 54,
+      "strength": 79
+    },
+    "tags": [
+      "str_dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStr4A.dds",
+      "id": "BodyStr4A"
+    }
+  },
+  "Dragonscale Doublet": {
+    "domain": "item",
+    "drop_level": 57,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Dragonscale Doublet",
+    "properties": {
+      "armour": 313,
+      "evasion": 313,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 83,
+      "intelligence": 0,
+      "level": 57,
+      "strength": 83
+    },
+    "tags": [
+      "str_dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrDex1B.dds",
+      "id": "BodyStrDex1B"
+    }
+  },
+  "Desert Brigandine": {
+    "domain": "item",
+    "drop_level": 60,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Desert Brigandine",
+    "properties": {
+      "armour": 376,
+      "evasion": 376,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 96,
+      "intelligence": 0,
+      "level": 60,
+      "strength": 96
+    },
+    "tags": [
+      "str_dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrDex2B.dds",
+      "id": "BodyStrDex2B"
+    }
+  },
+  "Full Dragonscale": {
+    "domain": "item",
+    "drop_level": 63,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Full Dragonscale",
+    "properties": {
+      "armour": 470,
+      "evasion": 373,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 94,
+      "intelligence": 0,
+      "level": 63,
+      "strength": 115
+    },
+    "tags": [
+      "str_dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrDex1C.dds",
+      "id": "BodyStrDex1C"
+    }
+  },
+  "General's Brigandine": {
+    "domain": "item",
+    "drop_level": 66,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "General's Brigandine",
+    "properties": {
+      "armour": 415,
+      "evasion": 415,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 103,
+      "intelligence": 0,
+      "level": 66,
+      "strength": 103
+    },
+    "tags": [
+      "str_dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrDex2C.dds",
+      "id": "BodyStrDex2C"
+    }
+  },
+  "Triumphant Lamellar": {
+    "domain": "item",
+    "drop_level": 69,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Triumphant Lamellar",
+    "properties": {
+      "armour": 380,
+      "evasion": 477,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 116,
+      "intelligence": 0,
+      "level": 69,
+      "strength": 95
+    },
+    "tags": [
+      "str_dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStr4A.dds",
+      "id": "BodyStr4A"
+    }
+  },
+  "Light Brigandine": {
+    "domain": "item",
+    "drop_level": 8,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Light Brigandine",
+    "properties": {
+      "armour": 48,
+      "evasion": 48,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 16,
+      "intelligence": 0,
+      "level": 8,
+      "strength": 16
+    },
+    "tags": [
+      "str_dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrDex2A.dds",
+      "id": "BodyStrDex2A"
+    }
+  },
+  "Scale Doublet": {
+    "domain": "item",
+    "drop_level": 17,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Scale Doublet",
+    "properties": {
+      "armour": 97,
+      "evasion": 97,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 28,
+      "intelligence": 0,
+      "level": 17,
+      "strength": 28
+    },
+    "tags": [
+      "str_dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrDex1B.dds",
+      "id": "BodyStrDex1B"
+    }
+  },
+  "Infantry Brigandine": {
+    "domain": "item",
+    "drop_level": 21,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Infantry Brigandine",
+    "properties": {
+      "armour": 119,
+      "evasion": 119,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 34,
+      "intelligence": 0,
+      "level": 21,
+      "strength": 34
+    },
+    "tags": [
+      "str_dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrDex2B.dds",
+      "id": "BodyStrDex2B"
+    }
+  },
+  "Full Scale Armour": {
+    "domain": "item",
+    "drop_level": 28,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Full Scale Armour",
+    "properties": {
+      "armour": 156,
+      "evasion": 156,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 43,
+      "intelligence": 0,
+      "level": 28,
+      "strength": 43
+    },
+    "tags": [
+      "str_dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrDex1C.dds",
+      "id": "BodyStrDex1C"
+    }
+  },
+  "Soldier's Brigandine": {
+    "domain": "item",
+    "drop_level": 32,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Soldier's Brigandine",
+    "properties": {
+      "armour": 178,
+      "evasion": 178,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 48,
+      "intelligence": 0,
+      "level": 32,
+      "strength": 48
+    },
+    "tags": [
+      "str_dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrDex2C.dds",
+      "id": "BodyStrDex2C"
+    }
+  },
+  "Field Lamellar": {
+    "domain": "item",
+    "drop_level": 35,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Field Lamellar",
+    "properties": {
+      "armour": 194,
+      "evasion": 194,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 53,
+      "intelligence": 0,
+      "level": 35,
+      "strength": 53
+    },
+    "tags": [
+      "str_dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStr4A.dds",
+      "id": "BodyStr4A"
+    }
+  },
+  "Wyrmscale Doublet": {
+    "domain": "item",
+    "drop_level": 38,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Wyrmscale Doublet",
+    "properties": {
+      "armour": 210,
+      "evasion": 210,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 57,
+      "intelligence": 0,
+      "level": 38,
+      "strength": 57
+    },
+    "tags": [
+      "str_dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrDex1B.dds",
+      "id": "BodyStrDex1B"
+    }
+  },
+  "Hussar Brigandine": {
+    "domain": "item",
+    "drop_level": 42,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Hussar Brigandine",
+    "properties": {
+      "armour": 232,
+      "evasion": 232,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 62,
+      "intelligence": 0,
+      "level": 42,
+      "strength": 62
+    },
+    "tags": [
+      "str_dex_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrDex2B.dds",
+      "id": "BodyStrDex2B"
+    }
+  },
+  "Sacrificial Garb": {
+    "domain": "item",
+    "drop_level": 72,
+    "implicits": [
+      "GlobalVaalGemsLevelImplicit1_"
+    ],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Sacrificial Garb",
+    "properties": {
+      "armour": 329,
+      "energy_shield": 64,
+      "evasion": 329,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 66,
+      "intelligence": 66,
+      "level": 72,
+      "strength": 66
+    },
+    "tags": [
+      "str_dex_int_armour",
+      "not_for_sale",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/SacrificialGarb.dds",
+      "id": "BodySacrificialGarb"
+    }
+  },
+  "Grasping Mail": {
+    "domain": "item",
+    "drop_level": 70,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Grasping Mail",
+    "properties": {
+      "armour": 217,
+      "energy_shield": 42,
+      "evasion": 217,
+      "movement_speed": -3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 60,
+      "intelligence": 60,
+      "level": 70,
+      "strength": 60
+    },
+    "tags": [
+      "str_dex_int_armour",
+      "not_for_sale",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/GraspingMail.dds",
+      "id": "BodyStrDexInt2"
+    }
+  },
+  "Chainmail Vest": {
+    "domain": "item",
+    "drop_level": 4,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Chainmail Vest",
+    "properties": {
+      "armour": 27,
+      "energy_shield": 8,
+      "movement_speed": -5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 10,
+      "level": 4,
+      "strength": 10
+    },
+    "tags": [
+      "str_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrInt1A.dds",
+      "id": "BodyStrInt1A_"
+    }
+  },
+  "Ornate Ringmail": {
+    "domain": "item",
+    "drop_level": 47,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Ornate Ringmail",
+    "properties": {
+      "armour": 259,
+      "energy_shield": 51,
+      "movement_speed": -5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 69,
+      "level": 47,
+      "strength": 69
+    },
+    "tags": [
+      "str_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrInt1C.dds",
+      "id": "BodyStrInt1C"
+    }
+  },
+  "Chain Hauberk": {
+    "domain": "item",
+    "drop_level": 51,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Chain Hauberk",
+    "properties": {
+      "armour": 281,
+      "energy_shield": 55,
+      "movement_speed": -5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 75,
+      "level": 51,
+      "strength": 75
+    },
+    "tags": [
+      "str_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrInt2C.dds",
+      "id": "BodyStrInt2C"
+    }
+  },
+  "Devout Chainmail": {
+    "domain": "item",
+    "drop_level": 55,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Devout Chainmail",
+    "properties": {
+      "armour": 302,
+      "energy_shield": 59,
+      "movement_speed": -5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 80,
+      "level": 55,
+      "strength": 80
+    },
+    "tags": [
+      "str_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrInt3C.dds",
+      "id": "BodyStrInt3C"
+    }
+  },
+  "Loricated Ringmail": {
+    "domain": "item",
+    "drop_level": 58,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Loricated Ringmail",
+    "properties": {
+      "armour": 325,
+      "energy_shield": 63,
+      "movement_speed": -5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 84,
+      "level": 58,
+      "strength": 84
+    },
+    "tags": [
+      "str_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrInt1B.dds",
+      "id": "BodyStrInt1B"
+    }
+  },
+  "Conquest Chainmail": {
+    "domain": "item",
+    "drop_level": 61,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Conquest Chainmail",
+    "properties": {
+      "armour": 387,
+      "energy_shield": 75,
+      "movement_speed": -5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 96,
+      "level": 61,
+      "strength": 96
+    },
+    "tags": [
+      "str_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrInt2B.dds",
+      "id": "BodyStrInt2B"
+    }
+  },
+  "Elegant Ringmail": {
+    "domain": "item",
+    "drop_level": 64,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Elegant Ringmail",
+    "properties": {
+      "armour": 377,
+      "energy_shield": 87,
+      "movement_speed": -5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 105,
+      "level": 64,
+      "strength": 90
+    },
+    "tags": [
+      "str_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrInt1C.dds",
+      "id": "BodyStrInt1C"
+    }
+  },
+  "Saint's Hauberk": {
+    "domain": "item",
+    "drop_level": 67,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Saint's Hauberk",
+    "properties": {
+      "armour": 443,
+      "energy_shield": 73,
+      "movement_speed": -5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 94,
+      "level": 67,
+      "strength": 109
+    },
+    "tags": [
+      "str_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrInt2C.dds",
+      "id": "BodyStrInt2C"
+    }
+  },
+  "Saintly Chainmail": {
+    "domain": "item",
+    "drop_level": 70,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Saintly Chainmail",
+    "properties": {
+      "armour": 401,
+      "energy_shield": 91,
+      "movement_speed": -5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 115,
+      "level": 70,
+      "strength": 99
+    },
+    "tags": [
+      "str_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrInt3C.dds",
+      "id": "BodyStrInt3C"
+    }
+  },
+  "Chainmail Tunic": {
+    "domain": "item",
+    "drop_level": 8,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Chainmail Tunic",
+    "properties": {
+      "armour": 48,
+      "energy_shield": 12,
+      "movement_speed": -5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 16,
+      "level": 8,
+      "strength": 16
+    },
+    "tags": [
+      "str_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrInt2A.dds",
+      "id": "BodyStrInt2A"
+    }
+  },
+  "Ringmail Coat": {
+    "domain": "item",
+    "drop_level": 17,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Ringmail Coat",
+    "properties": {
+      "armour": 97,
+      "energy_shield": 21,
+      "movement_speed": -5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 28,
+      "level": 17,
+      "strength": 28
+    },
+    "tags": [
+      "str_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrInt1B.dds",
+      "id": "BodyStrInt1B"
+    }
+  },
+  "Chainmail Doublet": {
+    "domain": "item",
+    "drop_level": 21,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Chainmail Doublet",
+    "properties": {
+      "armour": 119,
+      "energy_shield": 25,
+      "movement_speed": -5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 34,
+      "level": 21,
+      "strength": 34
+    },
+    "tags": [
+      "str_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrInt2B.dds",
+      "id": "BodyStrInt2B"
+    }
+  },
+  "Full Ringmail": {
+    "domain": "item",
+    "drop_level": 28,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Full Ringmail",
+    "properties": {
+      "armour": 156,
+      "energy_shield": 32,
+      "movement_speed": -5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 43,
+      "level": 28,
+      "strength": 43
+    },
+    "tags": [
+      "str_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrInt1C.dds",
+      "id": "BodyStrInt1C"
+    }
+  },
+  "Full Chainmail": {
+    "domain": "item",
+    "drop_level": 32,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Full Chainmail",
+    "properties": {
+      "armour": 178,
+      "energy_shield": 36,
+      "movement_speed": -5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 48,
+      "level": 32,
+      "strength": 48
+    },
+    "tags": [
+      "str_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrInt2C.dds",
+      "id": "BodyStrInt2C"
+    }
+  },
+  "Holy Chainmail": {
+    "domain": "item",
+    "drop_level": 35,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Holy Chainmail",
+    "properties": {
+      "armour": 194,
+      "energy_shield": 39,
+      "movement_speed": -5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 53,
+      "level": 35,
+      "strength": 53
+    },
+    "tags": [
+      "str_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrInt3C.dds",
+      "id": "BodyStrInt3C"
+    }
+  },
+  "Latticed Ringmail": {
+    "domain": "item",
+    "drop_level": 39,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Latticed Ringmail",
+    "properties": {
+      "armour": 216,
+      "energy_shield": 43,
+      "movement_speed": -5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 59,
+      "level": 39,
+      "strength": 59
+    },
+    "tags": [
+      "str_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrInt1B.dds",
+      "id": "BodyStrInt1B"
+    }
+  },
+  "Crusader Chainmail": {
+    "domain": "item",
+    "drop_level": 43,
+    "implicits": [],
+    "inventory_height": 3,
+    "inventory_width": 2,
+    "item_class": "Body Armour",
+    "name": "Crusader Chainmail",
+    "properties": {
+      "armour": 237,
+      "energy_shield": 47,
+      "movement_speed": -5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 64,
+      "level": 43,
+      "strength": 64
+    },
+    "tags": [
+      "str_int_armour",
+      "body_armour",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/BodyArmours/BodyStrInt2B.dds",
+      "id": "BodyStrInt2B"
+    }
+  },
+  "Two-Toned Boots": {
+    "domain": "item",
+    "drop_level": 70,
+    "implicits": [
+      "FireAndLightningResistImplicitBoots1"
+    ],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Two-Toned Boots",
+    "properties": {
+      "armour": 126,
+      "energy_shield": 24
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 62,
+      "level": 70,
+      "strength": 62
+    },
+    "tags": [
+      "not_for_sale",
+      "atlas_base_type",
+      "bootsatlas3",
+      "str_int_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/TwoTonedBoots3B.dds",
+      "id": "BootsAtlas3"
+    }
+  },
+  "Blessed Boots": {
+    "domain": "item",
+    "drop_level": 70,
+    "implicits": [
+      "ChaosResistImplicitBoots1"
+    ],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Blessed Boots",
+    "properties": {
+      "energy_shield": 31,
+      "evasion": 112
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 56,
+      "intelligence": 76,
+      "level": 70,
+      "strength": 0
+    },
+    "tags": [
+      "not_for_sale",
+      "atlas_base_type",
+      "bootsatlasdexint",
+      "dex_int_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/HalfTonedBoots.dds",
+      "id": "BootsAtlas4_"
+    }
+  },
+  "Avian Slippers": {
+    "domain": "item",
+    "drop_level": 1,
+    "implicits": [
+      "MovementVelocityDescent2Boots1"
+    ],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Avian Slippers",
+    "properties": {},
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 1,
+      "strength": 0
+    },
+    "tags": [
+      "not_for_sale",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsInt1.dds",
+      "id": "BootsInt1"
+    }
+  },
+  "Rawhide Boots": {
+    "domain": "item",
+    "drop_level": 3,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Rawhide Boots",
+    "properties": {
+      "evasion": 13
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 11,
+      "intelligence": 0,
+      "level": 3,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsDex1.dds",
+      "id": "BootsDex1"
+    }
+  },
+  "Goathide Boots": {
+    "domain": "item",
+    "drop_level": 12,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Goathide Boots",
+    "properties": {
+      "evasion": 42
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 26,
+      "intelligence": 0,
+      "level": 12,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsDex2.dds",
+      "id": "BootsDex2"
+    }
+  },
+  "Deerskin Boots": {
+    "domain": "item",
+    "drop_level": 22,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Deerskin Boots",
+    "properties": {
+      "evasion": 74
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 42,
+      "intelligence": 0,
+      "level": 22,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsDex3.dds",
+      "id": "BootsDex3"
+    }
+  },
+  "Nubuck Boots": {
+    "domain": "item",
+    "drop_level": 34,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Nubuck Boots",
+    "properties": {
+      "evasion": 113
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 62,
+      "intelligence": 0,
+      "level": 34,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsDex4.dds",
+      "id": "BootsDex4"
+    }
+  },
+  "Eelskin Boots": {
+    "domain": "item",
+    "drop_level": 39,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Eelskin Boots",
+    "properties": {
+      "evasion": 129
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 70,
+      "intelligence": 0,
+      "level": 39,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsDex2.dds",
+      "id": "BootsDex2"
+    }
+  },
+  "Sharkskin Boots": {
+    "domain": "item",
+    "drop_level": 44,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Sharkskin Boots",
+    "properties": {
+      "evasion": 145
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 79,
+      "intelligence": 0,
+      "level": 44,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsDex3.dds",
+      "id": "BootsDex3"
+    }
+  },
+  "Shagreen Boots": {
+    "domain": "item",
+    "drop_level": 55,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Shagreen Boots",
+    "properties": {
+      "evasion": 180
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 97,
+      "intelligence": 0,
+      "level": 55,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsDex4.dds",
+      "id": "BootsDex4"
+    }
+  },
+  "Stealth Boots": {
+    "domain": "item",
+    "drop_level": 62,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Stealth Boots",
+    "properties": {
+      "evasion": 220
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 117,
+      "intelligence": 0,
+      "level": 62,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsDex3.dds",
+      "id": "BootsDex3"
+    }
+  },
+  "Slink Boots": {
+    "domain": "item",
+    "drop_level": 69,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Slink Boots",
+    "properties": {
+      "evasion": 246
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 120,
+      "intelligence": 0,
+      "level": 69,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsDex4.dds",
+      "id": "BootsDex4"
+    }
+  },
+  "Wrapped Boots": {
+    "domain": "item",
+    "drop_level": 6,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Wrapped Boots",
+    "properties": {
+      "energy_shield": 3,
+      "evasion": 12
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 9,
+      "intelligence": 9,
+      "level": 6,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsDexInt1.dds",
+      "id": "BootsDexInt1"
+    }
+  },
+  "Strapped Boots": {
+    "domain": "item",
+    "drop_level": 16,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Strapped Boots",
+    "properties": {
+      "energy_shield": 6,
+      "evasion": 30
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 18,
+      "intelligence": 18,
+      "level": 16,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsDexInt2.dds",
+      "id": "BootsDexInt2"
+    }
+  },
+  "Clasped Boots": {
+    "domain": "item",
+    "drop_level": 27,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Clasped Boots",
+    "properties": {
+      "energy_shield": 10,
+      "evasion": 50
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 27,
+      "intelligence": 27,
+      "level": 27,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsDexInt3.dds",
+      "id": "BootsDexInt3"
+    }
+  },
+  "Shackled Boots": {
+    "domain": "item",
+    "drop_level": 34,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Shackled Boots",
+    "properties": {
+      "energy_shield": 12,
+      "evasion": 62
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 34,
+      "intelligence": 34,
+      "level": 34,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsDexInt4.dds",
+      "id": "BootsDexInt4"
+    }
+  },
+  "Trapper Boots": {
+    "domain": "item",
+    "drop_level": 41,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Trapper Boots",
+    "properties": {
+      "energy_shield": 15,
+      "evasion": 74
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 40,
+      "intelligence": 40,
+      "level": 41,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsDexInt2.dds",
+      "id": "BootsDexInt2"
+    }
+  },
+  "Ambush Boots": {
+    "domain": "item",
+    "drop_level": 47,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Ambush Boots",
+    "properties": {
+      "energy_shield": 17,
+      "evasion": 85
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 45,
+      "intelligence": 45,
+      "level": 47,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsDexInt3.dds",
+      "id": "BootsDexInt3"
+    }
+  },
+  "Carnal Boots": {
+    "domain": "item",
+    "drop_level": 55,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Carnal Boots",
+    "properties": {
+      "energy_shield": 19,
+      "evasion": 99
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 52,
+      "intelligence": 52,
+      "level": 55,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsDexInt4.dds",
+      "id": "BootsDexInt4"
+    }
+  },
+  "Assassin's Boots": {
+    "domain": "item",
+    "drop_level": 63,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Assassin's Boots",
+    "properties": {
+      "energy_shield": 24,
+      "evasion": 121
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 62,
+      "intelligence": 62,
+      "level": 63,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsDexInt3.dds",
+      "id": "BootsDexInt3"
+    }
+  },
+  "Murder Boots": {
+    "domain": "item",
+    "drop_level": 69,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Murder Boots",
+    "properties": {
+      "energy_shield": 17,
+      "evasion": 185
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 82,
+      "intelligence": 42,
+      "level": 69,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsDexInt4.dds",
+      "id": "BootsDexInt4"
+    }
+  },
+  "Cloudwhisper Boots": {
+    "domain": "item",
+    "drop_level": 20,
+    "implicits": [
+      "AddedLightningDamagePerAccuracyReducedAccuracyImplicitR1_"
+    ],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Cloudwhisper Boots",
+    "properties": {
+      "evasion": 68
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 39,
+      "intelligence": 0,
+      "level": 20,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "not_for_sale",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/RitualDexBoots.dds",
+      "id": "BootsDexR1"
+    }
+  },
+  "Windbreak Boots": {
+    "domain": "item",
+    "drop_level": 50,
+    "implicits": [
+      "AddedLightningDamagePerAccuracyReducedAccuracyImplicitR2_"
+    ],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Windbreak Boots",
+    "properties": {
+      "evasion": 164
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 89,
+      "intelligence": 0,
+      "level": 50,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "not_for_sale",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/RitualDexBoots.dds",
+      "id": "BootsDexR2"
+    }
+  },
+  "Stormrider Boots": {
+    "domain": "item",
+    "drop_level": 80,
+    "implicits": [
+      "AddedLightningDamagePerAccuracyReducedAccuracyImplicitR3"
+    ],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Stormrider Boots",
+    "properties": {
+      "evasion": 236
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 124,
+      "intelligence": 0,
+      "level": 80,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "not_for_sale",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/RitualDexBoots.dds",
+      "id": "BootsDexR3"
+    }
+  },
+  "Wool Shoes": {
+    "domain": "item",
+    "drop_level": 3,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Wool Shoes",
+    "properties": {
+      "energy_shield": 4
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 11,
+      "level": 3,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsInt1.dds",
+      "id": "BootsInt1"
+    }
+  },
+  "Velvet Slippers": {
+    "domain": "item",
+    "drop_level": 9,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Velvet Slippers",
+    "properties": {
+      "energy_shield": 8
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 21,
+      "level": 9,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsInt2.dds",
+      "id": "BootsInt2"
+    }
+  },
+  "Silk Slippers": {
+    "domain": "item",
+    "drop_level": 22,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Silk Slippers",
+    "properties": {
+      "energy_shield": 15
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 42,
+      "level": 22,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsInt3.dds",
+      "id": "BootsInt3"
+    }
+  },
+  "Scholar Boots": {
+    "domain": "item",
+    "drop_level": 32,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Scholar Boots",
+    "properties": {
+      "energy_shield": 21
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 59,
+      "level": 32,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsInt4.dds",
+      "id": "BootsInt4"
+    }
+  },
+  "Satin Slippers": {
+    "domain": "item",
+    "drop_level": 38,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Satin Slippers",
+    "properties": {
+      "energy_shield": 25
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 69,
+      "level": 38,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsInt2.dds",
+      "id": "BootsInt2"
+    }
+  },
+  "Samite Slippers": {
+    "domain": "item",
+    "drop_level": 44,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Samite Slippers",
+    "properties": {
+      "energy_shield": 29
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 79,
+      "level": 44,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsInt3.dds",
+      "id": "BootsInt3"
+    }
+  },
+  "Conjurer Boots": {
+    "domain": "item",
+    "drop_level": 53,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Conjurer Boots",
+    "properties": {
+      "energy_shield": 34
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 94,
+      "level": 53,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsInt4.dds",
+      "id": "BootsInt4"
+    }
+  },
+  "Arcanist Slippers": {
+    "domain": "item",
+    "drop_level": 61,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Arcanist Slippers",
+    "properties": {
+      "energy_shield": 45
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 119,
+      "level": 61,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsInt3.dds",
+      "id": "BootsInt3"
+    }
+  },
+  "Sorcerer Boots": {
+    "domain": "item",
+    "drop_level": 67,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Sorcerer Boots",
+    "properties": {
+      "energy_shield": 49
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 123,
+      "level": 67,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsInt4.dds",
+      "id": "BootsInt4"
+    }
+  },
+  "Duskwalk Slippers": {
+    "domain": "item",
+    "drop_level": 20,
+    "implicits": [
+      "MovementSkillCooldownReducedMoveSpeedImplicitR1"
+    ],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Duskwalk Slippers",
+    "properties": {
+      "energy_shield": 14
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 39,
+      "level": 20,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "not_for_sale",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/RitualIntBoots.dds",
+      "id": "BootsIntR1"
+    }
+  },
+  "Nightwind Slippers": {
+    "domain": "item",
+    "drop_level": 50,
+    "implicits": [
+      "MovementSkillCooldownReducedMoveSpeedImplicitR2_"
+    ],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Nightwind Slippers",
+    "properties": {
+      "energy_shield": 32
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 89,
+      "level": 50,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "not_for_sale",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/RitualIntBoots.dds",
+      "id": "BootsIntR2_"
+    }
+  },
+  "Dreamquest Slippers": {
+    "domain": "item",
+    "drop_level": 80,
+    "implicits": [
+      "MovementSkillCooldownReducedMoveSpeedImplicitR3_"
+    ],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Dreamquest Slippers",
+    "properties": {
+      "energy_shield": 47
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 124,
+      "level": 80,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "not_for_sale",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/RitualIntBoots.dds",
+      "id": "BootsIntR3"
+    }
+  },
+  "Iron Greaves": {
+    "domain": "item",
+    "drop_level": 1,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Iron Greaves",
+    "properties": {
+      "armour": 6
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 1,
+      "strength": 8
+    },
+    "tags": [
+      "str_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsStr1.dds",
+      "id": "BootsStr1"
+    }
+  },
+  "Steel Greaves": {
+    "domain": "item",
+    "drop_level": 9,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Steel Greaves",
+    "properties": {
+      "armour": 32
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 9,
+      "strength": 21
+    },
+    "tags": [
+      "str_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsStr2.dds",
+      "id": "BootsStr2"
+    }
+  },
+  "Plated Greaves": {
+    "domain": "item",
+    "drop_level": 23,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Plated Greaves",
+    "properties": {
+      "armour": 77
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 23,
+      "strength": 44
+    },
+    "tags": [
+      "str_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsStr3.dds",
+      "id": "BootsStr3"
+    }
+  },
+  "Reinforced Greaves": {
+    "domain": "item",
+    "drop_level": 33,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Reinforced Greaves",
+    "properties": {
+      "armour": 109
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 33,
+      "strength": 60
+    },
+    "tags": [
+      "str_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsStr4.dds",
+      "id": "BootsStr4"
+    }
+  },
+  "Antique Greaves": {
+    "domain": "item",
+    "drop_level": 37,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Antique Greaves",
+    "properties": {
+      "armour": 122
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 37,
+      "strength": 67
+    },
+    "tags": [
+      "str_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsStr2.dds",
+      "id": "BootsStr2"
+    }
+  },
+  "Ancient Greaves": {
+    "domain": "item",
+    "drop_level": 46,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Ancient Greaves",
+    "properties": {
+      "armour": 151
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 46,
+      "strength": 82
+    },
+    "tags": [
+      "str_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsStr3.dds",
+      "id": "BootsStr3"
+    }
+  },
+  "Goliath Greaves": {
+    "domain": "item",
+    "drop_level": 54,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Goliath Greaves",
+    "properties": {
+      "armour": 177
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 54,
+      "strength": 95
+    },
+    "tags": [
+      "str_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsStr4.dds",
+      "id": "BootsStr4"
+    }
+  },
+  "Vaal Greaves": {
+    "domain": "item",
+    "drop_level": 62,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Vaal Greaves",
+    "properties": {
+      "armour": 220
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 62,
+      "strength": 117
+    },
+    "tags": [
+      "str_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsStr3.dds",
+      "id": "BootsStr3"
+    }
+  },
+  "Titan Greaves": {
+    "domain": "item",
+    "drop_level": 68,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Titan Greaves",
+    "properties": {
+      "armour": 241
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 68,
+      "strength": 120
+    },
+    "tags": [
+      "str_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsStr4.dds",
+      "id": "BootsStr4"
+    }
+  },
+  "Leatherscale Boots": {
+    "domain": "item",
+    "drop_level": 6,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Leatherscale Boots",
+    "properties": {
+      "armour": 12,
+      "evasion": 12
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 9,
+      "intelligence": 0,
+      "level": 6,
+      "strength": 9
+    },
+    "tags": [
+      "str_dex_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsStrDex1.dds",
+      "id": "BootsStrDex1"
+    }
+  },
+  "Ironscale Boots": {
+    "domain": "item",
+    "drop_level": 18,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Ironscale Boots",
+    "properties": {
+      "armour": 34,
+      "evasion": 34
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 19,
+      "intelligence": 0,
+      "level": 18,
+      "strength": 19
+    },
+    "tags": [
+      "str_dex_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsStrDex2.dds",
+      "id": "BootsStrDex2"
+    }
+  },
+  "Bronzescale Boots": {
+    "domain": "item",
+    "drop_level": 30,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Bronzescale Boots",
+    "properties": {
+      "armour": 55,
+      "evasion": 55
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 30,
+      "intelligence": 0,
+      "level": 30,
+      "strength": 30
+    },
+    "tags": [
+      "str_dex_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsStrDex3.dds",
+      "id": "BootsStrDex3"
+    }
+  },
+  "Steelscale Boots": {
+    "domain": "item",
+    "drop_level": 36,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Steelscale Boots",
+    "properties": {
+      "armour": 65,
+      "evasion": 65
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 35,
+      "intelligence": 0,
+      "level": 36,
+      "strength": 35
+    },
+    "tags": [
+      "str_dex_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsStrDex1.dds",
+      "id": "BootsStrDex1"
+    }
+  },
+  "Serpentscale Boots": {
+    "domain": "item",
+    "drop_level": 42,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Serpentscale Boots",
+    "properties": {
+      "armour": 76,
+      "evasion": 76
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 40,
+      "intelligence": 0,
+      "level": 42,
+      "strength": 40
+    },
+    "tags": [
+      "str_dex_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsStrDex2.dds",
+      "id": "BootsStrDex2"
+    }
+  },
+  "Wyrmscale Boots": {
+    "domain": "item",
+    "drop_level": 51,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Wyrmscale Boots",
+    "properties": {
+      "armour": 92,
+      "evasion": 92
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 48,
+      "intelligence": 0,
+      "level": 51,
+      "strength": 48
+    },
+    "tags": [
+      "str_dex_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsStrDex3.dds",
+      "id": "BootsStrDex3"
+    }
+  },
+  "Hydrascale Boots": {
+    "domain": "item",
+    "drop_level": 59,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Hydrascale Boots",
+    "properties": {
+      "armour": 106,
+      "evasion": 106
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 56,
+      "intelligence": 0,
+      "level": 59,
+      "strength": 56
+    },
+    "tags": [
+      "str_dex_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsStrDex2.dds",
+      "id": "BootsStrDex2"
+    }
+  },
+  "Dragonscale Boots": {
+    "domain": "item",
+    "drop_level": 65,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Dragonscale Boots",
+    "properties": {
+      "armour": 121,
+      "evasion": 121
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 62,
+      "intelligence": 0,
+      "level": 65,
+      "strength": 62
+    },
+    "tags": [
+      "str_dex_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsStrDex3.dds",
+      "id": "BootsStrDex3"
+    }
+  },
+  "Chain Boots": {
+    "domain": "item",
+    "drop_level": 5,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Chain Boots",
+    "properties": {
+      "armour": 11,
+      "energy_shield": 3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 8,
+      "level": 5,
+      "strength": 8
+    },
+    "tags": [
+      "str_int_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsStrInt1.dds",
+      "id": "BootsStrInt1"
+    }
+  },
+  "Ringmail Boots": {
+    "domain": "item",
+    "drop_level": 13,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Ringmail Boots",
+    "properties": {
+      "armour": 25,
+      "energy_shield": 5
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 15,
+      "level": 13,
+      "strength": 15
+    },
+    "tags": [
+      "str_int_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsStrInt2.dds",
+      "id": "BootsStrInt2"
+    }
+  },
+  "Mesh Boots": {
+    "domain": "item",
+    "drop_level": 28,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Mesh Boots",
+    "properties": {
+      "armour": 51,
+      "energy_shield": 10
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 28,
+      "level": 28,
+      "strength": 28
+    },
+    "tags": [
+      "str_int_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsStrInt3.dds",
+      "id": "BootsStrInt3"
+    }
+  },
+  "Riveted Boots": {
+    "domain": "item",
+    "drop_level": 36,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Riveted Boots",
+    "properties": {
+      "armour": 65,
+      "energy_shield": 13
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 35,
+      "level": 36,
+      "strength": 35
+    },
+    "tags": [
+      "str_int_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsStrInt1.dds",
+      "id": "BootsStrInt1"
+    }
+  },
+  "Zealot Boots": {
+    "domain": "item",
+    "drop_level": 40,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Zealot Boots",
+    "properties": {
+      "armour": 73,
+      "energy_shield": 14
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 38,
+      "level": 40,
+      "strength": 38
+    },
+    "tags": [
+      "str_int_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsStrInt2.dds",
+      "id": "BootsStrInt2"
+    }
+  },
+  "Soldier Boots": {
+    "domain": "item",
+    "drop_level": 49,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Soldier Boots",
+    "properties": {
+      "armour": 88,
+      "energy_shield": 17
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 47,
+      "level": 49,
+      "strength": 47
+    },
+    "tags": [
+      "str_int_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsStrInt3.dds",
+      "id": "BootsStrInt3"
+    }
+  },
+  "Legion Boots": {
+    "domain": "item",
+    "drop_level": 58,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Legion Boots",
+    "properties": {
+      "armour": 104,
+      "energy_shield": 20
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 54,
+      "level": 58,
+      "strength": 54
+    },
+    "tags": [
+      "str_int_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsStrInt2.dds",
+      "id": "BootsStrInt2"
+    }
+  },
+  "Crusader Boots": {
+    "domain": "item",
+    "drop_level": 64,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Crusader Boots",
+    "properties": {
+      "armour": 121,
+      "energy_shield": 24
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 62,
+      "level": 64,
+      "strength": 62
+    },
+    "tags": [
+      "str_int_armour",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/BootsStrInt3.dds",
+      "id": "BootsStrInt3"
+    }
+  },
+  "Basemetal Treads": {
+    "domain": "item",
+    "drop_level": 20,
+    "implicits": [
+      "ChanceToBlockAndDamageTakenFromBlockedHitsImplicitR1"
+    ],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Basemetal Treads",
+    "properties": {
+      "armour": 68
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 20,
+      "strength": 39
+    },
+    "tags": [
+      "str_armour",
+      "not_for_sale",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/RitualStrBoots.dds",
+      "id": "BootsStrR1"
+    }
+  },
+  "Darksteel Treads": {
+    "domain": "item",
+    "drop_level": 50,
+    "implicits": [
+      "ChanceToBlockAndDamageTakenFromBlockedHitsImplicitR2__"
+    ],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Darksteel Treads",
+    "properties": {
+      "armour": 164
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 50,
+      "strength": 89
+    },
+    "tags": [
+      "str_armour",
+      "not_for_sale",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/RitualStrBoots.dds",
+      "id": "BootsStrR2"
+    }
+  },
+  "Brimstone Treads": {
+    "domain": "item",
+    "drop_level": 80,
+    "implicits": [
+      "ChanceToBlockAndDamageTakenFromBlockedHitsImplicitR3"
+    ],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Boots",
+    "name": "Brimstone Treads",
+    "properties": {
+      "armour": 236
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 80,
+      "strength": 124
+    },
+    "tags": [
+      "str_armour",
+      "not_for_sale",
+      "boots",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Boots/RitualStrBoots.dds",
+      "id": "BootsStrR3"
+    }
+  },
+  "Gripped Gloves": {
+    "domain": "item",
+    "drop_level": 70,
+    "implicits": [
+      "ProjectileAttackDamageImplicitGloves1"
+    ],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Gripped Gloves",
+    "properties": {
+      "evasion": 220
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 95,
+      "intelligence": 0,
+      "level": 70,
+      "strength": 0
+    },
+    "tags": [
+      "not_for_sale",
+      "atlas_base_type",
+      "glovesatlasdex",
+      "dex_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GripGlovesBaseType.dds",
+      "id": "GlovesAtlasDex"
+    }
+  },
+  "Fingerless Silk Gloves": {
+    "domain": "item",
+    "drop_level": 70,
+    "implicits": [
+      "SpellDamageImplicitGloves1"
+    ],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Fingerless Silk Gloves",
+    "properties": {
+      "energy_shield": 43
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 95,
+      "level": 70,
+      "strength": 0
+    },
+    "tags": [
+      "not_for_sale",
+      "atlas_base_type",
+      "glovesatlasint",
+      "int_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/FingerlessSilkGloves.dds",
+      "id": "GlovesAtlasInt"
+    }
+  },
+  "Spiked Gloves": {
+    "domain": "item",
+    "drop_level": 70,
+    "implicits": [
+      "MeleeDamageImplicitGloves1"
+    ],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Spiked Gloves",
+    "properties": {
+      "armour": 220
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 70,
+      "strength": 95
+    },
+    "tags": [
+      "not_for_sale",
+      "atlas_base_type",
+      "glovesatlasstr",
+      "str_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/SpikedGloves.dds",
+      "id": "GlovesAtlasStr"
+    }
+  },
+  "Apothecary's Gloves": {
+    "domain": "item",
+    "drop_level": 70,
+    "implicits": [
+      "DegenerationDamageImplicit1"
+    ],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Apothecary's Gloves",
+    "properties": {
+      "armour": 108,
+      "energy_shield": 27
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 58,
+      "level": 70,
+      "strength": 46
+    },
+    "tags": [
+      "not_for_sale",
+      "atlas_base_type",
+      "glovesatlasstrint",
+      "str_int_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/ChemistGloves.dds",
+      "id": "GlovesAtlasStrInt"
+    }
+  },
+  "Rawhide Gloves": {
+    "domain": "item",
+    "drop_level": 3,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Rawhide Gloves",
+    "properties": {
+      "evasion": 13
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 9,
+      "intelligence": 0,
+      "level": 3,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesDex1.dds",
+      "id": "GlovesDex1"
+    }
+  },
+  "Goathide Gloves": {
+    "domain": "item",
+    "drop_level": 9,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Goathide Gloves",
+    "properties": {
+      "evasion": 32
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 17,
+      "intelligence": 0,
+      "level": 9,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesDex2.dds",
+      "id": "GlovesDex2"
+    }
+  },
+  "Deerskin Gloves": {
+    "domain": "item",
+    "drop_level": 21,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Deerskin Gloves",
+    "properties": {
+      "evasion": 71
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 33,
+      "intelligence": 0,
+      "level": 21,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesDex3.dds",
+      "id": "GlovesDex3"
+    }
+  },
+  "Nubuck Gloves": {
+    "domain": "item",
+    "drop_level": 33,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Nubuck Gloves",
+    "properties": {
+      "evasion": 109
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 50,
+      "intelligence": 0,
+      "level": 33,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesDex4.dds",
+      "id": "GlovesDex4"
+    }
+  },
+  "Eelskin Gloves": {
+    "domain": "item",
+    "drop_level": 38,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Eelskin Gloves",
+    "properties": {
+      "evasion": 125
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 56,
+      "intelligence": 0,
+      "level": 38,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesDex2.dds",
+      "id": "GlovesDex2"
+    }
+  },
+  "Sharkskin Gloves": {
+    "domain": "item",
+    "drop_level": 45,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Sharkskin Gloves",
+    "properties": {
+      "evasion": 148
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 66,
+      "intelligence": 0,
+      "level": 45,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesDex3.dds",
+      "id": "GlovesDex3"
+    }
+  },
+  "Shagreen Gloves": {
+    "domain": "item",
+    "drop_level": 54,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Shagreen Gloves",
+    "properties": {
+      "evasion": 177
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 78,
+      "intelligence": 0,
+      "level": 54,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesDex4.dds",
+      "id": "GlovesDex4"
+    }
+  },
+  "Stealth Gloves": {
+    "domain": "item",
+    "drop_level": 62,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Stealth Gloves",
+    "properties": {
+      "evasion": 231
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 97,
+      "intelligence": 0,
+      "level": 62,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesDex3.dds",
+      "id": "GlovesDex3"
+    }
+  },
+  "Slink Gloves": {
+    "domain": "item",
+    "drop_level": 70,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Slink Gloves",
+    "properties": {
+      "evasion": 242
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 95,
+      "intelligence": 0,
+      "level": 70,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesDex4.dds",
+      "id": "GlovesDex4"
+    }
+  },
+  "Wrapped Mitts": {
+    "domain": "item",
+    "drop_level": 5,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Wrapped Mitts",
+    "properties": {
+      "energy_shield": 3,
+      "evasion": 11
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 6,
+      "intelligence": 6,
+      "level": 5,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesDexInt1.dds",
+      "id": "GlovesDexInt1"
+    }
+  },
+  "Strapped Mitts": {
+    "domain": "item",
+    "drop_level": 16,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Strapped Mitts",
+    "properties": {
+      "energy_shield": 6,
+      "evasion": 30
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 14,
+      "intelligence": 14,
+      "level": 16,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesDexInt2.dds",
+      "id": "GlovesDexInt2"
+    }
+  },
+  "Clasped Mitts": {
+    "domain": "item",
+    "drop_level": 31,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Clasped Mitts",
+    "properties": {
+      "energy_shield": 11,
+      "evasion": 57
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 25,
+      "intelligence": 25,
+      "level": 31,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesDexInt3.dds",
+      "id": "GlovesDexInt3"
+    }
+  },
+  "Trapper Mitts": {
+    "domain": "item",
+    "drop_level": 36,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Trapper Mitts",
+    "properties": {
+      "energy_shield": 13,
+      "evasion": 65
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 29,
+      "intelligence": 29,
+      "level": 36,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesDexInt1.dds",
+      "id": "GlovesDexInt1"
+    }
+  },
+  "Ambush Mitts": {
+    "domain": "item",
+    "drop_level": 45,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Ambush Mitts",
+    "properties": {
+      "energy_shield": 16,
+      "evasion": 81
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 35,
+      "intelligence": 35,
+      "level": 45,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesDexInt2.dds",
+      "id": "GlovesDexInt2"
+    }
+  },
+  "Carnal Mitts": {
+    "domain": "item",
+    "drop_level": 50,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Carnal Mitts",
+    "properties": {
+      "energy_shield": 18,
+      "evasion": 90
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 39,
+      "intelligence": 39,
+      "level": 50,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesDexInt3.dds",
+      "id": "GlovesDexInt3"
+    }
+  },
+  "Assassin's Mitts": {
+    "domain": "item",
+    "drop_level": 58,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Assassin's Mitts",
+    "properties": {
+      "energy_shield": 20,
+      "evasion": 104
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 45,
+      "intelligence": 45,
+      "level": 58,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesDexInt2.dds",
+      "id": "GlovesDexInt2"
+    }
+  },
+  "Murder Mitts": {
+    "domain": "item",
+    "drop_level": 67,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Murder Mitts",
+    "properties": {
+      "energy_shield": 24,
+      "evasion": 121
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 51,
+      "intelligence": 51,
+      "level": 67,
+      "strength": 0
+    },
+    "tags": [
+      "dex_int_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesDexInt3.dds",
+      "id": "GlovesDexInt3"
+    }
+  },
+  "Gauche Gloves": {
+    "domain": "item",
+    "drop_level": 10,
+    "implicits": [
+      "MainHandOffHandDamage1_"
+    ],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Gauche Gloves",
+    "properties": {
+      "evasion": 35
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 18,
+      "intelligence": 0,
+      "level": 10,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "not_for_sale",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/RitualDexGloves.dds",
+      "id": "GlovesDexR1"
+    }
+  },
+  "Southswing Gloves": {
+    "domain": "item",
+    "drop_level": 40,
+    "implicits": [
+      "MainHandOffHandDamage2"
+    ],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Southswing Gloves",
+    "properties": {
+      "evasion": 132
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 59,
+      "intelligence": 0,
+      "level": 40,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "not_for_sale",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/RitualDexGloves.dds",
+      "id": "GlovesDexR2"
+    }
+  },
+  "Sinistral Gloves": {
+    "domain": "item",
+    "drop_level": 70,
+    "implicits": [
+      "MainHandOffHandDamage3_"
+    ],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Sinistral Gloves",
+    "properties": {
+      "evasion": 236
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 101,
+      "intelligence": 0,
+      "level": 70,
+      "strength": 0
+    },
+    "tags": [
+      "dex_armour",
+      "not_for_sale",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/RitualDexGloves.dds",
+      "id": "GlovesDexR3_"
+    }
+  },
+  "Wool Gloves": {
+    "domain": "item",
+    "drop_level": 3,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Wool Gloves",
+    "properties": {
+      "energy_shield": 4
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 9,
+      "level": 3,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesInt1.dds",
+      "id": "GlovesInt1"
+    }
+  },
+  "Velvet Gloves": {
+    "domain": "item",
+    "drop_level": 12,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Velvet Gloves",
+    "properties": {
+      "energy_shield": 9
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 21,
+      "level": 12,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesInt2.dds",
+      "id": "GlovesInt2"
+    }
+  },
+  "Silk Gloves": {
+    "domain": "item",
+    "drop_level": 25,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Silk Gloves",
+    "properties": {
+      "energy_shield": 17
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 39,
+      "level": 25,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesInt3.dds",
+      "id": "GlovesInt3"
+    }
+  },
+  "Embroidered Gloves": {
+    "domain": "item",
+    "drop_level": 36,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Embroidered Gloves",
+    "properties": {
+      "energy_shield": 24
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 54,
+      "level": 36,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesInt4.dds",
+      "id": "GlovesInt4"
+    }
+  },
+  "Satin Gloves": {
+    "domain": "item",
+    "drop_level": 41,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Satin Gloves",
+    "properties": {
+      "energy_shield": 27
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 60,
+      "level": 41,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesInt2.dds",
+      "id": "GlovesInt2"
+    }
+  },
+  "Samite Gloves": {
+    "domain": "item",
+    "drop_level": 47,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Samite Gloves",
+    "properties": {
+      "energy_shield": 30
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 68,
+      "level": 47,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesInt3.dds",
+      "id": "GlovesInt3"
+    }
+  },
+  "Conjurer Gloves": {
+    "domain": "item",
+    "drop_level": 55,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Conjurer Gloves",
+    "properties": {
+      "energy_shield": 35
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 79,
+      "level": 55,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesInt4.dds",
+      "id": "GlovesInt4"
+    }
+  },
+  "Arcanist Gloves": {
+    "domain": "item",
+    "drop_level": 60,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Arcanist Gloves",
+    "properties": {
+      "energy_shield": 43
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 95,
+      "level": 60,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesInt3.dds",
+      "id": "GlovesInt3"
+    }
+  },
+  "Sorcerer Gloves": {
+    "domain": "item",
+    "drop_level": 69,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Sorcerer Gloves",
+    "properties": {
+      "energy_shield": 47
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 97,
+      "level": 69,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesInt4.dds",
+      "id": "GlovesInt4"
+    }
+  },
+  "Leyline Gloves": {
+    "domain": "item",
+    "drop_level": 10,
+    "implicits": [
+      "GainManaOnManaPaidManaCost1"
+    ],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Leyline Gloves",
+    "properties": {
+      "energy_shield": 8
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 18,
+      "level": 10,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "not_for_sale",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/RitualIntGloves.dds",
+      "id": "GlovesIntR1"
+    }
+  },
+  "Aetherwind Gloves": {
+    "domain": "item",
+    "drop_level": 40,
+    "implicits": [
+      "GainManaOnManaPaidManaCost2"
+    ],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Aetherwind Gloves",
+    "properties": {
+      "energy_shield": 26
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 59,
+      "level": 40,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "not_for_sale",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/RitualIntGloves.dds",
+      "id": "GlovesIntR2"
+    }
+  },
+  "Nexus Gloves": {
+    "domain": "item",
+    "drop_level": 70,
+    "implicits": [
+      "GainManaOnManaPaidManaCost3____"
+    ],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Nexus Gloves",
+    "properties": {
+      "energy_shield": 45
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 101,
+      "level": 70,
+      "strength": 0
+    },
+    "tags": [
+      "int_armour",
+      "not_for_sale",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/RitualIntGloves.dds",
+      "id": "GlovesIntR3"
+    }
+  },
+  "Iron Gauntlets": {
+    "domain": "item",
+    "drop_level": 1,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Iron Gauntlets",
+    "properties": {
+      "armour": 6
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 1,
+      "strength": 6
+    },
+    "tags": [
+      "str_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesStr1.dds",
+      "id": "GlovesStr1"
+    }
+  },
+  "Plated Gauntlets": {
+    "domain": "item",
+    "drop_level": 11,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Plated Gauntlets",
+    "properties": {
+      "armour": 39
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 11,
+      "strength": 20
+    },
+    "tags": [
+      "str_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesStr2.dds",
+      "id": "GlovesStr2"
+    }
+  },
+  "Bronze Gauntlets": {
+    "domain": "item",
+    "drop_level": 23,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Bronze Gauntlets",
+    "properties": {
+      "armour": 77
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 23,
+      "strength": 36
+    },
+    "tags": [
+      "str_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesStr3.dds",
+      "id": "GlovesStr3"
+    }
+  },
+  "Steel Gauntlets": {
+    "domain": "item",
+    "drop_level": 35,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Steel Gauntlets",
+    "properties": {
+      "armour": 116
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 35,
+      "strength": 52
+    },
+    "tags": [
+      "str_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesStr4.dds",
+      "id": "GlovesStr4"
+    }
+  },
+  "Antique Gauntlets": {
+    "domain": "item",
+    "drop_level": 39,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Antique Gauntlets",
+    "properties": {
+      "armour": 129
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 39,
+      "strength": 58
+    },
+    "tags": [
+      "str_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesStr2.dds",
+      "id": "GlovesStr2"
+    }
+  },
+  "Ancient Gauntlets": {
+    "domain": "item",
+    "drop_level": 47,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Ancient Gauntlets",
+    "properties": {
+      "armour": 154
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 47,
+      "strength": 68
+    },
+    "tags": [
+      "str_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesStr3.dds",
+      "id": "GlovesStr3"
+    }
+  },
+  "Goliath Gauntlets": {
+    "domain": "item",
+    "drop_level": 53,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Goliath Gauntlets",
+    "properties": {
+      "armour": 174
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 53,
+      "strength": 76
+    },
+    "tags": [
+      "str_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesStr4.dds",
+      "id": "GlovesStr4"
+    }
+  },
+  "Vaal Gauntlets": {
+    "domain": "item",
+    "drop_level": 63,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Vaal Gauntlets",
+    "properties": {
+      "armour": 232
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 63,
+      "strength": 100
+    },
+    "tags": [
+      "str_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesStr3.dds",
+      "id": "GlovesStr3"
+    }
+  },
+  "Titan Gauntlets": {
+    "domain": "item",
+    "drop_level": 69,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Titan Gauntlets",
+    "properties": {
+      "armour": 242
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 69,
+      "strength": 98
+    },
+    "tags": [
+      "str_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesStr4.dds",
+      "id": "GlovesStr4"
+    }
+  },
+  "Fishscale Gauntlets": {
+    "domain": "item",
+    "drop_level": 4,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Fishscale Gauntlets",
+    "properties": {
+      "armour": 9,
+      "evasion": 9
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 5,
+      "intelligence": 0,
+      "level": 4,
+      "strength": 5
+    },
+    "tags": [
+      "str_dex_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesStrDex1.dds",
+      "id": "GlovesStrDex1"
+    }
+  },
+  "Ironscale Gauntlets": {
+    "domain": "item",
+    "drop_level": 15,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Ironscale Gauntlets",
+    "properties": {
+      "armour": 28,
+      "evasion": 28
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 14,
+      "intelligence": 0,
+      "level": 15,
+      "strength": 14
+    },
+    "tags": [
+      "str_dex_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesStrDex2.dds",
+      "id": "GlovesStrDex2"
+    }
+  },
+  "Bronzescale Gauntlets": {
+    "domain": "item",
+    "drop_level": 27,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Bronzescale Gauntlets",
+    "properties": {
+      "armour": 50,
+      "evasion": 50
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 22,
+      "intelligence": 0,
+      "level": 27,
+      "strength": 22
+    },
+    "tags": [
+      "str_dex_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesStrDex3.dds",
+      "id": "GlovesStrDex3"
+    }
+  },
+  "Steelscale Gauntlets": {
+    "domain": "item",
+    "drop_level": 36,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Steelscale Gauntlets",
+    "properties": {
+      "armour": 65,
+      "evasion": 65
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 29,
+      "intelligence": 0,
+      "level": 36,
+      "strength": 29
+    },
+    "tags": [
+      "str_dex_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesStrDex1.dds",
+      "id": "GlovesStrDex1"
+    }
+  },
+  "Serpentscale Gauntlets": {
+    "domain": "item",
+    "drop_level": 43,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Serpentscale Gauntlets",
+    "properties": {
+      "armour": 78,
+      "evasion": 78
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 34,
+      "intelligence": 0,
+      "level": 43,
+      "strength": 34
+    },
+    "tags": [
+      "str_dex_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesStrDex2.dds",
+      "id": "GlovesStrDex2"
+    }
+  },
+  "Wyrmscale Gauntlets": {
+    "domain": "item",
+    "drop_level": 49,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Wyrmscale Gauntlets",
+    "properties": {
+      "armour": 88,
+      "evasion": 88
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 38,
+      "intelligence": 0,
+      "level": 49,
+      "strength": 38
+    },
+    "tags": [
+      "str_dex_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesStrDex3.dds",
+      "id": "GlovesStrDex3"
+    }
+  },
+  "Hydrascale Gauntlets": {
+    "domain": "item",
+    "drop_level": 59,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Hydrascale Gauntlets",
+    "properties": {
+      "armour": 106,
+      "evasion": 106
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 45,
+      "intelligence": 0,
+      "level": 59,
+      "strength": 45
+    },
+    "tags": [
+      "str_dex_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesStrDex2.dds",
+      "id": "GlovesStrDex2"
+    }
+  },
+  "Dragonscale Gauntlets": {
+    "domain": "item",
+    "drop_level": 67,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Dragonscale Gauntlets",
+    "properties": {
+      "armour": 121,
+      "evasion": 121
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 51,
+      "intelligence": 0,
+      "level": 67,
+      "strength": 51
+    },
+    "tags": [
+      "str_dex_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesStrDex3.dds",
+      "id": "GlovesStrDex3"
+    }
+  },
+  "Chain Gloves": {
+    "domain": "item",
+    "drop_level": 7,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Chain Gloves",
+    "properties": {
+      "armour": 14,
+      "energy_shield": 3
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 8,
+      "level": 7,
+      "strength": 8
+    },
+    "tags": [
+      "str_int_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesStrInt1.dds",
+      "id": "GlovesStrInt1"
+    }
+  },
+  "Ringmail Gloves": {
+    "domain": "item",
+    "drop_level": 19,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Ringmail Gloves",
+    "properties": {
+      "armour": 35,
+      "energy_shield": 7
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 16,
+      "level": 19,
+      "strength": 16
+    },
+    "tags": [
+      "str_int_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesStrInt2.dds",
+      "id": "GlovesStrInt2"
+    }
+  },
+  "Mesh Gloves": {
+    "domain": "item",
+    "drop_level": 32,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Mesh Gloves",
+    "properties": {
+      "armour": 58,
+      "energy_shield": 12
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 26,
+      "level": 32,
+      "strength": 26
+    },
+    "tags": [
+      "str_int_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesStrInt3.dds",
+      "id": "GlovesStrInt3"
+    }
+  },
+  "Riveted Gloves": {
+    "domain": "item",
+    "drop_level": 37,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Riveted Gloves",
+    "properties": {
+      "armour": 67,
+      "energy_shield": 13
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 29,
+      "level": 37,
+      "strength": 29
+    },
+    "tags": [
+      "str_int_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesStrInt1.dds",
+      "id": "GlovesStrInt1"
+    }
+  },
+  "Zealot Gloves": {
+    "domain": "item",
+    "drop_level": 43,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Zealot Gloves",
+    "properties": {
+      "armour": 78,
+      "energy_shield": 15
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 34,
+      "level": 43,
+      "strength": 34
+    },
+    "tags": [
+      "str_int_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesStrInt2.dds",
+      "id": "GlovesStrInt2"
+    }
+  },
+  "Soldier Gloves": {
+    "domain": "item",
+    "drop_level": 51,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Soldier Gloves",
+    "properties": {
+      "armour": 92,
+      "energy_shield": 18
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 40,
+      "level": 51,
+      "strength": 40
+    },
+    "tags": [
+      "str_int_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesStrInt3.dds",
+      "id": "GlovesStrInt3"
+    }
+  },
+  "Legion Gloves": {
+    "domain": "item",
+    "drop_level": 57,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Legion Gloves",
+    "properties": {
+      "armour": 103,
+      "energy_shield": 20
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 44,
+      "level": 57,
+      "strength": 44
+    },
+    "tags": [
+      "str_int_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesStrInt2.dds",
+      "id": "GlovesStrInt2"
+    }
+  },
+  "Crusader Gloves": {
+    "domain": "item",
+    "drop_level": 66,
+    "implicits": [],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Crusader Gloves",
+    "properties": {
+      "armour": 121,
+      "energy_shield": 24
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 51,
+      "level": 66,
+      "strength": 51
+    },
+    "tags": [
+      "str_int_armour",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/GlovesStrInt3.dds",
+      "id": "GlovesStrInt3"
+    }
+  },
+  "Taxing Gauntlets": {
+    "domain": "item",
+    "drop_level": 10,
+    "implicits": [
+      "ExertedDamageWarcryCooldown1"
+    ],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Taxing Gauntlets",
+    "properties": {
+      "armour": 35
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 10,
+      "strength": 18
+    },
+    "tags": [
+      "str_armour",
+      "not_for_sale",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/RitualStrGloves.dds",
+      "id": "GlovesStrR1"
+    }
+  },
+  "Gruelling Gauntlets": {
+    "domain": "item",
+    "drop_level": 40,
+    "implicits": [
+      "ExertedDamageWarcryCooldown2"
+    ],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Gruelling Gauntlets",
+    "properties": {
+      "armour": 132
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 40,
+      "strength": 59
+    },
+    "tags": [
+      "str_armour",
+      "not_for_sale",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/RitualStrGloves.dds",
+      "id": "GlovesStrR2_"
+    }
+  },
+  "Debilitation Gauntlets": {
+    "domain": "item",
+    "drop_level": 70,
+    "implicits": [
+      "ExertedDamageWarcryCooldown3"
+    ],
+    "inventory_height": 2,
+    "inventory_width": 2,
+    "item_class": "Gloves",
+    "name": "Debilitation Gauntlets",
+    "properties": {
+      "armour": 236
+    },
+    "release_state": "released",
+    "requirements": {
+      "dexterity": 0,
+      "intelligence": 0,
+      "level": 70,
+      "strength": 101
+    },
+    "tags": [
+      "str_armour",
+      "not_for_sale",
+      "gloves",
+      "armour",
+      "default"
+    ],
+    "visual_identity": {
+      "dds_file": "Art/2DItems/Armours/Gloves/RitualStrGloves.dds",
+      "id": "GlovesStrR3"
+    }
+  }
+}

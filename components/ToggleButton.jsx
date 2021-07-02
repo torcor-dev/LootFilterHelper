@@ -41,13 +41,13 @@ export default function ToggleButton(props) {
     (props.styles ? props.styles: ""),
   ]
 
-  let iname
+  let name
   let icon
   if (props.name in details){
-    iname = details[props.name].name
+    name = details[props.name].name
     icon = props.icon ? details[props.name].icon : null
   } else {
-    iname = props.name
+    name = props.name
   }
 
   switch (chosenTier) {
@@ -65,13 +65,13 @@ export default function ToggleButton(props) {
   return (
     <button 
       className={styleList.join(" ")} 
-      title={iname}
+      title={name}
       onClick={() => { 
         setChosenTier(props.onClick()) 
       }}
       
     >
-      {icon ? <Icon type={icon} /> : iname}
+      {icon ? <Icon type={icon} /> : name}
     </button>
   )
 }

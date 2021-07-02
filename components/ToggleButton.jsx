@@ -1,5 +1,5 @@
-import {useState} from 'react'
-import styles from '../styles/components/ToggleButton.module.css' 
+import {useEffect, useState} from 'react'
+import buttonStyles from '../styles/components/ToggleButton.module.css' 
 import Icon from './Icon'
 
 /*MOVE ME!*/
@@ -9,69 +9,38 @@ export const buttonChoices = {
   DISABLED: 2,
 }
 
-/*MOVE ME!*/
-export const details = {
-  helmets: {
-    name: "Helmets",
-    icon: "helmets",
-  },
-  gloves: {
-    name: "Gloves",
-    icon: "gloves",
-  },
-  boots: {
-    name: "Boots",
-    icon: "boots",
-  },
-  bodyArmour: {
-    name: "Body Armour",
-    icon: "bodyArmour",
-  },
-  shields: {
-    name: "Shields",
-    icon: "shields"
-  },
-  
-}
-
-export default function ToggleButton(props) {
-  const [chosenTier, setChosenTier] = useState(props.initialTier)
-  const styleList = [
-    styles.button,
-    (props.styles ? props.styles: ""),
-  ]
-
-  let name
-  let icon
-  if (props.name in details){
-    name = details[props.name].name
-    icon = props.icon ? details[props.name].icon : null
-  } else {
-    name = props.name
+export default function ToggleButton({ name, fullName, currentChoice, icon, onClick }) {
+  if (!fullName) {
+    fullName = name
   }
 
-  switch (chosenTier) {
-    case buttonChoices.WHITE:
-      styleList.push(styles.buttonWhite)
-      break;
-    case buttonChoices.RARE:
-      styleList.push(styles.buttonRare)
-      break;
-    case buttonChoices.DISABLED:
-      styleList.push(styles.buttonDisabled)
-      break;
+  function buttonStyling(chosenTier) {
+    const styleList = new Array(buttonStyles.button)
+    switch (chosenTier) {
+      case buttonChoices.WHITE:
+        styleList.push(buttonStyles.buttonWhite)
+        break;
+      case buttonChoices.RARE:
+        styleList.push(buttonStyles.buttonRare)
+        break;
+      case buttonChoices.DISABLED:
+        styleList.push(buttonStyles.buttonDisabled)
+        break;
+    }
+    return styleList.join(" ")
+  }
+
+  function handleClick() {
+    onClick(name)
   }
 
   return (
     <button 
-      className={styleList.join(" ")} 
-      title={name}
-      onClick={() => { 
-        setChosenTier(props.onClick()) 
-      }}
-      
+      className={buttonStyling(currentChoice)} 
+      title={fullName}
+      onClick={handleClick}
     >
-      {icon ? <Icon type={icon} /> : name}
+      {icon ? <Icon type={icon} /> : fullName}
     </button>
   )
 }

@@ -2,16 +2,37 @@
   background: var(--unselected-item-bg);
   color: var(--foreground);
   fill: var(--foreground);
-  border: none;
   padding: 1rem;
   width: 100%;
+  margin-bottom: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid transparent;
+  box-shadow: 0 3px 5px var(--shadow);
 }
 
-.button:hover {
-  color: var(--rare-item-bg);
-  fill: var(--rare-item-bg);
-  cursor: pointer;
+@media (hover: hover) and (pointer: fine) {
+  .button:hover {
+    color: var(--green);
+    fill: var(--green);
+    border: 1px solid var(--green);
+    cursor: pointer;
+  }
+}
+
+.buttonRare {
+  background: var(--rare-item-bg);
+  color: var(--background);
+  fill: var(--background);
+}
+
+.buttonWhite {
+  background: var(--normal-item-bg);
+  color: var(--background);
+  fill: var(--background);
+}
+
+.buttonDisabled {
+  background: var(--unselected-item-bg);
 }

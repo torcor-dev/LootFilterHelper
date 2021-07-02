@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
     --background: #282A36;
     --foreground: #F8F8F2;
@@ -15,6 +14,8 @@
     --purple: #BD93F9;
     --cyan: #8BE9FD;
     --pink: #FF79C6;
+
+    --shadow: rgba(0, 0, 0, 15);
 
     --unique-item-bg: rgb(175,96,37);
     --rare-item-bg: rgb(255,255,119);
@@ -31,6 +32,7 @@ body {
 h2 {
     color: var(--comment);
 }
+
 
 a {
     color: var(--cyan);

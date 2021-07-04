@@ -1,34 +1,38 @@
 import ToggleButton, {buttonChoices} from "./ToggleButton";
-import { cycleThroughChoices } from "./sections/ArmorSection";
+import { cycleThroughChoices, cycleThroughChoicesByValue } from "./sections/ArmorSection";
 import PropTypes from 'prop-types'
 import {useState} from "react";
+import {synchCol} from '../utils'
 
 function TierColumn({ name, heading, tiers }) {
-  const tiersMap = new Map()
-  tiers.forEach(tier => tiersMap.set(tier, buttonChoices.DISABLED))
-  const [toggleState, setToggleState] = useState(tiersMap)
+  const [columnValues, setColumnValues] = useState(Array(tiers.length).fill(buttonChoices.DISABLED))
+  //const [prevColumnValues, setPrevColumnValues] = useState(Array(tiers.length).fill(buttonChoices.DISABLED))
 
   function handleClick(tier) {
-    const mapCopy = new Map(toggleState)
-    mapCopy.set(tier, cycleThroughChoices(mapCopy, tier, buttonChoices))
-    setToggleState(mapCopy)
+    const changedIdx = tiers.findIndex(i => i === tier)
+    //console.log("Setting prev values:", columnValues)
+    const prev = columnValues.slice()
+    //setPrevColumnValues(prev)
+    columnValues[changedIdx] = cycleThroughChoicesByValue(columnValues[changedIdx], buttonChoices)
+    const newColumn = synchCol(columnValues, prev)
+    setColumnValues(newColumn)
+    //console.log("pre",prevColumnValues)
+    //console.log("new",newColumn)
   }
 
   function renderButtons() {
-    const buttons = []
-    toggleState.forEach((value, key) => {
-      buttons.push(
+    return tiers.map((tier, index) => {
+      return (
         <ToggleButton 
-          name={key}
-          fullName={key}
+          name={tier}
+          fullName={tier}
           column={name}
-          currentChoice={value}
-          key={`${key} ${name}`}
+          currentChoice={columnValues[index]}
+          key={`${tier} ${name}`}
           onClick={handleClick}
         />
       )
     })
-    return buttons
   }
 
   return (

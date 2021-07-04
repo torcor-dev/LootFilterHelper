@@ -9,25 +9,26 @@ export const buttonChoices = {
   DISABLED: 2,
 }
 
+
 export default function ToggleButton({ name, fullName, currentChoice, icon, onClick }) {
   if (!fullName) {
     fullName = name
   }
 
   function buttonStyling(chosenTier) {
-    const styleList = new Array(buttonStyles.button)
+    let style = buttonStyles.button
     switch (chosenTier) {
       case buttonChoices.WHITE:
-        styleList.push(buttonStyles.buttonWhite)
+        style += " " + buttonStyles.buttonWhite
         break;
       case buttonChoices.RARE:
-        styleList.push(buttonStyles.buttonRare)
+        style += " " + buttonStyles.buttonRare
         break;
       case buttonChoices.DISABLED:
-        styleList.push(buttonStyles.buttonDisabled)
+        style += " " + buttonStyles.buttonDisabled
         break;
     }
-    return styleList.join(" ")
+    return style
   }
 
   function handleClick() {

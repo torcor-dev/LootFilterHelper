@@ -4,13 +4,13 @@ import Icon from './Icon'
 
 /*MOVE ME!*/
 export const buttonChoices = {
-  WHITE: 0,
+  DISABLED: 0,
   RARE: 1,
-  DISABLED: 2,
+  WHITE: 2,
 }
 
 
-export default function ToggleButton({ name, fullName, currentChoice, icon, onClick }) {
+export default function ToggleButton({ name, fullName, currentChoice, icon, onClick, choices }) {
   if (!fullName) {
     fullName = name
   }
@@ -32,7 +32,7 @@ export default function ToggleButton({ name, fullName, currentChoice, icon, onCl
   }
 
   function handleClick() {
-    onClick(name)
+    onClick(name, choices)
   }
 
   return (

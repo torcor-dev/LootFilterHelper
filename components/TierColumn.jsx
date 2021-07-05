@@ -4,19 +4,28 @@ import PropTypes from 'prop-types'
 import {useState} from "react";
 import {synchCol} from '../utils'
 
+const tierOneChoices = {
+  DISABLED: 0,
+  RARE: 1,
+  WHITE: 2,
+}
+
+const tierChoices = {
+  DISABLED: 0,
+  RARE: 1,
+}
+
 function TierColumn({ name, heading, tiers }) {
   const [columnValues, setColumnValues] = useState(Array(tiers.length).fill(buttonChoices.DISABLED))
-  //const [prevColumnValues, setPrevColumnValues] = useState(Array(tiers.length).fill(buttonChoices.DISABLED))
 
-  function handleClick(tier) {
+  function handleClick(tier, choices) {
     const changedIdx = tiers.findIndex(i => i === tier)
     //console.log("Setting prev values:", columnValues)
     const prev = columnValues.slice()
-    //setPrevColumnValues(prev)
-    columnValues[changedIdx] = cycleThroughChoicesByValue(columnValues[changedIdx], buttonChoices)
+    columnValues[changedIdx] = cycleThroughChoicesByValue(columnValues[changedIdx], choices)
+    //console.log("After cycle:", columnValues)
     const newColumn = synchCol(columnValues, prev)
     setColumnValues(newColumn)
-    //console.log("pre",prevColumnValues)
     //console.log("new",newColumn)
   }
 
@@ -28,6 +37,7 @@ function TierColumn({ name, heading, tiers }) {
           fullName={tier}
           column={name}
           currentChoice={columnValues[index]}
+          choices={index === 0 ? tierOneChoices : tierChoices}
           key={`${tier} ${name}`}
           onClick={handleClick}
         />

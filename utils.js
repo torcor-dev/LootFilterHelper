@@ -1,20 +1,31 @@
-function updateCellsBefore(changedIdx, col) {
-  // If the changed cell is less than the old one
-  // Set the values before the index to be the same
-  // as the change.
+function updateCellsBefore(changedIdx, newCol) {
+  const col = newCol.slice()
   for (let i = 0; i < changedIdx; i++) {
-    col[i] = col[changedIdx]
+    //if (col[i] > col[changedIdx]) continue // ? A higher value takes precedent over a smaller one.
+    //col[i] = col[changedIdx]
+    if (col[i] < col[changedIdx]) col[i] = col[changedIdx]
   }
+  return col
 }
 
-function updateCellsAfter(changedIdx, col) {
-  // If the opposite is true change latter values to be
-  // the same as the change.
+function updateAllCellsAfter(changedIdx, newCol) {
+  const col =  newCol.slice()
   for (let i = changedIdx; i < col.length; i++) {
-    if (col[changedIdx] > col[i]) {
-      col[i] = col[changedIdx]
-    } 
+    col[i] = col[changedIdx]
   }
+  return col
+}
+
+
+function updateCellsAfterExceptZero(changedIdx, newCol) {
+  const col =  newCol.slice()
+  for (let i = changedIdx; i < col.length; i++) {
+    if (col[i] === 0) {
+      break
+    }
+    col[i] = col[changedIdx]
+  }
+  return col
 }
 
 export function synchCol(newCol, oldCol) { 
@@ -26,16 +37,22 @@ export function synchCol(newCol, oldCol) {
     throw Error("The two columns must be same length")
   }
 
-  const updatedCol = newCol.slice()
+  let updatedCol = newCol.slice()
   // Find the changed cell
   for (let i = 0; i < newCol.length; i++) {
-    if(oldCol[i] > newCol[i]) {
-      updateCellsBefore(i, updatedCol)
+    if (newCol[i] !== oldCol[i] && newCol[i] === 0) {
+      updatedCol = updateAllCellsAfter(i, newCol)
       break
-    } else if(oldCol[i] < newCol[i]) {
-      updateCellsAfter(i, updatedCol)
+    } else if (newCol[i] > oldCol[i]) {
+      updatedCol = updateCellsBefore(i, newCol)
+      break
+    } else if (newCol[i] < oldCol[i]) {
+      updatedCol = updateCellsAfterExceptZero(i, newCol)
       break
     }
+
   }
+
   return updatedCol
 }
+

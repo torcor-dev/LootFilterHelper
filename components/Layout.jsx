@@ -1,9 +1,7 @@
 import Head from 'next/head'
-import Link from 'next/link'
+import Navbar from './Navbar'
 
-
-
-export default function Layout({ children }) {
+export default function Layout({ session, children }) {
   const siteName = "Filterhelper"
 
   return (
@@ -17,11 +15,7 @@ export default function Layout({ children }) {
         <title>{siteName}</title>
       </Head>
       <header>
-        <Link href="/">
-          <a>
-            <h1>{siteName}</h1>
-          </a>
-        </Link>
+        <Navbar session={session} siteName={siteName} />
       </header>
       <main>
         { children }

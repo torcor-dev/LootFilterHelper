@@ -4,7 +4,6 @@
   fill: var(--foreground);
   padding: 1rem;
   width: 100%;
-  margin-bottom: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,4 +34,11 @@
 
 .buttonDisabled {
   background: var(--unselected-item-bg);
+}
+
+.buttonBaseSelected { 
+  fill: var(--green);
+  border: 1px solid var(--unselected-item-bg);
+  background: var(--unselected-item-bg);
+  background: linear-gradient(180deg, var(--unselected-item-bg) 97%, var(--green) 97% 100%);
 }

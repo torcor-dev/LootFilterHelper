@@ -38,6 +38,7 @@ function TierColumn({ name, heading, tiers }) {
           column={name}
           currentChoice={columnValues[index]}
           choices={index === 0 ? tierOneChoices : tierChoices}
+          type={"tier"}
           key={`${tier} ${name}`}
           onClick={handleClick}
         />
@@ -46,7 +47,7 @@ function TierColumn({ name, heading, tiers }) {
   }
 
   return (
-    <div id={`${name}_column`} className="w-full">
+    <div id={`${name}_column`} className="w-full flex flex-col gap-1">
       <h2 className="text-center text-lg font-bold">{heading}</h2>
       {renderButtons()}
     </div>

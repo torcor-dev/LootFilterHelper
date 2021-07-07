@@ -3,6 +3,11 @@ import { cycleThroughChoices } from "./sections/ArmorSection";
 import PropTypes from 'prop-types'
 import {useState} from "react";
 
+const rowChoices = {
+  DISABLED: buttonChoices.DISABLED,
+  SELECTED: buttonChoices.BASE_SELECTED,
+}
+
 function ButtonRow({ details }) {
   const initMap = new Map()
   details.forEach((_, key) => {
@@ -13,7 +18,7 @@ function ButtonRow({ details }) {
 
   function handleClick(name) {
     const mapCopy = new Map(toggleState)
-    mapCopy.set(name, cycleThroughChoices(mapCopy, name, buttonChoices))
+    mapCopy.set(name, cycleThroughChoices(mapCopy, name, rowChoices))
     setToggleState(mapCopy)
   }
 
@@ -25,6 +30,8 @@ function ButtonRow({ details }) {
           name={key} 
           fullName={details.get(key).fullName}
           currentChoice={value}
+          choices={rowChoices}
+          type={"bases"}
           icon={details.get(key).icon}
           key={`${key}_button`}
           onClick={handleClick}

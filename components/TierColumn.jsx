@@ -2,7 +2,7 @@ import ToggleButton, {buttonChoices} from "./ToggleButton";
 import { cycleThroughChoices, cycleThroughChoicesByValue } from "./sections/ArmorSection";
 import PropTypes from 'prop-types'
 import {useState} from "react";
-import {synchCol} from '../utils'
+import {synchCol} from '../utils/columnUtils'
 
 const tierOneChoices = {
   DISABLED: 0,

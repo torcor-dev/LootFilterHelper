@@ -2,16 +2,17 @@ import ToggleButton, {buttonChoices} from "./ToggleButton";
 import { cycleThroughChoices } from "./sections/ArmorSection";
 import PropTypes from 'prop-types'
 import {useState} from "react";
+import { filterAPIPut } from "../utils/apiHelpers";
 
 const rowChoices = {
   DISABLED: buttonChoices.DISABLED,
   SELECTED: buttonChoices.BASE_SELECTED,
 }
 
-function ButtonRow({ details }) {
+function ButtonRow({ details, type, selection, selectionDoc, filterId }) {
   const initMap = new Map()
   details.forEach((_, key) => {
-    initMap.set(key, buttonChoices.DISABLED)
+    initMap.set(key, selection[key])
   })
 
   const [toggleState, setToggleState] = useState(initMap)
@@ -20,6 +21,8 @@ function ButtonRow({ details }) {
     const mapCopy = new Map(toggleState)
     mapCopy.set(name, cycleThroughChoices(mapCopy, name, rowChoices))
     setToggleState(mapCopy)
+    const updateDoc = `${selectionDoc}.${type}`
+    filterAPIPut(filterId, updateDoc, Object.fromEntries(mapCopy))
   }
 
   function renderButtons() {
@@ -31,7 +34,7 @@ function ButtonRow({ details }) {
           fullName={details.get(key).fullName}
           currentChoice={value}
           choices={rowChoices}
-          type={"bases"}
+          type={type}
           icon={details.get(key).icon}
           key={`${key}_button`}
           onClick={handleClick}
@@ -50,6 +53,10 @@ function ButtonRow({ details }) {
 
 ButtonRow.propTypes = {
   details: PropTypes.instanceOf(Map),
+  type: PropTypes.string,
+  selection: PropTypes.object,
+  selectionDoc: PropTypes.string,
+  filterId: PropTypes.string,
 }
 
 export default ButtonRow

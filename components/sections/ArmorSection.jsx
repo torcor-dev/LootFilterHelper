@@ -60,24 +60,32 @@ export function cycleThroughChoicesByValue(value, choiceObj) {
   return (value + 1) % Object.keys(choiceObj).length
 }
 
-export default function ArmorSection() {
+export default function ArmorSection({ filter }) {
+  const selectionDoc = "armourSelection"
   function renderTierColumns() {
     return Object.keys(baseTypes).map((key) => {
       return (
         <TierColumn 
           key={key}
-          name={baseTypes[key].name}
+          name={key}
           heading={baseTypes[key].heading}
           tiers={tiers}
+          selection={filter.armourSelection[key]}
+          selectionDoc={selectionDoc}
+          filterId={filter["_id"]}
         />
       )
     }) 
   }
 
   return (
-    <Section name="Armor Bases">
+    <Section name="Armour Bases">
       <ButtonRow 
         details={armorDetails}
+        type={"bases"}
+        selection={filter.armourSelection.bases}
+        selectionDoc={selectionDoc}
+        filterId={filter["_id"]}
       />
       <div className="w-screen flex mt-4 gap-1">
         {renderTierColumns()}

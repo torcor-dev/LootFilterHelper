@@ -16,7 +16,7 @@ const tierChoices = {
   RARE: 1,
 }
 
-function TierColumn({ name, heading, tiers, selection, selectionDoc, filterId }) {
+function TierColumn({ name, heading, tiers, selection, selectionDoc, filterId, filter, setFilter }) {
   const [columnValues, setColumnValues] = useState(selection)
 
   function handleClick(tier, choices) {
@@ -27,8 +27,7 @@ function TierColumn({ name, heading, tiers, selection, selectionDoc, filterId })
     setColumnValues(newColumn)
 
     const updateDoc = `${selectionDoc}.${name}`
-    filterAPIPut(filterId, updateDoc, newColumn)
-
+    filterAPIPut(filterId, updateDoc, newColumn, filter, setFilter)
   }
 
   function renderButtons() {

@@ -4,8 +4,9 @@ import WeaponSection from '../components/sections/WeaponSection'
 import Link from 'next/link'
 import {signIn, signOut, useSession} from 'next-auth/client'
 import { connectToDatabase } from '../utils/mongodb'
+import {useState} from 'react'
 
-export default function Home({ filter }) {
+export default function Home({ defaultFilter}) {
   const [session, loading] = useSession()
 
   if (session) {
@@ -13,9 +14,16 @@ export default function Home({ filter }) {
     // filter = foo()
   }
 
+  const [filter, setFilter] = useState(defaultFilter)
+
+  function handleFilterUpdate(newFilter) {
+    setFilter(newFilter)
+  }
+
   return (
     <Layout session={session}>
-      <ArmorSection filter={filter} />
+      <h1>CURRENT FILTER: {filter._id}</h1>
+      <ArmorSection filter={filter} updateFilter={handleFilterUpdate} />
       <WeaponSection />
     </Layout>
   )
@@ -24,12 +32,12 @@ export default function Home({ filter }) {
 export async function getStaticProps(context) {
   const { db } = await connectToDatabase()
 
-  const defaultFilter = await db.collection("filter").findOne({})
-  const filter = JSON.parse(JSON.stringify(defaultFilter))
+  let defaultFilter = await db.collection("filter").findOne({})
+  defaultFilter = JSON.parse(JSON.stringify(defaultFilter))
 
   return {
     props: {
-      filter,
+      defaultFilter,
     }
   }
 

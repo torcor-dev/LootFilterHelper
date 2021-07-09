@@ -9,7 +9,7 @@ const rowChoices = {
   SELECTED: buttonChoices.BASE_SELECTED,
 }
 
-function ButtonRow({ details, type, selection, selectionDoc, filterId }) {
+function ButtonRow({ details, type, selection, selectionDoc, filterId, filter, setFilter }) {
   const initMap = new Map()
   details.forEach((_, key) => {
     initMap.set(key, selection[key])
@@ -21,8 +21,18 @@ function ButtonRow({ details, type, selection, selectionDoc, filterId }) {
     const mapCopy = new Map(toggleState)
     mapCopy.set(name, cycleThroughChoices(mapCopy, name, rowChoices))
     setToggleState(mapCopy)
+    const bases = Object.fromEntries(mapCopy)
     const updateDoc = `${selectionDoc}.${type}`
-    filterAPIPut(filterId, updateDoc, Object.fromEntries(mapCopy))
+    //filterAPIPut(filterId, updateDoc, bases).then((id) => {
+    //  const f = {
+    //    ...filter
+    //  }
+    //  if (id) {
+    //    f._id = id
+    //    setFilter(f)
+    //  }
+    //})
+    filterAPIPut(filterId, updateDoc, bases, filter, setFilter)
   }
 
   function renderButtons() {
@@ -57,6 +67,9 @@ ButtonRow.propTypes = {
   selection: PropTypes.object,
   selectionDoc: PropTypes.string,
   filterId: PropTypes.string,
+  filter: PropTypes.object,
+  setFilter: PropTypes.func,
+
 }
 
 export default ButtonRow

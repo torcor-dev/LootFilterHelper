@@ -4,26 +4,34 @@ import WeaponSection from '../components/sections/WeaponSection'
 import Link from 'next/link'
 import {signIn, signOut, useSession} from 'next-auth/client'
 import { connectToDatabase } from '../utils/mongodb'
-import {useState} from 'react'
+import {useState, useReducer} from 'react'
 
 export default function Home({ defaultFilter}) {
   const [session, loading] = useSession()
+  const [filter, setFilter] = useState(defaultFilter)
+  const [ignored, forceUpdate] = useReducer(x => x + 1, 0);
 
   if (session) {
     // Load user specific filter.
     // filter = foo()
   }
 
-  const [filter, setFilter] = useState(defaultFilter)
-
   function handleFilterUpdate(newFilter) {
     setFilter(newFilter)
   }
 
+  function handleClick() {
+    fetch("api/filter/defaults")
+      .then(response => response.json())
+      .then(response => setFilter(response))
+      .then(forceUpdate)
+  }
+
   return (
-    <Layout session={session}>
-      <h1>CURRENT FILTER: {filter._id}</h1>
-      <ArmorSection filter={filter} updateFilter={handleFilterUpdate} />
+    <Layout session={session} key={ignored}>
+      <h1>CURRENT FILTER: {defaultFilter._id === filter._id ? "Default" : filter._id}</h1>
+      <button onClick={handleClick}>Reset filter</button>
+      <ArmorSection filter={filter} key={ignored} updateFilter={handleFilterUpdate} />
       <WeaponSection />
     </Layout>
   )

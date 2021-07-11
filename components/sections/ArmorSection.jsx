@@ -4,6 +4,7 @@ import ToggleButton, {buttonChoices} from "../ToggleButton";
 import TierColumn from "../TierColumn";
 import {useState, useEffect} from "react";
 import buttonStyles from "../../styles/components/ToggleButton.module.css"
+import {useFilterContex} from '../../utils/filterState'
 
 const baseTypes = {
   armour: {
@@ -60,8 +61,9 @@ export function cycleThroughChoicesByValue(value, choiceObj) {
   return (value + 1) % Object.keys(choiceObj).length
 }
 
-export default function ArmorSection({ filter, updateFilter }) {
-  const selectionDoc = "armourSelection"
+export default function ArmorSection() {
+  const section = "armourSelection"
+  console.log("rerender?")
   function renderTierColumns() {
     return Object.keys(baseTypes).map((key) => {
       return (
@@ -70,11 +72,7 @@ export default function ArmorSection({ filter, updateFilter }) {
           name={key}
           heading={baseTypes[key].heading}
           tiers={tiers}
-          selection={filter.armourSelection[key]}
-          selectionDoc={selectionDoc}
-          filterId={filter["_id"]}
-          filter={filter}
-          setFilter={updateFilter}
+          section={section}
         />
       )
     }) 
@@ -85,11 +83,7 @@ export default function ArmorSection({ filter, updateFilter }) {
       <ButtonRow 
         details={armorDetails}
         type={"bases"}
-        selection={filter.armourSelection.bases}
-        selectionDoc={selectionDoc}
-        filterId={filter["_id"]}
-        filter={filter}
-        setFilter={updateFilter}
+        section={section}
       />
       <div className="w-screen flex mt-4 gap-1">
         {renderTierColumns()}

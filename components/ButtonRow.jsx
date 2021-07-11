@@ -1,48 +1,37 @@
 import ToggleButton, {buttonChoices} from "./ToggleButton";
 import { cycleThroughChoices } from "./sections/ArmorSection";
 import PropTypes from 'prop-types'
-import {useState} from "react";
+import {useMemo, useState} from "react";
 import { filterAPIPut } from "../utils/apiHelpers";
+import { useFilterContex } from "../utils/filterState";
 
 const rowChoices = {
   DISABLED: buttonChoices.DISABLED,
   SELECTED: buttonChoices.BASE_SELECTED,
 }
 
-function ButtonRow({ details, type, selection, selectionDoc, filterId, filter, setFilter }) {
-  const initMap = new Map()
-  details.forEach((_, key) => {
-    initMap.set(key, selection[key])
-  })
+function ButtonRow({ details, type, section}) {
+  const { id, setId, filter, setFilter, updateFilter } = useFilterContex()
+  const bases = filter[section][type]
 
-  const [toggleState, setToggleState] = useState(initMap)
+  console.log("Rerender", type)
 
   function handleClick(name) {
-    const mapCopy = new Map(toggleState)
-    mapCopy.set(name, cycleThroughChoices(mapCopy, name, rowChoices))
-    setToggleState(mapCopy)
-    const bases = Object.fromEntries(mapCopy)
-    const updateDoc = `${selectionDoc}.${type}`
-    //filterAPIPut(filterId, updateDoc, bases).then((id) => {
-    //  const f = {
-    //    ...filter
-    //  }
-    //  if (id) {
-    //    f._id = id
-    //    setFilter(f)
-    //  }
-    //})
-    filterAPIPut(filterId, updateDoc, bases, filter, setFilter)
+    const updateDoc = section + "." + type
+    bases[name] = cycleThroughChoices(bases, name, rowChoices)
+    filterAPIPut(id, updateDoc, bases, filter, setFilter, setId)
+    filter[section][type] = bases
+
+    updateFilter({keys: [section, type], value: bases})
   }
 
   function renderButtons() {
-    const buttons = []
-    toggleState.forEach((value, key) => {
-      buttons.push(
+    return Object.keys(filter[section][type]).map( (key) => {
+      return (
         <ToggleButton 
           name={key} 
           fullName={details.get(key).fullName}
-          currentChoice={value}
+          currentChoice={filter[section][type][key]}
           choices={rowChoices}
           type={type}
           icon={details.get(key).icon}
@@ -51,7 +40,6 @@ function ButtonRow({ details, type, selection, selectionDoc, filterId, filter, s
         />
       )
     })
-    return buttons
   }
 
   return (
@@ -64,12 +52,7 @@ function ButtonRow({ details, type, selection, selectionDoc, filterId, filter, s
 ButtonRow.propTypes = {
   details: PropTypes.instanceOf(Map),
   type: PropTypes.string,
-  selection: PropTypes.object,
-  selectionDoc: PropTypes.string,
-  filterId: PropTypes.string,
-  filter: PropTypes.object,
-  setFilter: PropTypes.func,
-
+  section: PropTypes.string,
 }
 
 export default ButtonRow

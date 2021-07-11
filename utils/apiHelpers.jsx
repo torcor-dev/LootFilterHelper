@@ -1,4 +1,4 @@
-export function filterAPIPut(id, updateDoc, value, filter, setFilter) {
+export function filterAPIPut(id, updateDoc, value, filter, setFilter, setId) {
   fetch(`/api/filter/${id}`, {
     method: "PUT",
     headers: {
@@ -11,6 +11,7 @@ export function filterAPIPut(id, updateDoc, value, filter, setFilter) {
     .then(response => response.json())
     .then((response) => {
       if(response.newFilterId) {
+        setId(response.newFilterId._id)
         const f = {
           ...filter
         }

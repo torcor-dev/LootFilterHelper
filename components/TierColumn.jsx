@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import {useState} from "react";
 import {synchCol} from '../utils/columnUtils'
 import {filterAPIPut} from "../utils/apiHelpers";
+import {useFilterContex} from '../utils/filterState'
 
 const tierOneChoices = {
   DISABLED: 0,
@@ -16,18 +17,22 @@ const tierChoices = {
   RARE: 1,
 }
 
-function TierColumn({ name, heading, tiers, selection, selectionDoc, filterId, filter, setFilter }) {
-  const [columnValues, setColumnValues] = useState(selection)
+function TierColumn({ name, heading, tiers, section }) {
+  const { id, setId, filter, setFilter } = useFilterContex()
+  const arr = filter[section][name]
+
+  console.log("Rerender", name)
 
   function handleClick(tier, choices) {
     const changedIdx = tiers.findIndex(i => i === tier)
-    const prev = columnValues.slice()
-    columnValues[changedIdx] = cycleThroughChoicesByValue(columnValues[changedIdx], choices)
-    const newColumn = synchCol(columnValues, prev)
-    setColumnValues(newColumn)
+    const prev = arr.slice()
+    arr[changedIdx] = cycleThroughChoicesByValue(arr[changedIdx], choices)
+    const newColumn = synchCol(arr, prev)
+    filter[section][name] = newColumn
+    const updateDoc = `${section}.${name}`
 
-    const updateDoc = `${selectionDoc}.${name}`
-    filterAPIPut(filterId, updateDoc, newColumn, filter, setFilter)
+    filterAPIPut(id, updateDoc, newColumn, filter, setFilter, setId)
+    setFilter(filter)
   }
 
   function renderButtons() {
@@ -37,7 +42,7 @@ function TierColumn({ name, heading, tiers, selection, selectionDoc, filterId, f
           name={tier}
           fullName={tier}
           column={name}
-          currentChoice={columnValues[index]}
+          currentChoice={arr[index]}
           choices={index === 0 ? tierOneChoices : tierChoices}
           type={"tier"}
           key={`${tier} ${name}`}
@@ -61,7 +66,7 @@ TierColumn.propTypes = {
   heading: PropTypes.string,
   tiers: PropTypes.array,
   selection: PropTypes.array,
-  selectionDoc: PropTypes.string,
+  section: PropTypes.string,
   filterId: PropTypes.string,
 }
 

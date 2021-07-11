@@ -2,7 +2,8 @@ import ToggleButton, {buttonChoices} from "./ToggleButton";
 import { cycleThroughChoices, cycleThroughChoicesByValue } from "./sections/ArmorSection";
 import PropTypes from 'prop-types'
 import {useState} from "react";
-import {synchCol} from '../utils'
+import {synchCol} from '../utils/columnUtils'
+import {filterAPIPut} from "../utils/apiHelpers";
 
 const tierOneChoices = {
   DISABLED: 0,
@@ -15,18 +16,18 @@ const tierChoices = {
   RARE: 1,
 }
 
-function TierColumn({ name, heading, tiers }) {
-  const [columnValues, setColumnValues] = useState(Array(tiers.length).fill(buttonChoices.DISABLED))
+function TierColumn({ name, heading, tiers, selection, selectionDoc, filterId, filter, setFilter }) {
+  const [columnValues, setColumnValues] = useState(selection)
 
   function handleClick(tier, choices) {
     const changedIdx = tiers.findIndex(i => i === tier)
-    //console.log("Setting prev values:", columnValues)
     const prev = columnValues.slice()
     columnValues[changedIdx] = cycleThroughChoicesByValue(columnValues[changedIdx], choices)
-    //console.log("After cycle:", columnValues)
     const newColumn = synchCol(columnValues, prev)
     setColumnValues(newColumn)
-    //console.log("new",newColumn)
+
+    const updateDoc = `${selectionDoc}.${name}`
+    filterAPIPut(filterId, updateDoc, newColumn, filter, setFilter)
   }
 
   function renderButtons() {
@@ -58,7 +59,10 @@ function TierColumn({ name, heading, tiers }) {
 TierColumn.propTypes = {
   name: PropTypes.string,
   heading: PropTypes.string,
-  tiers: PropTypes.array
+  tiers: PropTypes.array,
+  selection: PropTypes.array,
+  selectionDoc: PropTypes.string,
+  filterId: PropTypes.string,
 }
 
 export default TierColumn

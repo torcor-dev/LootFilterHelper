@@ -1,51 +1,72 @@
 import Layout from '../components/Layout'
 import ArmorSection from '../components/sections/ArmorSection'
 import WeaponSection from '../components/sections/WeaponSection'
-import Link from 'next/link'
-import {signIn, signOut, useSession} from 'next-auth/client'
+import { useSession} from 'next-auth/client'
 import { connectToDatabase } from '../utils/mongodb'
-import {useState, useReducer} from 'react'
+import { useReducer } from 'react'
 
-export default function Home({ defaultFilter}) {
-  const [session, loading] = useSession()
-  const [filter, setFilter] = useState(defaultFilter)
-  const [ignored, forceUpdate] = useReducer(x => x + 1, 0);
+const actions = {
+  SET_ID: "SET_ID",
+  SET_FILTER: "SET_FILTER",
+}
 
-  if (session) {
-    // Load user specific filter.
-    // filter = foo()
+function reducer(filter, action) {
+  switch (action.type) {
+    case actions.SET_ID:
+      return { ...filter, _id: action.value }
+    case actions.SET_FILTER:
+      return { ...filter, ...action.value }
   }
+}
 
-  function handleFilterUpdate(newFilter) {
-    setFilter(newFilter)
+export default function Home({ defaultFilter, staticData }) {
+  const [session, loading] = useSession()
+  const [filter, dispatch] = useReducer(reducer, defaultFilter)
+  const [updater, forceUpdate] = useReducer(x => x + 1, 0);
+
+  const [armourDetails] = staticData.filter(data => data.name === "armourDetails");
+
+  const filterFuncs = {
+    setId: value => { dispatch({type: actions.SET_ID, value}) },
+    setFilter: value => { dispatch({type: actions.SET_FILTER, value}) },
   }
 
   function handleClick() {
     fetch("api/filter/defaults")
       .then(response => response.json())
-      .then(response => setFilter(response))
+      .then(response => filterFuncs.setFilter(response))
       .then(forceUpdate)
   }
 
   return (
-    <Layout session={session} key={ignored}>
+    <Layout session={session} key={updater}>
       <h1>CURRENT FILTER: {defaultFilter._id === filter._id ? "Default" : filter._id}</h1>
       <button onClick={handleClick}>Reset filter</button>
-      <ArmorSection filter={filter} key={ignored} updateFilter={handleFilterUpdate} />
+      <ArmorSection 
+        filter={filter} 
+        data={armourDetails} 
+        filterFuncs={filterFuncs}
+      />
       <WeaponSection />
     </Layout>
   )
 }
 
-export async function getStaticProps(context) {
+export async function getStaticProps() {
   const { db } = await connectToDatabase()
 
-  let defaultFilter = await db.collection("filter").findOne({})
-  defaultFilter = JSON.parse(JSON.stringify(defaultFilter))
+  const defaultFilter = JSON.parse(JSON.stringify(
+    await db.collection("filter").findOne({})
+  ))
+
+  const staticData = JSON.parse(JSON.stringify(
+    await db.collection("static").find({}).toArray()
+  ))
 
   return {
     props: {
       defaultFilter,
+      staticData,
     }
   }
 

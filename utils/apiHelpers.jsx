@@ -1,21 +1,18 @@
-export function filterAPIPut(id, updateDoc, value, filter, setFilter) {
-  fetch(`/api/filter/${id}`, {
+export function filterAPIPut(key, value, filter, filterFuncs) {
+  console.log(filter._id, "Old?")
+  fetch(`/api/filter/${filter._id}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      [updateDoc]: value
+      [key]: value
     }),
   })
     .then(response => response.json())
     .then((response) => {
       if(response.newFilterId) {
-        const f = {
-          ...filter
-        }
-        f._id = response.newFilterId._id
-        setFilter(f)
+        filterFuncs.setId(response.newFilterId._id)
       }
     })
 }

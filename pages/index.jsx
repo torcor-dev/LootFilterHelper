@@ -17,13 +17,6 @@ const actions = {
   FINISH_LOADING: "FINISH_LOADING",
 }
 
-function reducer(filter, action) {
-  switch (action.type) {
-    case actions.SET_FILTER:
-      return { ...filter, ...action.value }
-  }
-}
-
 function stateReducer(state, action) {
   switch (action.type) {
     case actions.SET_ID:
@@ -83,8 +76,7 @@ export default function Home({ defaultFilter, staticData }) {
         .then(response => setFilter(response))
         .then(
           stateDispatch({type: "SET_ID", payload: {id: filter._id}}),
-          stateDispatch({type: "SET_NAME", payload: {name: filter.name}})
-        ).then(
+          stateDispatch({type: "SET_NAME", payload: {name: filter.name}}),
           stateDispatch({ type: actions.FINISH_LOADING })
         )
     } else {
@@ -97,13 +89,15 @@ export default function Home({ defaultFilter, staticData }) {
   const [armourDetails] = staticData.filter(data => data.name === "armourDetails");
 
   function handleClick() {
+    stateDispatch({ type: actions.START_LOADING })
     fetch("api/filter/defaults/defaults")
       .then(response => response.json())
       .then(response => {
         localStorage.removeItem("curFilter")
         setFilter(response)
-        stateDispatch({type: "RESET"})
         stateDispatch({type: "SET_ID", payload: {id: ObjectId()}})
+        stateDispatch({type: "SET_NAME", payload: {name: filter.name}})
+        stateDispatch({ type: actions.FINISH_LOADING })
       })
 
   }

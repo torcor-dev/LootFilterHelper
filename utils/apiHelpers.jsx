@@ -1,6 +1,5 @@
-export function filterAPIPut(key, value, filter, filterFuncs) {
-  console.log(filter._id, "Old?")
-  fetch(`/api/filter/${filter._id}`, {
+export function filterAPIPut(key, value, filterId) {
+  fetch(`/api/filter/${filterId}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
@@ -10,9 +9,15 @@ export function filterAPIPut(key, value, filter, filterFuncs) {
     }),
   })
     .then(response => response.json())
-    .then((response) => {
-      if(response.newFilterId) {
-        filterFuncs.setId(response.newFilterId._id)
-      }
-    })
+    .then(localStorage.setItem("curFilter", filterId))
+}
+
+export function getFilter(filterId) {
+  return fetch(`/api/filter/${filterId}`, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    }
+  })
+    .then(response => response.json())
 }

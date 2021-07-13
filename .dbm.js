@@ -1,6 +1,6 @@
 show collections
 
-db.filter.find({name: "Default"}, { "armourSelection.armour": 1 }).sort({_id: -1})
+db.filter.find({_id: "60ed9951cf92e18627e171f8"}, { "armourSelection.armour": 1 }).sort({_id: -1})
 
 db.filter.aggregate([
   { $match: {name: "Default"} },

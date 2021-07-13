@@ -16,7 +16,7 @@ const tierChoices = {
   RARE: 1,
 }
 
-function TierColumn({ name, heading, tiers, selection, filter, filterFuncs }) {
+function TierColumn({ name, heading, tiers, selection, filter, filterId }) {
   const [columnValues, setColumnValues] = useState(filter[selection][name])
 
   function handleClick(tier, choices) {
@@ -27,7 +27,7 @@ function TierColumn({ name, heading, tiers, selection, filter, filterFuncs }) {
     setColumnValues(newColumn)
 
     const key = `${selection}.${name}`
-    filterAPIPut(key, newColumn, filter, filterFuncs)
+    filterAPIPut(key, newColumn, filterId)
   }
 
   function renderButtons() {
@@ -62,6 +62,7 @@ TierColumn.propTypes = {
   tiers: PropTypes.array,
   selection: PropTypes.string,
   filter: PropTypes.object,
+  filterId: PropTypes.string,
 }
 
 export default TierColumn

@@ -9,15 +9,15 @@ const rowChoices = {
   SELECTED: buttonChoices.BASE_SELECTED,
 }
 
-function ButtonRow({ details, type, selection, filter, filterFuncs }) {
+function ButtonRow({ details, type, selection, filter,  filterId }) {
   const [toggleState, setToggleState] = useState(filter[selection][type])
 
   function handleClick(name) {
     const stateCopy = {...toggleState}
     stateCopy[name] = cycleThroughChoices(stateCopy, name, rowChoices)
     setToggleState(stateCopy)
-    const key = `${selection}.${name}`
-    filterAPIPut(key, stateCopy, filter, filterFuncs)
+    const key = `${selection}.${type}`
+    filterAPIPut(key, stateCopy, filterId)
   }
 
   function renderButtons() {
@@ -50,7 +50,7 @@ ButtonRow.propTypes = {
   type: PropTypes.string,
   selection: PropTypes.string,
   filter: PropTypes.object,
-  filterFuncs: PropTypes.object,
+  filterId: PropTypes.string,
 
 }
 

@@ -4,7 +4,7 @@ import TierColumn from "../TierColumn";
 
 const tiers = ["T1", "T2", "T3", "T4+"]
 
-export default function ArmorSection({ filter, data, filterFuncs }) {
+export default function ArmorSection({ filter, data, filterId }) {
   const {selectionName, details, baseTypes} = data
 
   function renderTierColumns() {
@@ -17,7 +17,7 @@ export default function ArmorSection({ filter, data, filterFuncs }) {
           tiers={tiers}
           selection={selectionName}
           filter={filter}
-          filterFuncs={filterFuncs}
+          filterId={filterId}
         />
       )
     }) 
@@ -30,7 +30,7 @@ export default function ArmorSection({ filter, data, filterFuncs }) {
         type={"bases"}
         selection={selectionName}
         filter={filter}
-        filterFuncs={filterFuncs}
+        filterId={filterId}
       />
       <div className="w-screen flex mt-4 gap-1">
         {renderTierColumns()}

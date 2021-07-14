@@ -47,20 +47,12 @@ const initialState = {
   isError: false,
 }
 
-//     const data = fetch(`api/filter/60ed99cd08c7ffc893d443b1`, {
-//        method: "GET",
-//        headers: {
-//          "Content-Type": "application/json",
-//        }
-//      })
-//        .then(response => response.json())
-//        .then(response => {return response})
-
 export default function Home({ defaultFilter, staticData }) {
   const [session, loading] = useSession()
   const [state, stateDispatch] = useReducer(stateReducer, initialState)
   const [filter, setFilter] = useState(defaultFilter)
   //const [updater, forceUpdate] = useReducer(x => x + 1, 0);
+  //
 
   useEffect(() => {
     stateDispatch({ type: actions.START_LOADING })
@@ -77,14 +69,18 @@ export default function Home({ defaultFilter, staticData }) {
         .then(
           stateDispatch({type: "SET_ID", payload: {id: filter._id}}),
           stateDispatch({type: "SET_NAME", payload: {name: filter.name}}),
-          stateDispatch({ type: actions.FINISH_LOADING })
         )
     } else {
       stateDispatch({type: "SET_ID", payload: {id: ObjectId()}})
       stateDispatch({type: "SET_NAME", payload: {name: "Default filter"}})
-      stateDispatch({ type: actions.FINISH_LOADING })
     }
+
+   const timer = setTimeout(() => {
+      stateDispatch({ type: actions.FINISH_LOADING })
+    }, 500)
+    return () => clearTimeout(timer)
   }, [filter._id, filter.name])
+
 
   const [armourDetails] = staticData.filter(data => data.name === "armourDetails");
 
@@ -97,15 +93,18 @@ export default function Home({ defaultFilter, staticData }) {
         setFilter(response)
         stateDispatch({type: "SET_ID", payload: {id: ObjectId()}})
         stateDispatch({type: "SET_NAME", payload: {name: filter.name}})
-        stateDispatch({ type: actions.FINISH_LOADING })
       })
-
-  }
+     setTimeout(() => {
+        stateDispatch({ type: actions.FINISH_LOADING })
+      }, 500)
+    }
 
   return (
     <Layout session={session} key={state._id}>
     {state.isLoading ? (
-      <p>Loading...</p>
+      <div className="flex w-screen h-screen justify-center items-center">
+        <p>Loading...</p>
+      </div>
     ): (
       <>
       <h1>CURRENT FILTER: {state.name} - {state._id}</h1>

@@ -47,14 +47,14 @@ a:hover {
     color: var(--pink);
 }
 
-input {
+.filternameInput {
     background: var(--background);
     color: var(--green);
     font-size: x-large;
     outline: none;
 }
 
-input:focus {
+.filternameInput:focus {
     border-bottom: 1px solid var(--green);
 }
 

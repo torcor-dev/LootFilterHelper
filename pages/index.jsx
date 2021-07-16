@@ -5,10 +5,9 @@ import InputField from '../components/InputField'
 import { useSession} from 'next-auth/client'
 import { connectToDatabase } from '../utils/mongodb'
 import { useEffect, useReducer, useState } from 'react'
-import { getFilter } from '../utils/apiHelpers'
 import { dispatchWrapper, stateReducer, ObjectId, initialState } from '../utils/appState'
 
-export default function Home({ defaultFilter, staticData }) {
+export default function Home({ defaultFilter, staticData, armourBaseTypes }) {
   const [session, loading] = useSession()
   const [state, dispatch] = useReducer(stateReducer, initialState)
   const [filter, setFilter] = useState(defaultFilter)
@@ -79,11 +78,13 @@ export default function Home({ defaultFilter, staticData }) {
       field="name"
       defaultValue={state.name}
       filterId={state._id}
+      className="filternameInput"
       />
       <ArmorSection 
       filter={filter} 
       data={armourDetails} 
       filterId={state._id}
+      armourBaseTypes={armourBaseTypes}
       />
       <WeaponSection />
       </>
@@ -103,10 +104,71 @@ export async function getStaticProps() {
     await db.collection("static").find({}).toArray()
   ))
 
+  //let armourBaseTypes = await db.collection("itemBases")
+  //  .aggregate([
+  //    { $match: { release_state: "released", itemType: "armour" } },
+  //    { $lookup: {
+  //        from: "mods",
+  //        localField: "implicits",
+  //        foreignField: "identifier",
+  //        as: "implicitsInfo"
+  //      } 
+  //    },
+  //    { $project: {
+  //        _id: 0,
+  //        name: 1,
+  //        item_class: 1,
+  //        properties: 1,
+  //        requirements: 1,
+  //        "implicitsInfo.name": { $ifNull: ["$implicitsInfo.name", "null"] },
+  //        "implicitsInfo.stats": { $ifNull: ["$implicitsInfo.stats", "null"] },
+  //      }
+  //    },
+  //    { $project: { "properties.movement_speed": 0 } },
+  //  ])
+  //  .toArray()
+
+
+  let armourBaseTypes = await db.collection("itemBases")
+    .aggregate([
+      { $match: { release_state: "released", itemType: "armour" } },
+      { $lookup: {
+          from: "mods",
+          localField: "implicits",
+          foreignField: "identifier",
+          as: "implicitsInfo"
+        } 
+      },
+      // FIXME: This lookup produces duplicate values if implicitsInfo has 2 or more ids?
+      { $lookup: {
+          from: "statTranslations",
+          localField: "implicitsInfo.stats.id",
+          foreignField: "ids",
+          as: "implicitsInfoHR"
+        } 
+      },
+      { $project: {
+          _id: 0,
+          name: 1,
+          item_class: 1,
+          properties: 1,
+          requirements: 1,
+          "implicitsInfo.stats": { $ifNull: [ "$implicitsInfo.stats", "null" ] },
+          "implicitsInfo.name": { $ifNull: [ "$implicitsInfo.name", "null" ] },
+          "implicitsInfoHR.English.string": { $ifNull: [ "$implicitsInfoHR.English.string", "null" ]},
+          "implicitsInfoHR.English.format": { $ifNull: [ "$implicitsInfoHR.English.format", "null" ]},
+        }
+      },
+    ]).toArray()
+
+
+  armourBaseTypes = JSON.parse(JSON.stringify(armourBaseTypes))
+
   return {
     props: {
       defaultFilter,
       staticData,
+      armourBaseTypes,
     }
   }
 

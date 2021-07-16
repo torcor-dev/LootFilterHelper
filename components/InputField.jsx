@@ -3,7 +3,7 @@ import {useEffect, useState} from "react";
 import {synchCol} from '../utils/columnUtils'
 import {filterAPIPut} from "../utils/apiHelpers";
 
-function InputField({ label, type="text", field, defaultValue="", filterId }) {
+function InputField({ label, type="text", field, defaultValue="", filterId, className }) {
   const [value, setValue] = useState(defaultValue)
 
   useEffect(() => {
@@ -27,6 +27,7 @@ function InputField({ label, type="text", field, defaultValue="", filterId }) {
         value={value} 
         onBlur={onBlur}
         onChange={onChange}
+        className={className ? className : ""}
       />
     </>
   )

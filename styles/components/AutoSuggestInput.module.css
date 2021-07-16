@@ -1,0 +1,23 @@
+.container {
+  border: 2px red solid;
+  width: 100%
+}
+.containerOpen {}
+.input {
+  color: var(--background);
+  width: 100%;
+  background: var(--foreground);
+}
+.inputOpen {}
+.inputFocused {}
+.suggestionsContainer {}
+.suggestionsContainerOpen {}
+.suggestionsList {}
+.suggestion {}
+.suggestionFirst {}
+.suggestionHighlighted {
+  background: var(--pink);
+}
+.sectionContainer {}
+.sectionContainerFirst {}
+.sectionTitle {}

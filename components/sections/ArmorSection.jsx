@@ -1,10 +1,11 @@
 import ButtonRow from "../ButtonRow";
 import Section from "./Section";
 import TierColumn from "../TierColumn";
+import AutoSuggestInput from "../AutoSuggestInput";
 
 const tiers = ["T1", "T2", "T3", "T4+"]
 
-export default function ArmorSection({ filter, data, filterId }) {
+export default function ArmorSection({ filter, data, filterId, armourBaseTypes }) {
   const {selectionName, details, baseTypes} = data
 
   function renderTierColumns() {
@@ -23,6 +24,10 @@ export default function ArmorSection({ filter, data, filterId }) {
     }) 
   }
 
+  function onItemSelect(item) {
+    console.log(item)
+  }
+
   return (
     <Section name="Armour Bases">
       <ButtonRow 
@@ -35,6 +40,14 @@ export default function ArmorSection({ filter, data, filterId }) {
       <div className="w-screen flex mt-4 gap-1">
         {renderTierColumns()}
       </div>
+      <div className="w-screen flex mt-4 gap-1">
+        <AutoSuggestInput 
+        suggestionData={armourBaseTypes} 
+        onItemSelect={onItemSelect} 
+        />
+        
+      </div>
+
     </Section>
   )
 }

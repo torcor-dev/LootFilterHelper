@@ -39,7 +39,7 @@ function ButtonRow({ details, type, selection, filter,  filterId }) {
   }
 
   return (
-    <div className="w-screen flex justify-center items-center gap-1">
+    <div className="w-screen max-w-full flex justify-center items-center gap-1">
       {renderButtons()}
     </div>
   )

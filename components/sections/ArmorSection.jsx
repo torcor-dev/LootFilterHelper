@@ -24,7 +24,15 @@ export default function ArmorSection({ filter, data, filterId, armourBaseTypes }
     }) 
   }
 
-  function onItemSelect(item) {
+  function onItemSelect({item }) {
+    const { name, itemClass, implicits, properties } = item
+    const implicitInfo = implicits.map(implicit => implicit.fullDescr ).join("\n")
+    const titleCase = (str) => str.replace(/\b\S/g, t => t.toUpperCase());
+
+    const propertyInfo = Object.keys(properties)
+      .map((prop) => `${titleCase(prop.replace(/_/, " "))}: ${properties[prop]}`)
+      .join("\n")
+
     console.log(item)
   }
 
@@ -37,11 +45,12 @@ export default function ArmorSection({ filter, data, filterId, armourBaseTypes }
         filter={filter}
         filterId={filterId}
       />
-      <div className="w-screen flex mt-4 gap-1">
+      <div className="w-screen max-w-full flex mt-4 gap-1">
         {renderTierColumns()}
       </div>
-      <div className="w-screen flex mt-4 gap-1">
+      <div className="w-screen max-w-full flex mt-4 gap-1">
         <AutoSuggestInput 
+        placeholder="Search armour bases."
         suggestionData={armourBaseTypes} 
         onItemSelect={onItemSelect} 
         />

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "fuse.js": "^6.4.6",
     "modern-normalize": "^1.1.0",
     "mongodb": "^3.6.10",
     "next": "11.0.1",

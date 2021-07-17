@@ -12,6 +12,7 @@ export default function Home({ defaultFilter, staticData, armourBaseTypes }) {
   const [state, dispatch] = useReducer(stateReducer, initialState)
   const [filter, setFilter] = useState(defaultFilter)
   //const [updater, forceUpdate] = useReducer(x => x + 1, 0);
+  const [armourDetails] = staticData.filter(data => data.name === "armourDetails");
   const {
     startLoading, 
     setId, 
@@ -46,7 +47,6 @@ export default function Home({ defaultFilter, staticData, armourBaseTypes }) {
   }, [filter._id, filter.name])
 
 
-  const [armourDetails] = staticData.filter(data => data.name === "armourDetails");
 
   function handleClick() {
     startLoading()
@@ -86,7 +86,6 @@ export default function Home({ defaultFilter, staticData, armourBaseTypes }) {
       filterId={state._id}
       armourBaseTypes={armourBaseTypes}
       />
-      <WeaponSection />
       </>
     )}
     </Layout>
@@ -104,31 +103,6 @@ export async function getStaticProps() {
     await db.collection("static").find({}).toArray()
   ))
 
-  //let armourBaseTypes = await db.collection("itemBases")
-  //  .aggregate([
-  //    { $match: { release_state: "released", itemType: "armour" } },
-  //    { $lookup: {
-  //        from: "mods",
-  //        localField: "implicits",
-  //        foreignField: "identifier",
-  //        as: "implicitsInfo"
-  //      } 
-  //    },
-  //    { $project: {
-  //        _id: 0,
-  //        name: 1,
-  //        item_class: 1,
-  //        properties: 1,
-  //        requirements: 1,
-  //        "implicitsInfo.name": { $ifNull: ["$implicitsInfo.name", "null"] },
-  //        "implicitsInfo.stats": { $ifNull: ["$implicitsInfo.stats", "null"] },
-  //      }
-  //    },
-  //    { $project: { "properties.movement_speed": 0 } },
-  //  ])
-  //  .toArray()
-
-
   let armourBaseTypes = await db.collection("itemBases")
     .aggregate([
       { $match: { release_state: "released", itemType: "armour" } },
@@ -140,6 +114,8 @@ export async function getStaticProps() {
         } 
       },
       // FIXME: This lookup produces duplicate values if implicitsInfo has 2 or more ids?
+      // also, need tighter coupling between ids, as they can be out of order as is.
+      // probably need to use lookup pipeline.
       { $lookup: {
           from: "statTranslations",
           localField: "implicitsInfo.stats.id",
@@ -159,10 +135,67 @@ export async function getStaticProps() {
           "implicitsInfoHR.English.format": { $ifNull: [ "$implicitsInfoHR.English.format", "null" ]},
         }
       },
+      { $sort: { name : 1 } },
     ]).toArray()
 
 
   armourBaseTypes = JSON.parse(JSON.stringify(armourBaseTypes))
+
+  function combineImplicitInfo(item) {
+    const titleCase = (str) => str.replace(/\b\S/g, t => t.toUpperCase());
+    const propertiesText = Object.keys(item.properties)
+      .map((prop) => prop === "movement_speed" && item.properties[prop] <= 0 ? "" 
+        : `${titleCase(prop.replace(/_/, " "))}: ${item.properties[prop]}`)
+
+    const itemTemplate = {
+      itemClass: item.item_class,
+      name: item.name,
+      properties: item.properties,
+      propertiesText,
+      requirements: item.requirements,
+      implicits: [],
+    }
+    const implicitTemplate = {
+      id: "",
+      format: "",
+      min: null,
+      max: null,
+      descr: "",
+      fullDescr: "",
+    }
+
+    // Hmmm... Probably very inefficient.
+    for (let i = 0; i < item.implicitsInfo.length; i++) {
+      let stats = item.implicitsInfo[i].stats[0]
+      let hrStats = item.implicitsInfoHR[i].English[0]
+      for (let j = 0; j < stats.length; j++) {
+        const implicit = { 
+          ...implicitTemplate, 
+          id: stats[j].id,
+          min: stats[j].min,
+          max: stats[j].max,
+        }
+        // Not sure where this is an issue...
+        if (hrStats.string[j]) {
+          implicit.format = hrStats.format[j][0][0] && hrStats.format[j][0][0] !== "ignore" ? hrStats.format[j][0][0] : ""
+          implicit.descr = hrStats.string[j][0] !== "ignore" ? hrStats.string[j][0] : ""
+        }
+        itemTemplate.implicits.push(implicit)
+      }
+    }
+
+    itemTemplate.implicits.forEach(implicit => {
+      let descr = implicit.format.replace(/\#/, "")
+      const valueRange = implicit.min === implicit.max ? 
+        implicit.min : `${implicit.min}-${implicit.max}`
+      descr += implicit.descr.replace(/\{.*\}/, valueRange)
+      implicit.fullDescr = descr
+    })
+
+    return itemTemplate
+  }
+
+  armourBaseTypes =  armourBaseTypes.map(base => combineImplicitInfo(base))
 
   return {
     props: {

@@ -1,12 +1,18 @@
 .container {
-  border: 2px red solid;
-  width: 100%
-}
-.containerOpen {}
-.input {
-  color: var(--background);
   width: 100%;
-  background: var(--foreground);
+  border: 2px solid transparent;
+  box-shadow: 0 3px 5px var(--shadow);
+}
+.containerOpen {
+  border: 2px solid transparent;
+  border-bottom: 2px var(--green) solid;
+  
+}
+.input {
+  color: var(--foreground);
+  width: 100%;
+  background: var(--unselected-item-bg);
+  border-bottom: 2px var(--green) solid;
 }
 .inputOpen {}
 .inputFocused {}

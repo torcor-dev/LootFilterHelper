@@ -1,45 +1,30 @@
-import {useState} from 'react';
+import {useMemo, useState} from 'react';
 import Autosuggest from 'react-autosuggest';
+import SuggestionItem from './SuggestionItem';
+import Fuse from 'fuse.js';
 import theme from '../styles/components/AutoSuggestInput.module.css'
 
-function SuggestionItem({ name }) {
-  return (
-    <div className="text-xl text-red-500 cursor-pointer">
-    {name}
-    </div>
-  )
 
-}
-
-
-// Use your imagination to render suggestions.
-const renderSuggestion = suggestion => (
-  <div className="text-xl text-red-500 cursor-pointer">
-    {suggestion.name}
-    {" "}
-    {suggestion.year}
-  </div>
-);
-
-export default function AutoSuggestInput({onItemSelect, suggestionData}) {
+function AutoSuggestInput({onItemSelect, suggestionData, placeholder=""}) {
   const [value, setValue] = useState("")
   const [suggestions, setSuggestions] = useState([])
 
+  const fuse = useMemo(
+    // TODO: Move keys to props.
+    () => new Fuse(suggestionData, {keys: ["name", "implicits.fullDescr", "propertiesText"]})
+    , [suggestionData]
+  )
 
   // Teach Autosuggest how to calculate suggestions for any given input value.
   const getSuggestions = value => {
-    const inputValue = value.trim().toLowerCase();
-    const inputLength = inputValue.length;
-
-    return inputLength === 0 ? [] : suggestionData.filter(item =>
-      item.name.toLowerCase().includes(inputValue)
-    );
+    const result = fuse.search(value.trim())
+    return result.splice(0,10)
   };
 
   // When suggestion is clicked, Autosuggest needs to populate the input
   // based on the clicked suggestion. Teach Autosuggest how to calculate the
   // input value for every given suggestion.
-  const getSuggestionValue = suggestion => suggestion.name;
+  const getSuggestionValue = suggestion => suggestion.item.name;
 
   function onChange(e, { newValue }) {
     setValue(newValue)
@@ -68,7 +53,7 @@ export default function AutoSuggestInput({onItemSelect, suggestionData}) {
   }
 
   function onSuggestionSelected(
-    event, { 
+    e, { 
       suggestion, 
       suggestionValue, 
       suggestionIndex, 
@@ -83,7 +68,7 @@ export default function AutoSuggestInput({onItemSelect, suggestionData}) {
   }
 
   const inputProps = {
-    placeholder: "Type a language.",
+    placeholder: placeholder,
     value: value,
     onChange: onChange,
     onKeyDown: onKeyDown,
@@ -102,3 +87,5 @@ export default function AutoSuggestInput({onItemSelect, suggestionData}) {
     />
   )
 }
+
+export default AutoSuggestInput

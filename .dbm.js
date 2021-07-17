@@ -82,7 +82,7 @@ db.itemBases.find({
 
 
 db.itemBases.aggregate([
-      { $match: { release_state: "released", itemType: "armour" } },
+      { $match: {name: "Archdemon Crown", release_state: "released", itemType: "armour" } },
       { $lookup: {
           from: "mods",
           localField: "implicits",
@@ -114,7 +114,7 @@ db.itemBases.aggregate([
 
 
 db.itemBases.aggregate([
-  { $match: { release_state: "released", itemType: "armour" } },
+  { $match: { name: "Archdemon Crown", release_state: "released", itemType: "armour" } },
   { $lookup: {
     from: "mods",
     let: {implicits: "$implicits"},
@@ -216,6 +216,97 @@ a = {
                         [
                             [
                                 "#"
+                            ]
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+
+b = {
+    "item_class": "Helmet",
+    "name": "Archdemon Crown",
+    "properties": {
+        "armour": 185,
+        "energy_shield": 36
+    },
+    "requirements": {
+        "dexterity": 0,
+        "intelligence": 79,
+        "level": 75,
+        "strength": 79
+    },
+    "implicitsInfo": [
+        {
+            "stats": [
+                [
+                    {
+                        "id": "base_resist_all_elements_%",
+                        "max": -10,
+                        "min": -10
+                    },
+                    {
+                        "id": "local_display_socketed_gems_exposure_on_hit",
+                        "max": 1,
+                        "min": 1
+                    }
+                ]
+            ],
+            "name": [
+                ""
+            ]
+        }
+    ],
+    "implicitsInfoHR": [
+        {
+            "English": [
+                {
+                    "string": [
+                        [
+                            "Socketed Skills apply Fire, Cold and Lightning Exposure on Hit"
+                        ],
+                        [
+                            "{0}% to all Elemental Resistances"
+                        ]
+                    ],
+                    "format": [
+                        [
+                            [
+                                "ignore"
+                            ]
+                        ],
+                        [
+                            [
+                                "+#"
+                            ]
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "English": [
+                {
+                    "string": [
+                        [
+                            "Socketed Skills apply Fire, Cold and Lightning Exposure on Hit"
+                        ],
+                        [
+                            "{0}% to all Elemental Resistances"
+                        ]
+                    ],
+                    "format": [
+                        [
+                            [
+                                "ignore"
+                            ]
+                        ],
+                        [
+                            [
+                                "+#"
                             ]
                         ]
                     ]

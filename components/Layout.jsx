@@ -17,7 +17,7 @@ export default function Layout({ session, children }) {
       <header>
         <Navbar session={session} siteName={siteName} />
       </header>
-      <main>
+      <main className="w-screen max-w-full">
         { children }
       </main>
     </>

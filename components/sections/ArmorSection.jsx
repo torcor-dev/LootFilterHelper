@@ -2,6 +2,7 @@ import ButtonRow from "../ButtonRow";
 import Section from "./Section";
 import TierColumn from "../TierColumn";
 import AutoSuggestInput from "../AutoSuggestInput";
+import SuggestionItem from "../SuggestionItem";
 
 const tiers = ["T1", "T2", "T3", "T4+"]
 
@@ -54,9 +55,7 @@ export default function ArmorSection({ filter, data, filterId, armourBaseTypes }
         suggestionData={armourBaseTypes} 
         onItemSelect={onItemSelect} 
         />
-        
       </div>
-
     </Section>
   )
 }

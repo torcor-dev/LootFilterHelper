@@ -1,0 +1,27 @@
+.itemName {
+  font-size: 1.0rem;
+  color: var(--purple);
+}
+
+.infoText {
+  font-size: 0.5rem;
+  color: var(--comment);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.itemContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  height: 2.6rem;
+}
+
+.itemContainer:hover,
+.itemContainer:focus,
+.itemContainer:target {
+  background: var(--selection);
+}
+

@@ -82,6 +82,29 @@ db.itemBases.find({
 
 
 db.itemBases.aggregate([
+      { $match: {name: "Barbute Helmet", release_state: "released", itemType: "armour" } },
+      { $lookup: {
+          from: "mods",
+          localField: "implicits",
+          foreignField: "identifier",
+          as: "implicitsInfo"
+        } 
+      },
+      { $project: {
+          _id: 1,
+          name: 1,
+          item_class: 1,
+          properties: 1,
+          requirements: 1,
+          "implicitsInfo.translated_stats": { $ifNull: [ "$implicitsInfo.translated_stats", [""] ] },
+          "implicitsInfo.name": { $ifNull: [ "$implicitsInfo.name", [""] ] },
+        }
+      },
+    ])
+
+
+
+db.itemBases.aggregate([
       { $match: {name: "Archdemon Crown", release_state: "released", itemType: "armour" } },
       { $lookup: {
           from: "mods",
@@ -90,49 +113,26 @@ db.itemBases.aggregate([
           as: "implicitsInfo"
         } 
       },
-      { $lookup: {
-          from: "statTranslations",
-          localField: "implicitsInfo.stats.id",
-          foreignField: "ids",
-          as: "implicitsInfoHR"
-        } 
-      },
+//      { $lookup: {
+//          from: "statTranslations",
+//          localField: "implicitsInfo.stats.id",
+//          foreignField: "ids",
+//          as: "implicitsInfoHR"
+//        } 
+//      },
       { $project: {
           _id: 0,
-          name: 1,
-          item_class: 1,
-          properties: 1,
-          requirements: 1,
+          //name: 1,
+          //item_class: 1,
+          //properties: 1,
+          //requirements: 1,
           "implicitsInfo.stats": { $ifNull: [ "$implicitsInfo.stats", "null" ] },
           "implicitsInfo.name": { $ifNull: [ "$implicitsInfo.name", "null" ] },
-          "implicitsInfoHR.English.string": { $ifNull: [ "$implicitsInfoHR.English.string", "null" ]},
-          "implicitsInfoHR.English.format": { $ifNull: [ "$implicitsInfoHR.English.format", "null" ]},
+//          "implicitsInfoHR.English.string": { $ifNull: [ "$implicitsInfoHR.English.string", "null" ]},
+//          "implicitsInfoHR.English.format": { $ifNull: [ "$implicitsInfoHR.English.format", "null" ]},
         }
       },
     ])
-
-
-
-db.itemBases.aggregate([
-  { $match: { name: "Archdemon Crown", release_state: "released", itemType: "armour" } },
-  { $lookup: {
-    from: "mods",
-    let: {implicits: "$implicits"},
-    pipeline: [
-      { $match: { identifier: "$implicits" } }
-    ],
-    as: "implicitsInfo"
-  } },
-  { $project: {
-      _id: 0,
-      name: 1,
-      item_class: 1,
-      properties: 1,
-      implicitsInfo: { $ifNull: [ "$implicitsInfo", "null" ]},
-    }
-  },
-  { $project: { "properties.movement_speed": 0 } },
-])
 
 
 

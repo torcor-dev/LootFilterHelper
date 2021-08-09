@@ -6,7 +6,7 @@ import SuggestionItem from "../SuggestionItem";
 
 const tiers = ["T1", "T2", "T3", "T4+"]
 
-export default function ArmorSection({ filter, data, filterId, armourBaseTypes }) {
+export default function ArmorSection({ filter, data, filterId, armourBaseTypes, baseItemSearchKeys }) {
   const {selectionName, details, baseTypes} = data
 
   function renderTierColumns() {
@@ -26,13 +26,13 @@ export default function ArmorSection({ filter, data, filterId, armourBaseTypes }
   }
 
   function onItemSelect({item }) {
-    const { name, itemClass, implicits, properties } = item
-    const implicitInfo = implicits.map(implicit => implicit.fullDescr ).join("\n")
-    const titleCase = (str) => str.replace(/\b\S/g, t => t.toUpperCase());
+    //const { name, itemClass, implicits, properties } = item
+    //const implicitInfo = implicits.map(implicit => implicit.fullDescr ).join("\n")
+    //const titleCase = (str) => str.replace(/\b\S/g, t => t.toUpperCase());
 
-    const propertyInfo = Object.keys(properties)
-      .map((prop) => `${titleCase(prop.replace(/_/, " "))}: ${properties[prop]}`)
-      .join("\n")
+    //const propertyInfo = Object.keys(properties)
+    //  .map((prop) => `${titleCase(prop.replace(/_/, " "))}: ${properties[prop]}`)
+    //  .join("\n")
 
     console.log(item)
   }
@@ -54,6 +54,7 @@ export default function ArmorSection({ filter, data, filterId, armourBaseTypes }
         placeholder="Search armour bases."
         suggestionData={armourBaseTypes} 
         onItemSelect={onItemSelect} 
+        searchKeys={baseItemSearchKeys}
         />
       </div>
     </Section>

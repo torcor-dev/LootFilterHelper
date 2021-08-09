@@ -7,7 +7,12 @@ import { connectToDatabase } from '../utils/mongodb'
 import { useEffect, useReducer, useState } from 'react'
 import { dispatchWrapper, stateReducer, ObjectId, initialState } from '../utils/appState'
 
-export default function Home({ defaultFilter, staticData, armourBaseTypes }) {
+export default function Home({ 
+  defaultFilter, 
+  staticData, 
+  armourBaseTypes, 
+  baseItemSearchKeys 
+}) {
   const [session, loading] = useSession()
   const [state, dispatch] = useReducer(stateReducer, initialState)
   const [filter, setFilter] = useState(defaultFilter)
@@ -63,6 +68,14 @@ export default function Home({ defaultFilter, staticData, armourBaseTypes }) {
       }, 500)
     }
 
+  function scrollFill() {
+    const fill = []
+    for(let i = 0; i < 4000; i++) {
+      fill.push("Lorem ipsum etc, etc...\n")
+    }
+    return fill
+  }
+
   return (
     <Layout session={session} key={state._id}>
     {state.isLoading ? (
@@ -85,8 +98,11 @@ export default function Home({ defaultFilter, staticData, armourBaseTypes }) {
       data={armourDetails} 
       filterId={state._id}
       armourBaseTypes={armourBaseTypes}
+      baseItemSearchKeys={baseItemSearchKeys}
       />
+      <p>{scrollFill()}</p>
       </>
+
     )}
     </Layout>
   )
@@ -110,42 +126,36 @@ export async function getStaticProps() {
           from: "mods",
           localField: "implicits",
           foreignField: "identifier",
-          as: "implicitsInfo"
-        } 
-      },
-      // FIXME: This lookup produces duplicate values if implicitsInfo has 2 or more ids?
-      // also, need tighter coupling between ids, as they can be out of order as is.
-      // probably need to use lookup pipeline.
-      { $lookup: {
-          from: "statTranslations",
-          localField: "implicitsInfo.stats.id",
-          foreignField: "ids",
-          as: "implicitsInfoHR"
+          as: "implicits_info"
         } 
       },
       { $project: {
-          _id: 0,
+          _id: 1,
           name: 1,
           item_class: 1,
           properties: 1,
           requirements: 1,
-          "implicitsInfo.stats": { $ifNull: [ "$implicitsInfo.stats", "null" ] },
-          "implicitsInfo.name": { $ifNull: [ "$implicitsInfo.name", "null" ] },
-          "implicitsInfoHR.English.string": { $ifNull: [ "$implicitsInfoHR.English.string", "null" ]},
-          "implicitsInfoHR.English.format": { $ifNull: [ "$implicitsInfoHR.English.format", "null" ]},
+          "implicits_info.translated_stats": { $ifNull: [ "$implicits_info.translated_stats", [""] ] },
         }
       },
       { $sort: { name : 1 } },
     ]).toArray()
 
-
-  armourBaseTypes = JSON.parse(JSON.stringify(armourBaseTypes))
-
-  function combineImplicitInfo(item) {
+  function combineItemInfo(item) {
     const titleCase = (str) => str.replace(/\b\S/g, t => t.toUpperCase());
     const propertiesText = Object.keys(item.properties)
       .map((prop) => prop === "movement_speed" && item.properties[prop] <= 0 ? "" 
         : `${titleCase(prop.replace(/_/, " "))}: ${item.properties[prop]}`)
+
+    const [translated_stats] = item.implicits_info
+    let implicits = []
+    let implicitsText = ""
+    if (translated_stats){
+      implicits = translated_stats.translated_stats[0]
+      implicitsText = implicits.join(", ")
+    }
+
+
 
     const itemTemplate = {
       itemClass: item.item_class,
@@ -153,55 +163,23 @@ export async function getStaticProps() {
       properties: item.properties,
       propertiesText,
       requirements: item.requirements,
-      implicits: [],
+      implicits,
+      implicitsText
     }
-    const implicitTemplate = {
-      id: "",
-      format: "",
-      min: null,
-      max: null,
-      descr: "",
-      fullDescr: "",
-    }
-
-    // Hmmm... Probably very inefficient.
-    for (let i = 0; i < item.implicitsInfo.length; i++) {
-      let stats = item.implicitsInfo[i].stats[0]
-      let hrStats = item.implicitsInfoHR[i].English[0]
-      for (let j = 0; j < stats.length; j++) {
-        const implicit = { 
-          ...implicitTemplate, 
-          id: stats[j].id,
-          min: stats[j].min,
-          max: stats[j].max,
-        }
-        // Not sure where this is an issue...
-        if (hrStats.string[j]) {
-          implicit.format = hrStats.format[j][0][0] && hrStats.format[j][0][0] !== "ignore" ? hrStats.format[j][0][0] : ""
-          implicit.descr = hrStats.string[j][0] !== "ignore" ? hrStats.string[j][0] : ""
-        }
-        itemTemplate.implicits.push(implicit)
-      }
-    }
-
-    itemTemplate.implicits.forEach(implicit => {
-      let descr = implicit.format.replace(/\#/, "")
-      const valueRange = implicit.min === implicit.max ? 
-        implicit.min : `${implicit.min}-${implicit.max}`
-      descr += implicit.descr.replace(/\{.*\}/, valueRange)
-      implicit.fullDescr = descr
-    })
-
     return itemTemplate
   }
 
-  armourBaseTypes =  armourBaseTypes.map(base => combineImplicitInfo(base))
+  const baseItemSearchKeys = ["name", "implicitsText", "propertiesText", "itemClass"]
+
+  armourBaseTypes =  armourBaseTypes.map(base => combineItemInfo(base))
+  armourBaseTypes = JSON.parse(JSON.stringify(armourBaseTypes))
 
   return {
     props: {
       defaultFilter,
       staticData,
       armourBaseTypes,
+      baseItemSearchKeys,
     }
   }
 

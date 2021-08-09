@@ -5,13 +5,12 @@ import Fuse from 'fuse.js';
 import theme from '../styles/components/AutoSuggestInput.module.css'
 
 
-function AutoSuggestInput({onItemSelect, suggestionData, placeholder=""}) {
+function AutoSuggestInput({onItemSelect, suggestionData, placeholder="", searchKeys}) {
   const [value, setValue] = useState("")
   const [suggestions, setSuggestions] = useState([])
 
   const fuse = useMemo(
-    // TODO: Move keys to props.
-    () => new Fuse(suggestionData, {keys: ["name", "implicits.fullDescr", "propertiesText"]})
+    () => new Fuse(suggestionData, {keys: searchKeys})
     , [suggestionData]
   )
 
@@ -67,11 +66,17 @@ function AutoSuggestInput({onItemSelect, suggestionData, placeholder=""}) {
     }
   }
 
+  function onFocus(e) {
+    // how to preventDefault the scroll in mobile browsers? Or change how much they scroll.
+    //window.scrollTo({top: e.target.offsetTop})
+  }
+
   const inputProps = {
     placeholder: placeholder,
     value: value,
     onChange: onChange,
     onKeyDown: onKeyDown,
+    onFocus: onFocus,
   }
 
   return (
@@ -84,6 +89,7 @@ function AutoSuggestInput({onItemSelect, suggestionData, placeholder=""}) {
       inputProps={inputProps}
       theme={theme}
       onSuggestionSelected={onSuggestionSelected}
+      focusInputOnSuggestionClick={false}
     />
   )
 }

@@ -11,7 +11,6 @@ export default function Home({
   defaultFilter, 
   staticData, 
   armourBaseTypes, 
-  baseItemSearchKeys 
 }) {
   const [session, loading] = useSession()
   const [state, dispatch] = useReducer(stateReducer, initialState)
@@ -98,9 +97,7 @@ export default function Home({
       data={armourDetails} 
       filterId={state._id}
       armourBaseTypes={armourBaseTypes}
-      baseItemSearchKeys={baseItemSearchKeys}
       />
-      <p>{scrollFill()}</p>
       </>
 
     )}
@@ -158,6 +155,7 @@ export async function getStaticProps() {
 
 
     const itemTemplate = {
+      id: item._id,
       itemClass: item.item_class,
       name: item.name,
       properties: item.properties,
@@ -169,8 +167,6 @@ export async function getStaticProps() {
     return itemTemplate
   }
 
-  const baseItemSearchKeys = ["name", "implicitsText", "propertiesText", "itemClass"]
-
   armourBaseTypes =  armourBaseTypes.map(base => combineItemInfo(base))
   armourBaseTypes = JSON.parse(JSON.stringify(armourBaseTypes))
 
@@ -179,7 +175,6 @@ export async function getStaticProps() {
       defaultFilter,
       staticData,
       armourBaseTypes,
-      baseItemSearchKeys,
     }
   }
 

@@ -10,6 +10,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
 .itemContainer {
   display: flex;
   flex-direction: row;
@@ -25,3 +26,46 @@
   background: var(--selection);
 }
 
+.exceptionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: center;
+  width: 100%;
+}
+
+.exceptionItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 95%;
+  cursor: pointer;
+  height: 2rem;
+  border: 1px solid transparent;
+  box-shadow: 0 3px 5px var(--shadow);
+}
+
+.exceptionItem:hover {
+  color: var(--green);
+  fill: var(--green);
+  border: 1px solid var(--green);
+  cursor: pointer;
+}
+
+.rareItemColors {
+  background: var(--rare-item-bg);
+  color: var(--background);
+  fill: var(--background);
+}
+
+.magicItemColors {
+  background: var(--magic-item-bg);
+  color: var(--background);
+  fill: var(--background);
+}
+
+.whiteItemColors {
+  background: var(--normal-item-bg);
+  color: var(--background);
+  fill: var(--background);
+}

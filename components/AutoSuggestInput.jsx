@@ -64,6 +64,7 @@ function AutoSuggestInput({onItemSelect, suggestionData, placeholder="", searchK
     if (method !== "enter") {
       onItemSelect(suggestion)
     }
+    setValue("")
   }
 
   function onFocus(e) {

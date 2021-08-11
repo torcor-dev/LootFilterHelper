@@ -8,19 +8,19 @@ export const rarityChoices = {
   WHITE: 2,
 }
 
-function ExceptionsList({ listItems, onClick, removeItemCallback }) {
+function ExceptionList({ listItems, onClick, removeItemCallback }) {
   return (
     <>
       <ul className={styles.exceptionContainer}>
         {listItems.map((item, index) => { 
-          return <ExceptionsListItem key={index} item={item} onClick={onClick}/>
+          return <ExceptionListItem key={index} item={item} onClick={onClick}/>
         })}
       </ul>
     </>
   )
 }
 
-function ExceptionsListItem({ item, onClick }) {
+function ExceptionListItem({ item, onClick }) {
   function itemStyling(item) {
     let rarityStyle = ""
     switch (item.rarity) {
@@ -51,9 +51,9 @@ function ExceptionsListItem({ item, onClick }) {
   )
 }
 
-ExceptionsList.propTypes = {
+ExceptionList.propTypes = {
   listItems: PropTypes.array,
   removeItemCallback: PropTypes.func,
 }
 
-export default ExceptionsList
+export default ExceptionList

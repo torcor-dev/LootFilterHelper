@@ -1,7 +1,7 @@
 import ButtonRow from "../ButtonRow";
 import Section from "./Section";
 import TierColumn from "../TierColumn";
-import ExceptionsContainer from "../ExceptionsContainer";
+import ExceptionContainer from "../ExceptionContainer";
 
 const tiers = ["T1", "T2", "T3", "T4+"]
 
@@ -37,7 +37,7 @@ export default function ArmorSection({ filter, data, filterId, armourBaseTypes }
         {renderTierColumns()}
       </div>
       <div className="w-screen max-w-full flex flex-col mt-4 gap-1">
-        <ExceptionsContainer
+        <ExceptionContainer
           suggestionData={armourBaseTypes}
           section="armour"
           selection={selectionName}

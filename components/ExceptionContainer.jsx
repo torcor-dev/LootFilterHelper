@@ -1,13 +1,13 @@
 import AutoSuggestInput from "./AutoSuggestInput";
-import ExceptionsList from "./ExceptionsList"; 
+import ExceptionList from "./ExceptionList"; 
 import PropTypes from 'prop-types'
 import {useState} from "react";
-import { rarityChoices } from "./ExceptionsList";
+import { rarityChoices } from "./ExceptionList";
 import { cycleThroughChoices } from "../utils/buttonUtils";
 
 const baseItemSearchKeys = ["name", "implicitsText", "propertiesText", "itemClass"]
 
-function ExceptionsContainer({
+function ExceptionContainer({
   suggestionData, 
   section,
   selection,
@@ -55,7 +55,7 @@ function ExceptionsContainer({
         searchKeys={baseItemSearchKeys}
         />
       </div>
-      <ExceptionsList 
+      <ExceptionList 
       listItems={listItems}
       onClick={onClick}
       removeItemCallback={removeItem}
@@ -64,7 +64,7 @@ function ExceptionsContainer({
   )
 }
 
-ExceptionsContainer.propTypes = {
+ExceptionContainer.propTypes = {
   suggestionData: PropTypes.array,
   section: PropTypes.string,
   selection: PropTypes.string,
@@ -72,4 +72,4 @@ ExceptionsContainer.propTypes = {
   filterId: PropTypes.string,
 }
 
-export default ExceptionsContainer
+export default ExceptionContainer

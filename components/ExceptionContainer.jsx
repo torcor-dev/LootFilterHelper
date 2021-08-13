@@ -9,6 +9,7 @@ const baseItemSearchKeys = ["name", "implicitsText", "propertiesText", "itemClas
 
 function ExceptionContainer({
   suggestionData, 
+  defaultIlvl,
   section,
   selection,
   filter,
@@ -36,12 +37,18 @@ function ExceptionContainer({
 
   function onClick(item) {
     const listCopy = listItems.slice()
-    listCopy[listCopy.indexOf(item)].rarity = cycleThroughChoices(listCopy[listCopy.indexOf(item)], "rarity", rarityChoices)
+    listCopy[listCopy.indexOf(item)].rarity = 
+      cycleThroughChoices(
+        listCopy[listCopy.indexOf(item)], 
+        "rarity", 
+        rarityChoices
+      )
     setListItems(listCopy)
   }
 
   function removeItem(item) {
-    return
+    const listCopy = listItems.filter(i => i.name !== item.name)
+    setListItems(listCopy)
   }
 
   return(
@@ -58,7 +65,11 @@ function ExceptionContainer({
       <ExceptionList 
       listItems={listItems}
       onClick={onClick}
+      defaultIlvl={defaultIlvl}
       removeItemCallback={removeItem}
+      selection={selection}
+      filter={filter}
+      filterId={filterId}
       />
     </div>
   )

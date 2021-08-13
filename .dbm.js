@@ -7,6 +7,22 @@ db.filter.aggregate([
   { $sort: {_id: -1} }
 ])
 
+db.filter.updateOne({_id: "60e81740b565781aa4fdfd80", "armourSelection.exceptionSelection.itemId": null}, )
+
+db.filter.findOne({_id: ObjectId("60e81740b565781aa4fdfd80")}, {"armourSelection.exceptionSelection": 1})
+
+db.filter.findOne({_id: ObjectId("60e81740b565781aa4fdfd80"), "armourSelection.exceptionSelection.name": "Crusader Boots"})
+
+db.filter.updateOne(
+  {_id: ObjectId("60e81740b565781aa4fdfd80")}, 
+  {$set: 
+    {"armourSelection.exceptionSelection.$[updateItem].itemId": 1}
+  }, {
+    "arrayFilters": [
+      {"updateItem.name": "Crusader Boots"}
+    ]
+  }
+)
 
 db.static.insertOne({
   name: "armourDetails",

@@ -90,7 +90,7 @@ export default function Home({
       field="name"
       defaultValue={state.name}
       filterId={state._id}
-      className="filternameInput"
+      className="input nameInput"
       />
       <ArmorSection 
       filter={filter} 

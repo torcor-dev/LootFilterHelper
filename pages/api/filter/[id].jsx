@@ -5,10 +5,12 @@ async function handlePut(query, body) {
   /**@type {MongoClient} */
   const { db } = await connectToDatabase()
   const { id } = query
-  //console.log(query)
+  const { value, options } = body
+  console.log(id)
+  console.log(body.options)
   
   const filterId = { _id: ObjectId(id) }
-  const updateElement = { $set: body }
+  const updateElement = { $set: value }
 
   const filterExists = await db.collection("filter").findOne(filterId)
 
@@ -21,11 +23,10 @@ async function handlePut(query, body) {
     } catch (e) {
       console.log("Tried to insert even though it already exists. Exists = ", !filterExists)
     }
-
   }
 
   try {
-    const response = await db.collection("filter").updateOne(filterId, updateElement)
+    const response = await db.collection("filter").updateOne(filterId, updateElement, options)
     return response
   } catch(e) {
     console.log(e)

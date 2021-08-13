@@ -1,11 +1,14 @@
-export function filterAPIPut(key, value, filterId) {
+export function filterAPIPut(key, value, filterId, options=null) {
   fetch(`/api/filter/${filterId}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      [key]: value
+      value: {
+        [key]: value
+      },
+      options,
     }),
   })
     .then(response => response.json())

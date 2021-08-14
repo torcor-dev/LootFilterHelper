@@ -1,51 +1,181 @@
 import Layout from '../components/Layout'
 import ArmorSection from '../components/sections/ArmorSection'
 import WeaponSection from '../components/sections/WeaponSection'
-import Link from 'next/link'
-import {signIn, signOut, useSession} from 'next-auth/client'
+import InputField from '../components/InputField'
+import { useSession} from 'next-auth/client'
 import { connectToDatabase } from '../utils/mongodb'
-import {useState, useReducer} from 'react'
+import { useEffect, useReducer, useState } from 'react'
+import { dispatchWrapper, stateReducer, ObjectId, initialState } from '../utils/appState'
 
-export default function Home({ defaultFilter}) {
+export default function Home({ 
+  defaultFilter, 
+  staticData, 
+  armourBaseTypes, 
+}) {
   const [session, loading] = useSession()
+  const [state, dispatch] = useReducer(stateReducer, initialState)
   const [filter, setFilter] = useState(defaultFilter)
-  const [ignored, forceUpdate] = useReducer(x => x + 1, 0);
+  //const [updater, forceUpdate] = useReducer(x => x + 1, 0);
+  const [armourDetails] = staticData.filter(data => data.name === "armourDetails");
+  const {
+    startLoading, 
+    setId, 
+    setName, 
+    createId, 
+    finishLoading
+  } = dispatchWrapper(dispatch)
 
-  if (session) {
-    // Load user specific filter.
-    // filter = foo()
-  }
+  useEffect(() => {
+    startLoading()
+    const existingFilter = localStorage.getItem("curFilter")
+    if (existingFilter) {
+      fetch(`api/filter/${existingFilter}`, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        }
+      })
+        .then(response => response.json())
+        .then(setFilter)
+        .then(setId(filter._id), setName(filter.name),)
+        .catch(e => console.log(e))
+    } else {
+      createId()
+      setName("Default Filter")
+    }
 
-  function handleFilterUpdate(newFilter) {
-    setFilter(newFilter)
-  }
+   const timer = setTimeout(() => {
+      finishLoading()
+    }, 500)
+    return () => clearTimeout(timer)
+  }, [filter._id, filter.name])
+
+
 
   function handleClick() {
-    fetch("api/filter/defaults")
+    startLoading()
+    fetch("api/filter/defaults/defaults")
       .then(response => response.json())
-      .then(response => setFilter(response))
-      .then(forceUpdate)
+      .then(response => {
+        localStorage.removeItem("curFilter")
+        setFilter(response)
+        createId()
+        setName("Default Filter")
+      })
+     setTimeout(() => {
+        finishLoading()
+      }, 500)
+    }
+
+  function scrollFill() {
+    const fill = []
+    for(let i = 0; i < 4000; i++) {
+      fill.push("Lorem ipsum etc, etc...\n")
+    }
+    return fill
   }
 
   return (
-    <Layout session={session} key={ignored}>
-      <h1>CURRENT FILTER: {defaultFilter._id === filter._id ? "Default" : filter._id}</h1>
+    <Layout session={session} key={state._id}>
+    {state.isLoading ? (
+      <div className="flex w-screen h-screen justify-center items-center">
+        <p>Loading...</p>
+      </div>
+    ): (
+      <>
+      <h1>CURRENT FILTER: {state.name} - {state._id}</h1>
       <button onClick={handleClick}>Reset filter</button>
-      <ArmorSection filter={filter} key={ignored} updateFilter={handleFilterUpdate} />
-      <WeaponSection />
+      <br />
+      <InputField 
+      field="name"
+      defaultValue={state.name}
+      filterId={state._id}
+      className="input nameInput"
+      />
+      <ArmorSection 
+      filter={filter} 
+      data={armourDetails} 
+      filterId={state._id}
+      armourBaseTypes={armourBaseTypes}
+      />
+      <div className="pb-56"></div>
+      </>
+
+    )}
     </Layout>
   )
 }
 
-export async function getStaticProps(context) {
+export async function getStaticProps() {
   const { db } = await connectToDatabase()
 
-  let defaultFilter = await db.collection("filter").findOne({})
-  defaultFilter = JSON.parse(JSON.stringify(defaultFilter))
+  const defaultFilter = JSON.parse(JSON.stringify(
+    await db.collection("filter").findOne({})
+  ))
+
+  const staticData = JSON.parse(JSON.stringify(
+    await db.collection("static").find({}).toArray()
+  ))
+
+  let armourBaseTypes = await db.collection("itemBases")
+    .aggregate([
+      { $match: { release_state: "released", itemType: "armour" } },
+      { $lookup: {
+          from: "mods",
+          localField: "implicits",
+          foreignField: "identifier",
+          as: "implicits_info"
+        } 
+      },
+      { $project: {
+          _id: 1,
+          name: 1,
+          item_class: 1,
+          properties: 1,
+          requirements: 1,
+          "implicits_info.translated_stats": { $ifNull: [ "$implicits_info.translated_stats", [""] ] },
+        }
+      },
+      { $sort: { name : 1 } },
+    ]).toArray()
+
+  function combineItemInfo(item) {
+    const titleCase = (str) => str.replace(/\b\S/g, t => t.toUpperCase());
+    const propertiesText = Object.keys(item.properties)
+      .map((prop) => prop === "movement_speed" && item.properties[prop] <= 0 ? "" 
+        : `${titleCase(prop.replace(/_/, " "))}: ${item.properties[prop]}`)
+
+    const [translated_stats] = item.implicits_info
+    let implicits = []
+    let implicitsText = ""
+    if (translated_stats){
+      implicits = translated_stats.translated_stats[0]
+      implicitsText = implicits.join(", ")
+    }
+
+
+
+    const itemTemplate = {
+      id: item._id,
+      itemClass: item.item_class,
+      name: item.name,
+      properties: item.properties,
+      propertiesText,
+      requirements: item.requirements,
+      implicits,
+      implicitsText
+    }
+    return itemTemplate
+  }
+
+  armourBaseTypes =  armourBaseTypes.map(base => combineItemInfo(base))
+  armourBaseTypes = JSON.parse(JSON.stringify(armourBaseTypes))
 
   return {
     props: {
       defaultFilter,
+      staticData,
+      armourBaseTypes,
     }
   }
 

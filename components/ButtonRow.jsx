@@ -1,5 +1,5 @@
 import ToggleButton, {buttonChoices} from "./ToggleButton";
-import { cycleThroughChoices } from "./sections/ArmorSection";
+import { cycleThroughChoices } from "../utils/buttonUtils";
 import PropTypes from 'prop-types'
 import {useState} from "react";
 import { filterAPIPut } from "../utils/apiHelpers";
@@ -9,66 +9,48 @@ const rowChoices = {
   SELECTED: buttonChoices.BASE_SELECTED,
 }
 
-function ButtonRow({ details, type, selection, selectionDoc, filterId, filter, setFilter }) {
-  const initMap = new Map()
-  details.forEach((_, key) => {
-    initMap.set(key, selection[key])
-  })
-
-  const [toggleState, setToggleState] = useState(initMap)
+function ButtonRow({ details, type, selection, filter,  filterId }) {
+  const [toggleState, setToggleState] = useState(filter[selection][type])
 
   function handleClick(name) {
-    const mapCopy = new Map(toggleState)
-    mapCopy.set(name, cycleThroughChoices(mapCopy, name, rowChoices))
-    setToggleState(mapCopy)
-    const bases = Object.fromEntries(mapCopy)
-    const updateDoc = `${selectionDoc}.${type}`
-    //filterAPIPut(filterId, updateDoc, bases).then((id) => {
-    //  const f = {
-    //    ...filter
-    //  }
-    //  if (id) {
-    //    f._id = id
-    //    setFilter(f)
-    //  }
-    //})
-    filterAPIPut(filterId, updateDoc, bases, filter, setFilter)
+    const stateCopy = {...toggleState}
+    stateCopy[name] = cycleThroughChoices(stateCopy, name, rowChoices)
+    setToggleState(stateCopy)
+    const key = `${selection}.${type}`
+    filterAPIPut(key, stateCopy, filterId)
   }
 
   function renderButtons() {
-    const buttons = []
-    toggleState.forEach((value, key) => {
-      buttons.push(
+    return Object.keys(toggleState).map(base => {
+      const [curBase] = details.filter(d => d.name === base)
+      return (
         <ToggleButton 
-          name={key} 
-          fullName={details.get(key).fullName}
-          currentChoice={value}
+          name={curBase.name} 
+          fullName={curBase.fullName}
+          currentChoice={toggleState[base]}
           choices={rowChoices}
           type={type}
-          icon={details.get(key).icon}
-          key={`${key}_button`}
+          icon={curBase.icon}
+          key={`${base}_button`}
           onClick={handleClick}
         />
       )
     })
-    return buttons
   }
 
   return (
-    <div className="w-screen flex justify-center items-center gap-1">
+    <div className="w-screen max-w-full flex justify-center items-center gap-1">
       {renderButtons()}
     </div>
   )
 }
 
 ButtonRow.propTypes = {
-  details: PropTypes.instanceOf(Map),
+  details: PropTypes.array,
   type: PropTypes.string,
-  selection: PropTypes.object,
-  selectionDoc: PropTypes.string,
-  filterId: PropTypes.string,
+  selection: PropTypes.string,
   filter: PropTypes.object,
-  setFilter: PropTypes.func,
+  filterId: PropTypes.string,
 
 }
 

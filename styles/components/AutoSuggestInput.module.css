@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  border: 2px solid transparent;
+  box-shadow: 0 3px 5px var(--shadow);
+}
+.containerOpen {
+  border: 2px solid transparent;
+  border-bottom: 2px var(--green) solid;
+  
+}
+.input {
+  color: var(--foreground);
+  width: 100%;
+  background: var(--unselected-item-bg);
+  border-bottom: 2px var(--green) solid;
+  padding-left: 0.25rem;
+}
+.inputOpen {}
+.inputFocused {}
+.suggestionsContainer {}
+.suggestionsContainerOpen {}
+.suggestionsList{
+}
+.suggestion:nth-child(odd) {
+  background: var(--background-dark);
+}
+.suggestionHighlighted {
+  background: var(--selection);
+}
+.suggestionHighlighted:nth-child(odd) {
+  background: var(--selection);
+}
+.suggestionFirst { 
+  font-size: bold;
+}
+.sectionContainer {}
+.sectionContainerFirst {}
+.sectionTitle {}

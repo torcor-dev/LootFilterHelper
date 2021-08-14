@@ -43,11 +43,13 @@ function basesStyling(choice) {
 function ToggleButton({ 
   name, 
   fullName, 
+  title=null,
   currentChoice, 
   icon, 
   onClick, 
   choices,
   type,
+  styleOverrides="",
 }) {
   if (!fullName) {
     fullName = name
@@ -66,8 +68,8 @@ function ToggleButton({
 
   return (
     <button 
-      className={buttonStyling(currentChoice)} 
-      title={fullName}
+      className={`${buttonStyling(currentChoice)} ${styleOverrides}`}
+      title={title ? title : fullName}
       onClick={handleClick}
     >
       {icon ? <Icon type={icon} /> : fullName}

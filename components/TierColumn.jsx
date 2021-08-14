@@ -1,5 +1,5 @@
 import ToggleButton, {buttonChoices} from "./ToggleButton";
-import { cycleThroughChoices, cycleThroughChoicesByValue } from "./sections/ArmorSection";
+import { cycleThroughChoices, cycleThroughChoicesByValue } from "../utils/buttonUtils";
 import PropTypes from 'prop-types'
 import {useState} from "react";
 import {synchCol} from '../utils/columnUtils'
@@ -16,8 +16,8 @@ const tierChoices = {
   RARE: 1,
 }
 
-function TierColumn({ name, heading, tiers, selection, selectionDoc, filterId, filter, setFilter }) {
-  const [columnValues, setColumnValues] = useState(selection)
+function TierColumn({ name, heading, tiers, selection, filter, filterId }) {
+  const [columnValues, setColumnValues] = useState(filter[selection][name])
 
   function handleClick(tier, choices) {
     const changedIdx = tiers.findIndex(i => i === tier)
@@ -26,8 +26,8 @@ function TierColumn({ name, heading, tiers, selection, selectionDoc, filterId, f
     const newColumn = synchCol(columnValues, prev)
     setColumnValues(newColumn)
 
-    const updateDoc = `${selectionDoc}.${name}`
-    filterAPIPut(filterId, updateDoc, newColumn, filter, setFilter)
+    const key = `${selection}.${name}`
+    filterAPIPut(key, newColumn, filterId)
   }
 
   function renderButtons() {
@@ -60,8 +60,8 @@ TierColumn.propTypes = {
   name: PropTypes.string,
   heading: PropTypes.string,
   tiers: PropTypes.array,
-  selection: PropTypes.array,
-  selectionDoc: PropTypes.string,
+  selection: PropTypes.string,
+  filter: PropTypes.object,
   filterId: PropTypes.string,
 }
 

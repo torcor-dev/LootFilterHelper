@@ -98,6 +98,7 @@ export default function Home({
       filterId={state._id}
       armourBaseTypes={armourBaseTypes}
       />
+      <div className="pb-56"></div>
       </>
 
     )}

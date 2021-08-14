@@ -2,15 +2,21 @@ import { connectToDatabase } from '../../../utils/mongodb'
 import { ObjectId } from 'mongodb';
 
 async function handlePut(query, body) {
-  /**@type {MongoClient} */
   const { db } = await connectToDatabase()
   const { id } = query
   const { value, options } = body
   console.log(id)
-  console.log(body.options)
+  console.log(body)
+  let operator = "$set"
+  let conditions = null
+
+  if (options) {
+    operator = options.operator ? options.operator : "$set" 
+    conditions = options.conditions ? options.conditions : null
+  }
   
   const filterId = { _id: ObjectId(id) }
-  const updateElement = { $set: value }
+  const updateElement = { [operator]: value }
 
   const filterExists = await db.collection("filter").findOne(filterId)
 
@@ -26,7 +32,7 @@ async function handlePut(query, body) {
   }
 
   try {
-    const response = await db.collection("filter").updateOne(filterId, updateElement, options)
+    const response = await db.collection("filter").updateOne(filterId, updateElement, conditions)
     return response
   } catch(e) {
     console.log(e)

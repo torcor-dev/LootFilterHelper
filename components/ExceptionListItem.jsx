@@ -9,37 +9,6 @@ export const rarityChoices = {
   WHITE: 2,
 }
 
-function ExceptionList({ 
-  listItems, 
-  defaultIlvl,
-  onClick, 
-  removeItemCallback, 
-  selection,
-  filter,
-  filterId,
-}) {
-  return (
-    <>
-      <ul className={styles.exceptionContainer}>
-        {listItems.map((item, index) => { 
-          return (
-            <ExceptionListItem 
-              key={index} 
-              item={item} 
-              defaultIlvl={defaultIlvl}
-              onClick={onClick} 
-              removeCallback={removeItemCallback}
-              selection={selection}
-              filter={filter}
-              filterId={filterId}
-            />
-          )
-        })}
-      </ul>
-    </>
-  )
-}
-
 function ExceptionListItem({ 
   item, 
   defaultIlvl,
@@ -87,11 +56,15 @@ function ExceptionListItem({
               label="ilvl:" 
               field={`${selection}.exceptionSelection.$[updateItem].ilvl`}
               filterId={filterId}
-              apiOptions={{ 
-                arrayFilters: [
-                  {"updateItem.name": item.name}
-                ]
-              }}
+              apiOptions={
+                { 
+                  conditions: {
+                    arrayFilters: [
+                      {"updateItem.name": item.name}
+                    ]
+                  }
+                }
+              }
               type="number"
               title="The minimum item level for the item to appear."
               className={styles.ilvlInput} 
@@ -107,9 +80,14 @@ function ExceptionListItem({
   )
 }
 
-ExceptionList.propTypes = {
-  listItems: PropTypes.array,
-  removeItemCallback: PropTypes.func,
+ExceptionListItem.propTypes = {
+  item: PropTypes.object,
+  defaultIlvl: PropTypes.number,
+  onClick: PropTypes.func, 
+  removeCallback: PropTypes.func,
+  selection: PropTypes.string,
+  filter: PropTypes.object,
+  filterId: PropTypes.string,
 }
 
-export default ExceptionList
+export default ExceptionListItem

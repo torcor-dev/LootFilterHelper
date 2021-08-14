@@ -37,6 +37,7 @@
 }
 
 .buttonBaseSelected { 
+  color: var(--green);
   fill: var(--green);
   border: 1px solid var(--unselected-item-bg);
   background: var(--unselected-item-bg);

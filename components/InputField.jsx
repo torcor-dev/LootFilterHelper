@@ -18,6 +18,7 @@ function InputField({
   min=0,
   max=100,
 }) {
+  const [previousValue, setPreviousValue] = useState(defaultValue)
   const [value, setValue] = useState(defaultValue)
   const prefix = label ? label : "input_"
   const [id] = useState(() => uniqueId(prefix))
@@ -54,9 +55,11 @@ function InputField({
     }
     if (setExternalState) {
       setExternalState(v)
-      console.log(v)
     }
-    filterAPIPut(field, v, filterId, apiOptions)
+    if (v !== previousValue) {
+      filterAPIPut(field, v, filterId, apiOptions)
+      setPreviousValue(v)
+    }
   }
 
   function onFocus(e) {
@@ -72,7 +75,8 @@ function InputField({
           title={title}
         >
           {label}
-        </label>}
+        </label>
+      }
       <input 
         type={type} 
         title={title}
@@ -89,6 +93,7 @@ function InputField({
 
 InputField.propTypes = {
   label: PropTypes.string,
+  title: PropTypes.string,
   type: PropTypes.string,
   field: PropTypes.string,
   defaultValue: PropTypes.any,
@@ -96,6 +101,9 @@ InputField.propTypes = {
   className: PropTypes.string,
   labelClassName: PropTypes.string,
   apiOptions: PropTypes.object,
+  setExternalState: PropTypes.func,
+  min: PropTypes.number,
+  max: PropTypes.number,
 }
 
 export default InputField

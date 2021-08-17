@@ -52,7 +52,7 @@ function ExceptionListItem({
         <div className="flex flex-row items-center">
           <div className="flex flex-row">
             <InputField 
-              defaultValue={item.ilvl ? item.ilvl : defaultIlvl}
+              defaultValue={item.itemlevel ? item.itemlevel : defaultIlvl}
               label="ilvl:" 
               field={`${selection}.exceptionSelection.$[updateItem].ilvl`}
               filterId={filterId}

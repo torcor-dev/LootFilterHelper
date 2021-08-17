@@ -11,12 +11,14 @@ export default function Home({
   defaultFilter, 
   staticData, 
   armourBaseTypes, 
+  weaponBaseTypes,
 }) {
   const [session, loading] = useSession()
   const [state, dispatch] = useReducer(stateReducer, initialState)
   const [filter, setFilter] = useState(defaultFilter)
   //const [updater, forceUpdate] = useReducer(x => x + 1, 0);
   const [armourDetails] = staticData.filter(data => data.name === "armourDetails");
+  const [weaponDetails] = staticData.filter(data => data.name === "weaponDetails");
   const {
     startLoading, 
     setId, 
@@ -92,6 +94,12 @@ export default function Home({
       filterId={state._id}
       className="input nameInput"
       />
+      <WeaponSection 
+      filter={filter} 
+      data={weaponDetails} 
+      filterId={state._id}
+      weaponBaseTypes={weaponBaseTypes}
+      />
       <ArmorSection 
       filter={filter} 
       data={armourDetails} 
@@ -117,9 +125,10 @@ export async function getStaticProps() {
     await db.collection("static").find({}).toArray()
   ))
 
-  let armourBaseTypes = await db.collection("itemBases")
+  async function getItemBases(type) {
+    return await db.collection("itemBases")
     .aggregate([
-      { $match: { release_state: "released", itemType: "armour" } },
+      { $match: { release_state: "released", itemType: type } },
       { $lookup: {
           from: "mods",
           localField: "implicits",
@@ -138,6 +147,10 @@ export async function getStaticProps() {
       },
       { $sort: { name : 1 } },
     ]).toArray()
+  }
+
+  let armourBaseTypes = await getItemBases("armour")
+  let weaponBaseTypes = await getItemBases("weapon")
 
   function combineItemInfo(item) {
     const titleCase = (str) => str.replace(/\b\S/g, t => t.toUpperCase());
@@ -171,11 +184,15 @@ export async function getStaticProps() {
   armourBaseTypes =  armourBaseTypes.map(base => combineItemInfo(base))
   armourBaseTypes = JSON.parse(JSON.stringify(armourBaseTypes))
 
+  weaponBaseTypes =  weaponBaseTypes.map(base => combineItemInfo(base))
+  weaponBaseTypes = JSON.parse(JSON.stringify(weaponBaseTypes))
+
   return {
     props: {
       defaultFilter,
       staticData,
       armourBaseTypes,
+      weaponBaseTypes,
     }
   }
 

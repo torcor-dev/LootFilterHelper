@@ -57,8 +57,9 @@ function ToggleButton({
 
   function buttonStyling(choice) {
     switch (type) {
-        case "tier": return tierStyling(choice)
-        case "bases": return basesStyling(choice)
+      case "tier": return tierStyling(choice)
+      case "bases": return basesStyling(choice)
+      default: return basesStyling(choice)
     }
   }
 

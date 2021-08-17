@@ -7,6 +7,253 @@ db.filter.aggregate([
   { $sort: {_id: -1} }
 ])
 
+db.static.insertOne(
+    {
+        "name": "weaponDetails",
+        "selectionName": "weaponSelection",
+        "details": [
+            {
+                "melee": [
+                    {
+                        "name": "axes",
+                        "fullName": "Axes",
+                        "icon": "axe"
+                    },
+                    {
+                        "name": "swords",
+                        "fullName": "Swords",
+                        "icon": "sword"
+                    },
+                    {
+                        "name": "maces",
+                        "fullName": "Maces",
+                        "icon": "mace"
+                    },
+                    {
+                        "name": "warstaves",
+                        "fullName": "Warstaves",
+                        "icon": "warstaff"
+                    },
+                    {
+                        "name": "claws",
+                        "fullName": "Claws",
+                        "icon": "claw"
+                    },
+                    {
+                        "name": "daggers",
+                        "fullName": "Daggers",
+                        "icon": "dagger"
+                    }
+
+                ]
+            },
+            {
+                "ranged": [
+                    {
+                        "name": "wands",
+                        "fullName": "Wands",
+                        "icon": "wand"
+                    },
+                    {
+                        "name": "bows",
+                        "fullName": "Bows",
+                        "icon": "bow"
+                    },
+                    {
+                        "name": "quivers",
+                        "fullName": "Quivers",
+                        "icon": "quiver"
+                    }
+                ]
+            },
+            {
+                "caster": [
+                    {
+                        "name": "wands",
+                        "fullName": "Wands",
+                        "icon": "wand"
+                    },
+                    {
+                        "name": "scepters",
+                        "fullName": "Scepters",
+                        "icon": "scepter"
+                    },
+                    {
+                        "name": "runeDaggers",
+                        "fullName": "Rune Daggers",
+                        "icon": "runeDagger"
+                    },
+                    {
+                        "name": "staves",
+                        "fullName": "Staves",
+                        "icon": "stave"
+                    }
+                ]
+            }
+        ],
+        "baseTypes": {
+            "melee": {
+                "name": "Melee",
+                "heading": "Melee"
+            },
+            "ranged": {
+                "name": "Ranged",
+                "heading": "Ranged"
+            },
+            "caster": {
+                "name": "Caster",
+                "heading": "Caster"
+            }
+        },
+        "atlasBaseTypes": [
+            "Convoking Wand",
+            "Artillery Quiver"
+        ]
+    }
+)
+
+db.static.updateOne(
+  {name: "weaponDetails"},
+  {$set: {
+        "details": [
+            {
+                "melee": [
+                    {
+                        "name": "axe",
+                        "fullName": "Axes",
+                        "icon": "axe"
+                    },
+                    {
+                        "name": "sword",
+                        "fullName": "Swords",
+                        "icon": "sword"
+                    },
+                    {
+                        "name": "mace",
+                        "fullName": "Maces",
+                        "icon": "mace"
+                    },
+                    {
+                        "name": "warstaff",
+                        "fullName": "Warstaves",
+                        "icon": "warstaff"
+                    },
+                    {
+                        "name": "claw",
+                        "fullName": "Claws",
+                        "icon": "claw"
+                    },
+                    {
+                        "name": "dagger",
+                        "fullName": "Daggers",
+                        "icon": "dagger"
+                    }
+
+                ]
+            },
+            {
+                "ranged": [
+                    {
+                        "name": "wand",
+                        "fullName": "Wands",
+                        "icon": "wand"
+                    },
+                    {
+                        "name": "bow",
+                        "fullName": "Bows",
+                        "icon": "bow"
+                    },
+                    {
+                        "name": "quiver",
+                        "fullName": "Quivers",
+                        "icon": "quiver"
+                    }
+                ]
+            },
+            {
+                "caster": [
+                    {
+                        "name": "wand",
+                        "fullName": "Wands",
+                        "icon": "wand"
+                    },
+                    {
+                        "name": "scepter",
+                        "fullName": "Scepters",
+                        "icon": "scepter"
+                    },
+                    {
+                        "name": "runeDagger",
+                        "fullName": "Rune Daggers",
+                        "icon": "runeDagger"
+                    },
+                    {
+                        "name": "staff",
+                        "fullName": "Staves",
+                        "icon": "stave"
+                    }
+                ]
+            }
+        ]
+    }
+  }
+)
+
+db.filter.updateMany(
+  {}, 
+  { $set: {
+    "weaponSelection": {
+        "melee": {
+            "axe": 1,
+            "sword": 1,
+            "mace": 0,
+            "warstaff": 0,
+            "dagger": 0,
+            "claw": 0,
+            "oneHand": 0,
+            "twoHand": 0,
+            "elemental": 0,
+            "physical": 0
+        },
+        "ranged": {
+            "bow": 1,
+            "quiver": 1,
+            "wand": 0,
+            "elemental": 0,
+            "physical": 0
+        },
+        "caster": {
+            "wand": 1,
+            "scepter": 1,
+            "staff": 0,
+            "runeDagger": 0,
+            "tiers": [
+              1,
+              0,
+              0,
+              0
+            ] 
+        },
+        "itemlevel": 68,
+        "exceptionSelection": [
+            {
+                "name": "Convoking Wand",
+                "itemId": "6110f8ea90861eac085356da",
+                "rarity": 1,
+                "itemlevel": 1
+            },
+            {
+                "name": "Artillery Quiver",
+                "itemId": "6110f8ea90861eac08535602",
+                "rarity": 1,
+                "itemlevel": 1
+            }
+        ]
+    }
+  }
+  }
+)
+
 db.filter.updateOne({_id: "60e81740b565781aa4fdfd80", "armourSelection.exceptionSelection.itemId": null}, )
 
 db.filter.findOne({_id: ObjectId("60e81740b565781aa4fdfd80")}, {"armourSelection.exceptionSelection": 1})

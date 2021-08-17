@@ -41,6 +41,8 @@ export default function ArmorSection({ filter, data, filterId, armourBaseTypes }
     }) 
   }
 
+  console.log(details)
+
   return (
     <Section name="Armour Bases">
       <ButtonRow 
@@ -53,7 +55,7 @@ export default function ArmorSection({ filter, data, filterId, armourBaseTypes }
       <div className="w-screen max-w-full flex mt-4 gap-1">
         {renderTierColumns()}
       </div>
-      <div className="w-screen max-w-full flex items-end flex-row mt-4 p-2 gap-1 box-shadow">
+      <div className="w-screen max-w-full flex items-end flex-row mt-2 mb-2 p-2 gap-1 box-shadow">
         <InputField 
           defaultValue={defaultIlvl}
           label="ilvl:" 

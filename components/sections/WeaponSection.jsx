@@ -4,7 +4,7 @@ import ButtonRow from "../ButtonRow"
 import InputField from "../InputField"
 import ExceptionContainer from "../ExceptionContainer"
 import TierColumn from "../TierColumn"
-import {useEffect, useState} from "react"
+import {useEffect, useReducer, useState} from "react"
 import { buttonChoices } from "../ToggleButton"
 import { cycleThroughChoicesByValue } from "../../utils/buttonUtils"
 import { filterAPIPut } from "../../utils/apiHelpers"
@@ -15,6 +15,22 @@ const dmgTypeChoices = {
   SELECTED: buttonChoices.BASE_SELECTED,
 }
 
+const actions = {
+  SET_ELEMENTAL: "SET_ELEMENTAL",
+  SET_PHYSICAL:  "SET_PHYSICAL",
+}
+
+function reducer(state, action) {
+  switch (action.type) {
+    case actions.SET_ELEMENTAL:
+      return {...state, elemental: action.payload}
+    case actions.SET_PHYSICAL:
+      return {...state, physical: action.payload}
+    default:
+      return {...state}
+  }
+}  
+
 function WeaponSection({
   filter,
   data, 
@@ -23,61 +39,85 @@ function WeaponSection({
 }) {
   const {selectionName, details, baseTypes, atlasBaseTypes} = data
   const [defaultIlvl, setDefaultIlvl] = useState(filter[selectionName].itemlevel)
-  const [meleeEleDmg, setMeleeEleDmg] = useState(filter[selectionName].melee.elemental)
-  const [meleePhysDmg, setMeleePhysDmg] = useState(filter[selectionName].melee.physical)
-  const [rangedEleDmg, setRangedEleDmg] = useState(filter[selectionName].ranged.elemental)
-  const [rangedPhysDmg, setRangedPhysDmg] = useState(filter[selectionName].ranged.physical)
+  const [meleeOptions, meleeDispatch] = useReducer(reducer, {
+    elemental: filter[selectionName].melee.options.elemental,
+    physical: filter[selectionName].melee.options.physical,
+  })
+  const [rangedOptions, rangedDispatch] = useReducer(reducer, {
+    elemental: filter[selectionName].ranged.options.elemental,
+    physical: filter[selectionName].ranged.options.physical,
+  })
+
   const [meleeDetails, rangedDetails, casterDetails] = details
 
-  const buttonHelper = {
-    meleeEleDmg: {
-      value: meleeEleDmg,
-      setter: setMeleeEleDmg,
-      dbField: `${selectionName}.melee.elemental`,
-    },
-    meleePhysDmg: {
-      value: meleePhysDmg,
-      setter: setMeleePhysDmg,
-      dbField: `${selectionName}.melee.physical`,
-    },
-    rangedEleDmg: {
-      value: rangedEleDmg,
-      setter: setRangedEleDmg,
-      dbField: `${selectionName}.ranged.elemental`,
-    },
-    rangedPhysDmg: {
-      value: rangedPhysDmg,
-      setter: setRangedPhysDmg,
-      dbField: `${selectionName}.ranged.physical`,
-    },
-  }
-
-  function handleClick(helper) {
-    const nextChoice = cycleThroughChoicesByValue(helper.value, dmgTypeChoices)
-    helper.setter(nextChoice)
-    filterAPIPut(helper.dbField, nextChoice, filterId)
-  }
-
   function handleMEDClick() {
-    handleClick(buttonHelper.meleeEleDmg)
+    const nextChoice = cycleThroughChoicesByValue(
+      meleeOptions.elemental, 
+      dmgTypeChoices
+    )
+    meleeDispatch({
+      type: actions.SET_ELEMENTAL, 
+      payload: nextChoice
+    })
+    filterAPIPut(
+      `${selectionName}.melee.options.elemental`, 
+      nextChoice, 
+      filterId
+    )
   }
 
   function handleMPDClick() {
-    handleClick(buttonHelper.meleePhysDmg)
+    const nextChoice = cycleThroughChoicesByValue(
+      meleeOptions.physical, 
+      dmgTypeChoices
+    )
+    meleeDispatch({
+      type: actions.SET_PHYSICAL, 
+      payload: nextChoice
+    })
+    filterAPIPut(
+      `${selectionName}.melee.options.physical`, 
+      nextChoice, 
+      filterId
+    )
   }
 
   function handleREDClick() {
-    handleClick(buttonHelper.rangedEleDmg)
+    const nextChoice = cycleThroughChoicesByValue(
+      rangedOptions.elemental, 
+      dmgTypeChoices
+    )
+    rangedDispatch({
+      type: actions.SET_ELEMENTAL, 
+      payload: nextChoice
+    })
+    filterAPIPut(
+      `${selectionName}.ranged.options.elemental`, 
+      nextChoice, 
+      filterId
+    )
   }
 
   function handleRPDClick() {
-    handleClick(buttonHelper.rangedPhysDmg)
+    const nextChoice = cycleThroughChoicesByValue(
+      rangedOptions.physical, 
+      dmgTypeChoices
+    )
+    rangedDispatch({
+      type: actions.SET_PHYSICAL, 
+      payload: nextChoice
+    })
+    filterAPIPut(
+      `${selectionName}.ranged.options.physical`, 
+      nextChoice, 
+      filterId
+    )
   }
 
   return (
     <Section name="Weapons">
       <div>
-        <h3>Melee attack weapons</h3>
+        <h3>{baseTypes.melee.heading}</h3>
         <ButtonRow 
           details={meleeDetails.melee}
           type="melee"
@@ -85,13 +125,14 @@ function WeaponSection({
           filter={filter}
           filterId={filterId}
           maxButtons={3}
+          fields={["melee", "bases"]}
         />
         <div className="w-screen max-w-full flex items-end flex-row mt-2 mb-2 p-2 gap-1 box-shadow">
           <div className="ml-auto">
             <ToggleButton 
               name={"Physical"}
               title={"Include physical damage bases"}
-              currentChoice={meleePhysDmg}
+              currentChoice={meleeOptions.physical}
               choices={dmgTypeChoices}
               type={"bases"}
               onClick={handleMPDClick}
@@ -102,7 +143,7 @@ function WeaponSection({
             <ToggleButton 
               name={"Elemental"}
               title={"Include elemental damage bases"}
-              currentChoice={meleeEleDmg}
+              currentChoice={meleeOptions.elemental}
               choices={dmgTypeChoices}
               type={"bases"}
               onClick={handleMEDClick}
@@ -112,7 +153,7 @@ function WeaponSection({
         </div>
       </div>
       <div>
-        <h3>Ranged attack weapons</h3>
+        <h3>{baseTypes.ranged.heading}</h3>
         <ButtonRow 
           details={rangedDetails.ranged}
           type="ranged"
@@ -120,13 +161,14 @@ function WeaponSection({
           filter={filter}
           filterId={filterId}
           maxButtons={3}
+          fields={["ranged", "bases"]}
         />
         <div className="w-screen max-w-full flex items-end flex-row mt-2 p-2 mb-2 gap-1 box-shadow">
           <div className="ml-auto">
             <ToggleButton 
               name={"Physical"}
               title={"Include physical damage bases"}
-              currentChoice={rangedPhysDmg}
+              currentChoice={rangedOptions.physical}
               choices={dmgTypeChoices}
               type={"bases"}
               onClick={handleRPDClick}
@@ -137,7 +179,7 @@ function WeaponSection({
             <ToggleButton 
               name={"Elemental"}
               title={"Include elemental damage bases"}
-              currentChoice={rangedEleDmg}
+              currentChoice={rangedOptions.elemental}
               choices={dmgTypeChoices}
               type={"bases"}
               onClick={handleREDClick}
@@ -147,20 +189,21 @@ function WeaponSection({
         </div>
       </div>
       <div>
-        <h3>Caster weapons</h3>
+        <h3>{baseTypes.caster.heading}</h3>
         <ButtonRow 
           details={casterDetails.caster}
           type="caster"
           selection={selectionName}
           filter={filter}
           filterId={filterId}
+          fields={["caster", "bases"]}
         />
         <div className="w-screen max-w-full flex justify-center items-end flex-row p-2 gap-1 box-shadow">
           <div className="w-1/2">
             <TierColumn 
               name={"tiers"}
               heading={"Caster weapon tiers"}
-              fields={["caster", "tiers"]}
+              fields={["caster", "options", "tiers"]}
               tiers={tiers}
               selection={selectionName}
               filter={filter}

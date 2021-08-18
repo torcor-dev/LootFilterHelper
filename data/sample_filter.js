@@ -83,36 +83,43 @@ var defaultArmourSelection = {
 var defaultWeaponSelection = {
     "weaponSelection": {
         "melee": {
-            "twoHandAxe": 1,
-            "twoHandSword": 1,
-            "twoHandMace": 0,
-            "oneHandAxe": 1,
-            "oneHandSword": 1,
-            "oneHandMace": 0,
-            "warstaff": 0,
-            "dagger": 0,
-            "claw": 0,
-            "elemental": 0,
-            "physical": 0
+            bases: {
+                "twoHandAxe": 1,
+                "twoHandSword": 1,
+                "twoHandMace": 0,
+                "oneHandAxe": 1,
+                "oneHandSword": 1,
+                "oneHandMace": 0,
+                "warstaff": 0,
+                "dagger": 0,
+                "claw": 0,
+            },
+            options: {
+                "elemental": 0,
+                "physical": 0
+            },
         },
         "ranged": {
-            "bow": 1,
-            "quiver": 1,
-            "wand": 0,
-            "elemental": 0,
-            "physical": 0
+            bases: {
+                "bow": 1,
+                "quiver": 1,
+                "wand": 0,
+            },
+            options: {
+                "elemental": 0,
+                "physical": 0
+            },
         },
         "caster": {
-            "wand": 1,
-            "scepter": 1,
-            "staff": 0,
-            "runeDagger": 0,
-            "tiers": [
-              1,
-              0,
-              0,
-              0
-            ] 
+            bases: {
+                "wand": 1,
+                "scepter": 1,
+                "staff": 0,
+                "runeDagger": 0,
+            },
+            options: {
+                "tiers": [1, 0, 0, 0] 
+            },
         },
         "itemlevel": 68,
         "exceptionSelection": [

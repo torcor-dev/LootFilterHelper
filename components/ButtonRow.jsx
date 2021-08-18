@@ -3,7 +3,6 @@ import { cycleThroughChoices } from "../utils/buttonUtils";
 import PropTypes from 'prop-types'
 import {useEffect, useState} from "react";
 import { filterAPIPut } from "../utils/apiHelpers";
-import {useWindowSize} from "../utils/useWindowSize"
 
 const rowChoices = {
   DISABLED: buttonChoices.DISABLED,
@@ -16,16 +15,28 @@ function ButtonRow({
   selection, 
   filter,  
   filterId,
+  fields=null,
   maxButtons=10,
 }) {
-  const [toggleState, setToggleState] = useState(filter[selection][type])
-  const windowSize = useWindowSize()
+
+  let filterSelection = filter[selection][type]
+  if (fields) {
+    filterSelection = filter[selection]
+    fields.forEach(field => filterSelection = filterSelection[field])
+  }
+
+  const [toggleState, setToggleState] = useState(filterSelection)
 
   function handleClick(name) {
     const stateCopy = {...toggleState}
     stateCopy[name] = cycleThroughChoices(stateCopy, name, rowChoices)
     setToggleState(stateCopy)
-    const key = `${selection}.${type}`
+
+    let key = `${selection}.${name}`
+    if (fields) {
+      key = `${selection}`
+      fields.forEach(field => key += `.${field}`)
+    }
     filterAPIPut(key, stateCopy, filterId)
   }
 

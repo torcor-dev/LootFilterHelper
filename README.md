@@ -38,8 +38,23 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ### Icons
 
-https://game-icons.net/1x1/lorc/leather-boot.html
-https://game-icons.net/1x1/lorc/barbute.html
-https://game-icons.net/1x1/delapouite/abdominal-armor.html
-https://game-icons.net/1x1/lorc/mailed-fist.html
-https://game-icons.net/1x1/sbed/shield.html
+- https://game-icons.net/1x1/lorc/leather-boot.html
+- https://game-icons.net/1x1/lorc/barbute.html
+- https://game-icons.net/1x1/delapouite/abdominal-armor.html
+- https://game-icons.net/1x1/lorc/mailed-fist.html
+- https://game-icons.net/1x1/sbed/shield.html
+- https://game-icons.net/1x1/lorc/wood-axe.html
+- https://game-icons.net/1x1/lorc/broadsword.html
+- https://game-icons.net/1x1/skoll/stiletto.html
+- https://game-icons.net/1x1/lorc/curvy-knife.html
+- https://game-icons.net/1x1/lorc/wizard-staff.html
+- https://game-icons.net/1x1/delapouite/bo.html
+- https://game-icons.net/1x1/delapouite/quiver.html
+- https://game-icons.net/1x1/lorc/high-shot.html
+- https://game-icons.net/1x1/willdabeast/orb-wand.html
+- https://game-icons.net/1x1/lorc/crystal-wand.html
+- https://game-icons.net/1x1/lorc/relic-blade.html
+- https://game-icons.net/1x1/lorc/battle-axe.html
+- https://game-icons.net/1x1/delapouite/wood-club.html
+
+Icon license: https://creativecommons.org/licenses/by/3.0/

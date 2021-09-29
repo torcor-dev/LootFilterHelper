@@ -30,7 +30,7 @@ body {
     color: var(--foreground);
 }
 
-h2, h3 {
+h2, h3, h4 {
     color: var(--comment);
 }
 

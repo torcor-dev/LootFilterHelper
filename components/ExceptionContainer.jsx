@@ -75,7 +75,7 @@ function ExceptionContainer({
   }
 
   return(
-    <div className="">
+    <div className="pb-2">
       <div className="flex w-full">
         <h3>Exception rules</h3>
         <button className="ml-auto text-xs" onClick={addAtlasBases}>Add all atlas bases</button>

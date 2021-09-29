@@ -19,9 +19,12 @@ export default function SuggestionItem({ item }) {
         </div>
         <div className="w-1/3 pr-1" title={propertiesText.join("\n")}>
           <ul>
-            {propertiesText.map(info => {
-              return <li key={info} className={styles.infoText}>{info}</li> 
-            })}
+            {
+              propertiesText.map(info => {
+                return <li key={info} className={styles.infoText}>{info}</li> 
+              })
+              .slice(0, 3)
+            }
           </ul>
         </div>
       </div>

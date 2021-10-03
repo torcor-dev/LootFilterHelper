@@ -43,3 +43,11 @@
   background: var(--unselected-item-bg);
   background: linear-gradient(180deg, var(--unselected-item-bg) 97%, var(--green) 97% 100%);
 }
+
+.buttonTabSelected { 
+  color: var(--orange);
+  fill: var(--orange);
+  border: 1px solid var(--unselected-item-bg);
+  background: var(--unselected-item-bg);
+  background: linear-gradient(180deg, var(--unselected-item-bg) 97%, var(--orange) 97% 100%);
+}

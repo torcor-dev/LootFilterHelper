@@ -76,16 +76,19 @@ function ButtonRow({
     }
 
     return (
-      rows.map((row, idx) => {
-          return (
-            <div 
+      <>
+        {rows.map((row, idx) => {
+            return (
+              <div 
               key={`${type}_${row}_${idx}`} 
               className="w-screen max-w-full flex justify-center items-center pb-1 gap-1"
-            >
+              >
               {row}
-            </div>
-          )
-        })
+              </div>
+            )
+          })
+        }
+      </>
     )
   }
 

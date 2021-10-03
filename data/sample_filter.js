@@ -139,6 +139,13 @@ var defaultWeaponSelection = {
     }
 }
 
+db.filter.updateOne(
+    {name: "F1"},
+    {$set: defaultWeaponSelection },
+    {$set: defaultArmourSelection },
+)
+
+
 db.filter.updateMany(
     {},
     {$set: defaultWeaponSelection },

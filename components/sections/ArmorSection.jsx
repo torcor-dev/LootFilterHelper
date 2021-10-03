@@ -41,8 +41,6 @@ export default function ArmorSection({ filter, data, filterId, armourBaseTypes }
     }) 
   }
 
-  console.log(details)
-
   return (
     <Section name="Armour Bases">
       <ButtonRow 

@@ -94,17 +94,17 @@ export default function Home({
       filterId={state._id}
       className="input nameInput"
       />
-      <WeaponSection 
-      filter={filter} 
-      data={weaponDetails} 
-      filterId={state._id}
-      weaponBaseTypes={weaponBaseTypes}
-      />
       <ArmorSection 
       filter={filter} 
       data={armourDetails} 
       filterId={state._id}
       armourBaseTypes={armourBaseTypes}
+      />
+      <WeaponSection 
+      filter={filter} 
+      data={weaponDetails} 
+      filterId={state._id}
+      weaponBaseTypes={weaponBaseTypes}
       />
       <div className="pb-56"></div>
       </>

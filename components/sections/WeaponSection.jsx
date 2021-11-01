@@ -117,7 +117,7 @@ function WeaponSection({
   }
 
   return (
-    <Section name="Weapons">
+    <Section name="Weapon Bases">
       <TabContainer>
         <Tab title={baseTypes.melee.heading} active={true} key="meleeTab">
           <ButtonRow 

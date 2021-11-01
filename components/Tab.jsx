@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types'
 
 function Tab({title, active, children}) {
-  console.log(children[0].props)
 
   return (
     <>

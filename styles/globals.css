@@ -30,7 +30,13 @@ body {
     color: var(--foreground);
 }
 
-h2, h3, h4 {
+h2 {
+  font-size: large;
+  font-weight: bold;
+  color: var(--foreground)
+}
+
+h3, h4 {
     color: var(--comment);
 }
 
